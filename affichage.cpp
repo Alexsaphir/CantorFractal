@@ -8,27 +8,28 @@ Affichage::Affichage() : QWidget(), QEvent(QEvent::Wheel)
     BnextStep = new QPushButton("Next Frame");
     BZoom = new QPushButton("zoom");
     Grid = new QGridLayout;
-	Grid->addWidget(BnextStep,0,0);
+
+    Grid->addWidget(BnextStep,0,0);
     Grid->addWidget(BZoom,0,2);
 	Grid->addWidget(view,1,0,4,4);
-
-
-
-	//view->viewport()->installEventFilter(this);
-	//view->setMouseTracking(true);
-	qDebug()<<view->isInteractive();
-
-
 
 
 	this->setMinimumSize(500,500);
 	this->setLayout(Grid);
 	view->show();
 
+    QObject::connect(BnextStep, SIGNAL(clicked(bool)),this,SLOT(Actualiser()));
 
-	QObject::connect(BnextStep, SIGNAL(clicked(bool)),this,SLOT(Actualiser()));
-    QObject::connect(BZoom, SIGNAL(clicked(bool)),this,SLOT(zoomIn()));
-	//QObject::connect(view, SIGNAL(),this,SLOT(zoomIn()));
+
+
+    //view->setTransformationAnchor(QGraphicsView::NoAnchor);
+    //view->setResizeAnchor(QGraphicsView::NoAnchor);
+
+
+
+    //On installe le filtre d'events
+    view->scene()->installEventFilter(this);
+
 }
 
 void Affichage::Actualiser()
@@ -37,7 +38,7 @@ void Affichage::Actualiser()
 	++step;
 	if (step!=1)
 		F.RunOnce();
-    qreal h=50;
+    qreal h=1000;
 	for(int i=0; i<F.getSizeEnsForme();++i)
 	{
 //Special pour cantor car on dessine les ligne une en dessous de l'autre
@@ -48,42 +49,44 @@ void Affichage::Actualiser()
 		//scene->addLine(x,h*step,y,h*step);
 
 
-		QPen Pen(Qt::PenStyle);
-		Pen.setWidth(0);
+        //QPen Pen(Qt::PenStyle);
+        //Pen.setWidth(0);
 		Forme tmpForme=F.getFromEnsForme(i);
 		for(int j=0;j<tmpForme.GetSize()-1;++j)
 		{
-			scene->addLine(h*tmpForme.GetPoint(j).x(), -h*tmpForme.GetPoint(j).y(), h*tmpForme.GetPoint(j+1).x(), -h*tmpForme.GetPoint(j+1).y(),Pen);
+            scene->addLine(h*tmpForme.GetPoint(j).x(), -h*tmpForme.GetPoint(j).y(), h*tmpForme.GetPoint(j+1).x(), -h*tmpForme.GetPoint(j+1).y());
 		}
 		scene->addLine(h*tmpForme.GetPoint(0).x(), -h*tmpForme.GetPoint(0).y(),h* tmpForme.GetPoint(tmpForme.GetSize()-1).x(), -h*tmpForme.GetPoint(tmpForme.GetSize()-1).y());
 	}
 	qDebug() << view->geometry().width();
 }
 
-void Affichage::zoomIn()
+
+
+
+
+void Affichage::Zoom(QGraphicsSceneWheelEvent *event)
 {
-	view->scale(1.5,1.5);
-
-}
-
-void Affichage::zoomOut()
-{
-	view->scale(1/1.5,1/1.5);
-}
-
-void Affichage::wheelEvent(QWheelEvent *event)
-{
-    //event.ignore();
-
     if(event->delta()>0)
-        zoomIn();
+    {
+        view->scale(1.01,1.01);
+    }
     else
-        zoomOut();
-	qDebug()<<"is call";
-    //view->scale(1.5,1.5);
+    {
+        view->scale(1/1.01,1/1.01);
+    }
+    qDebug()<< event->scenePos();
+    view->centerOn(event->scenePos());
+
 }
 
-void Affichage::mousePressEvent(QMouseEvent *event)
+bool Affichage::eventFilter(QObject *obj, QEvent *event)
 {
-    qDebug() << "mousePressEvent";
+    if (event->type() == QEvent::GraphicsSceneWheel)
+    {
+        Zoom(static_cast<QGraphicsSceneWheelEvent*> (event));
+        event->accept();//On ne propage pas l'event
+        return true;
+    }
+    return false;
 }

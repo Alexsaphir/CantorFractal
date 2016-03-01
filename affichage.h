@@ -12,6 +12,7 @@
 
 #include <QEvent>
 #include <QWheelEvent>
+#include <QGraphicsSceneWheelEvent>
 
 #include <QDebug>
 
@@ -26,13 +27,14 @@ public:
 	Affichage();
 	Fractale F;
 protected:
-        virtual void wheelEvent(QWheelEvent *event);
-        virtual void mousePressEvent(QMouseEvent *event);
+    virtual bool eventFilter(QObject *obj, QEvent *event);
+    //virtual void wheelEvent(QWheelEvent *event);
+        //virtual void mousePressEvent(QMouseEvent *event);
 
 public slots:
 	void Actualiser();
-	void zoomIn();
-	void zoomOut();
+private:
+    void Zoom(QGraphicsSceneWheelEvent *event);
 
 private:
 	//Cantor F;
