@@ -14,6 +14,8 @@
 #include <QWheelEvent>
 #include <QGraphicsSceneWheelEvent>
 
+#include <math.h>
+
 #include <QDebug>
 
 
@@ -35,6 +37,7 @@ public slots:
 	void Actualiser();
 private:
     void Zoom(QGraphicsSceneWheelEvent *event);
+    //void scaleView(double scalefactor);
 
 private:
 	//Cantor F;
@@ -43,7 +46,10 @@ private:
 	QPushButton *BnextStep;
     QPushButton *BZoom;
 	QGridLayout *Grid;
+    QPen Pen1;
 	int step;
+
+    //float ZoomFactor;
 };
 
 #endif // AFFICHAGE_H

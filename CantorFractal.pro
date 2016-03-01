@@ -15,4 +15,5 @@ HEADERS += \
 
 DISTFILES += \
     README \
-    Triangle
+    Triangle \
+    TODO
