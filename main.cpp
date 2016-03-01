@@ -46,6 +46,7 @@ int main(int argc, char *argv[])
 	Fen.F.AddForme(FormeInitiale);
 
 	Fen.show();
+    //Hello
 
 	return app.exec();
 }
