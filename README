@@ -1,0 +1,12 @@
+On dessine la forme de cette facon
+    [P1,___________,Pn]
+    on dessine le segment P1-P2,P2-P3,__________,Pn-P1
+QgraphicsScene utilise un repere
+	    -y
+
+	-x  0	+x
+
+	    +y
+On doit donc prendre l'inverse de l'ordonné de chaque points lors de l'affichage
+
+
