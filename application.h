@@ -2,6 +2,10 @@
 #define APPLICATION_H
 
 #include <QList>
+#include <QMatrix2x2>
+
+#include <math.h>
+
 #include "forme.h"
 
 class Application
@@ -22,6 +26,7 @@ private:
 	QPointF Centre;
 	qreal k;
 	qreal r;
+    QMatrix2x2 matR;//Matrice de rotation associé a l'angle r
 };
 
 #endif // APPLICATION_H

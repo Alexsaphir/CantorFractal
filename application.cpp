@@ -7,6 +7,7 @@ Application::Application()
 	Centre.setY(0.0);
 	k=1;
 	r=0;
+    matR.setToIdentity();
 }
 Application::Application(bool pSimi, qreal K, qreal R, QPointF CENTRE)
 {
@@ -14,6 +15,9 @@ Application::Application(bool pSimi, qreal K, qreal R, QPointF CENTRE)
 	k = K;
 	r = R;
 	Centre =CENTRE;
+    float MatRData[4]={cos(r), -sin(r), sin(r), cos(r)};
+    matR.copyDataTo(*MatRData);
+    qDebug()<< matR;
 }
 
 bool Application::isHomothetie() const
