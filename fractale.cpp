@@ -9,6 +9,10 @@ bool Fractale::isLikeCantor() const
 {
 	return isCantor;
 }
+void Fractale::setLikeCantor(bool p)
+{
+	isCantor = p;
+}
 
 void Fractale::AddApplication(Application A)
 {
@@ -105,5 +109,6 @@ void Fractale::generateExisting(quint32 n)
 			this->AddHomothetie(1./3.,F.GetPoint(i));
 		}
 		this->AddForme(F);
+		this->setLikeCantor(true);
 	}
 }

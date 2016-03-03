@@ -2,8 +2,7 @@
 #include <iostream>
 #include <QDebug>
 
-#include "affichage.h"
-#include <math.h>
+#include "window.h"
 
 #include <QGraphicsRectItem>
 
@@ -29,7 +28,9 @@ int main(int argc, char *argv[])
 //	Fen.F.AddForme(FormeInitiale);
 //	Fen.Actualiser();
 //	Fen.show();
-	qDebug() << (qreal)(3./4.);
+
+	Window Fen;
+	Fen.show();
 
 
 	return app.exec();

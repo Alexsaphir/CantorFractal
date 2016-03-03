@@ -1,6 +1,9 @@
 #ifndef FRACTALE_H
 #define FRACTALE_H
 
+#include <QtGlobal>
+#include <QtMath>
+
 #include <QPointF>
 #include <QList>
 
@@ -27,6 +30,7 @@ public:
 	void AddForme(const Forme &F);
 
 	bool isLikeCantor() const;
+	void setLikeCantor(bool p);
 
 	void RunOnce();
 
