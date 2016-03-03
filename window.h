@@ -14,6 +14,7 @@ class Window : public QMainWindow
 public:
 	Window();
 
+	Fractale *fractale;
 protected:
 	virtual bool eventFilter(QObject *obj, QEvent *event);
 
@@ -40,7 +41,7 @@ private:
 	QPushButton *B_next;
 	QPushButton *B_load;
 
-	Fractale *fractale;
+
 	quint32 step;
 };
 

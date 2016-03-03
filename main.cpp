@@ -30,6 +30,13 @@ int main(int argc, char *argv[])
 //	Fen.show();
 
 	Window Fen;
+	Fen.fractale = new Fractale;
+	Forme F;F.generateExisting(1);//genere triangle
+	Fen.fractale->AddForme(F);
+	for(int i=0;i<F.GetSize();++i)
+	{
+		Fen.fractale->AddHomothetie(1./2.,F.GetPoint(i));
+	}
 	Fen.show();
 
 

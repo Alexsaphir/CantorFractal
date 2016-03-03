@@ -29,7 +29,7 @@ Window::Window() : QMainWindow()
 	ToolBar->setMovable(false);
 	ToolBar->addWidget(B_next);
 	ToolBar->addWidget(B_load);
-	B_next->setDisabled(true);
+	//B_next->setDisabled(true);//To test new Fractale in main
 
 
 	SDI_Area->setLayout(GridLayout);
