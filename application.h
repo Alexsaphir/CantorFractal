@@ -1,35 +1,39 @@
 #ifndef APPLICATION_H
 #define APPLICATION_H
 
-#include <QList>
-#include <QMatrix2x2>
+#include <QtGlobal>
+#include <QtMath>
+#include <QPointF>
 
-#include <math.h>
+#include <complex>
+#include <cmath>
 
 #include "forme.h"
+
 
 class Application
 {
 public:
 	Application();
-	Application(bool pSimi, qreal K, qreal R, QPointF CENTRE);
-	bool isSimilitude() const;
+
+	std::complex<qreal> getApplication() const;
+	QPointF getCentre() const;
+	QPointF DoForQPointF(QPointF const &P) const;
+	Forme DoForForme(Forme const &F) const;
+	QList<Forme> DoForEns(const QList<Forme> &EnsForme) const;
+
+	void setW(std::complex<qreal> W);
+	void setY(std::complex<qreal> Y);
+
+
 	bool isHomothetie() const;
+	bool isRotation() const;
 
-
-
-	QList<Forme> doForEns(const QList<Forme> &EnsForme) const;//Applique la transformation sur un ensemble
-
-
-private:
-	bool isSimi;
-	QPointF Centre;
-	qreal k;
-	qreal r;
-    QMatrix2x2 matR;//Matrice de rotation associé a l'angle r
+protected:
+	std::complex<qreal> y;//y représente la transformation
+	std::complex<qreal> w;//Représente le centre
 };
 
+bool operator ==(Application const &A, Application const &B);
+
 #endif // APPLICATION_H
-
-
-//Homothetie ou similitude

@@ -5,6 +5,8 @@
 #include <QList>
 
 #include "application.h"
+#include "homothetie.h"
+#include "rotation.h"
 #include "forme.h"
 
 class Fractale
@@ -12,6 +14,15 @@ class Fractale
 public:
 	Fractale();
 	void AddAppli(bool isSimi, qreal k, qreal r, QPointF Centre);
+
+	void AddHomothetie(qreal k);
+	void AddHomothetie(qreal k, QPointF Centre);
+	void AddHomothetie(qreal k, qreal x, qreal y);
+
+	void AddRotation(qreal theta);
+	void AddRotation(qreal theta, QPointF Centre);
+	void AddRotation(qreal theta, qreal x, qreal y);
+
 	void AddForme(const Forme &F);
 
 	bool isLikeCantor() const;

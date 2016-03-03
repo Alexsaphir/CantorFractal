@@ -5,13 +5,17 @@ SOURCES += \
     affichage.cpp \
     application.cpp \
     fractale.cpp \
-    forme.cpp
+    forme.cpp \
+    homothetie.cpp \
+    rotation.cpp
 
 HEADERS += \
     affichage.h \
     application.h \
     fractale.h \
-    forme.h
+    forme.h \
+    homothetie.h \
+    rotation.h
 
 DISTFILES += \
     README \

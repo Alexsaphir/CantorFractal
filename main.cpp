@@ -21,12 +21,10 @@ int main(int argc, char *argv[])
     for (int i=0;i<N;++i)
     {
         QPointF P(cos((float)i*theta),sin((float)i*theta));
-        FormeInitiale.AddPoint(P);
-        if(i%2)
-        {
-            Fen.F.AddAppli(0,0.3333,0,P);
-        }
-        else Fen.F.AddAppli(0,0.3333,0,P);
+		FormeInitiale.AddPoint(P);
+
+		Fen.F.AddHomothetie(0.33333, P);
+
     }
     Fen.F.AddForme(FormeInitiale);
     Fen.Actualiser();

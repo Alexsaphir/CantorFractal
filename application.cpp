@@ -2,47 +2,77 @@
 
 Application::Application()
 {
-	isSimi = false;
-	Centre.setX(0.0);
-	Centre.setY(0.0);
-	k=1;
-	r=0;
-    matR.setToIdentity();
+	y=1+0i;
+	w=0+0i;
 }
-Application::Application(bool pSimi, qreal K, qreal R, QPointF CENTRE)
+
+std::complex<qreal> Application::getApplication() const
 {
-	isSimi = pSimi;
-	k = K;
-	r = R;
-	Centre =CENTRE;
-    float MatRData[4]={cos(r), -sin(r), sin(r), cos(r)};
-    matR.copyDataTo(*MatRData);
-    qDebug()<< matR;
+	return y;
+}
+
+QPointF Application::getCentre() const
+{
+	return QPointF(w.real(),w.imag());
+}
+
+void Application::setW(std::complex<qreal> W)
+{
+	w=W;
+}
+
+void Application::setY(std::complex<qreal> Y)
+{
+	y=Y;
 }
 
 bool Application::isHomothetie() const
 {
-	return !isSimi;
+	if (y.imag() == 0.0)
+		return true;
+	return false;
 }
 
-bool Application::isSimilitude() const
+bool Application::isRotation() const
 {
-	return isSimi;
+	if (std::norm(y)==1 && y.real()!= 1)
+		return true;
+	return false;
 }
 
-QList<Forme> Application::doForEns(const QList<Forme> &EnsForme) const
+QPointF Application::DoForQPointF(const QPointF &P) const
+{
+	std::complex<qreal> z=P.x() +1i*P.y();
+	z=y*(z-w)+w;//Forme de la rotation ou de l'homothetie
+	return QPointF(z.real(),z.imag());
+}
+
+Forme Application::DoForForme(const Forme &F) const
+{
+	Forme tmp;
+	for (int i=0;F.GetSize();++i)
+	{
+		tmp.AddPoint(this->DoForQPointF(F.GetPoint(i)));
+	}
+	return tmp;
+}
+
+QList<Forme> Application::DoForEns(const QList<Forme> &EnsForme) const
 {
 	QList<Forme> EnsT;
+	EnsT.reserve(EnsForme.size());//Préalloue le nombre d'élement pour eviter les réallocations
 	for (int i=0;i<EnsForme.size();++i)
 	{
-		Forme TmpF;
-		for(int j=0;j<EnsForme.at(i).GetSize(); ++j)
-		{
-			QPointF P=EnsForme.at(i).GetPoint(j);
-			QPointF tmp(k*(P-Centre)+Centre);
-			TmpF.AddPoint(tmp);
-		}
-		EnsT.append(TmpF);
+		EnsT.append(this->DoForForme(EnsForme.at(i)));
 	}
 	return EnsT;
 }
+
+bool operator ==(Application const &A, Application const &B)
+{
+	if ( (A.getApplication() == B.getApplication()) && (A.getCentre() == B.getCentre()) )
+		return true;
+	return false;
+}
+
+

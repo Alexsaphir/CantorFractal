@@ -10,11 +10,43 @@ bool Fractale::isLikeCantor() const
 	return isCantor;
 }
 
-void Fractale::AddAppli(bool isSimi, qreal k, qreal r, QPointF Centre)
+void Fractale::AddHomothetie(qreal k)
 {
-	Application A(isSimi, k, r, Centre);
-	EnsA.append(A);
+	Homothetie H(k);
+	EnsA.append(H);
 }
+
+void Fractale::AddHomothetie(qreal k, QPointF Centre)
+{
+	Homothetie H(k, Centre);
+	EnsA.append(H);
+}
+
+void Fractale::AddHomothetie(qreal k, qreal x, qreal y)
+{
+	Homothetie H(k,QPointF(x,y));
+	EnsA.append(H);
+}
+
+void Fractale::AddRotation(qreal theta)
+{
+	Rotation H(theta);
+	EnsA.append(H);
+}
+
+void Fractale::AddRotation(qreal theta, QPointF Centre)
+{
+	Rotation H(theta, Centre);
+	EnsA.append(H);
+}
+
+void Fractale::AddRotation(qreal theta, qreal x, qreal y)
+{
+	Rotation H(theta, QPointF(x,y));
+	EnsA.append(H);
+}
+
+
 
 void Fractale::AddForme(const Forme &F)
 {
@@ -26,7 +58,7 @@ void Fractale::RunOnce()
 	QList<Forme> Tmp;
 	for(int i=0;i<EnsA.size();++i)
 	{
-		Tmp+=EnsA.at(i).doForEns(EnsF);
+		Tmp+=EnsA.at(i).DoForEns(EnsF);
 	}
 
 //	//On retire les doublons

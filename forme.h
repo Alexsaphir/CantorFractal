@@ -3,6 +3,7 @@
 
 #include <QList>
 #include <QPointF>
+
 class Forme
 {
 public:
