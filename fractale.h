@@ -13,7 +13,6 @@ class Fractale
 {
 public:
 	Fractale();
-	void AddAppli(bool isSimi, qreal k, qreal r, QPointF Centre);
 
 	void AddHomothetie(qreal k);
 	void AddHomothetie(qreal k, QPointF Centre);
