@@ -19,7 +19,6 @@ Affichage::Affichage() : QWidget(), QEvent(QEvent::Wheel)
 
 	this->setMinimumSize(500,500);
 	this->setLayout(Grid);
-	view->show();
 
 
     QObject::connect(BnextStep, SIGNAL(clicked(bool)),this,SLOT(Actualiser()));
@@ -27,7 +26,7 @@ Affichage::Affichage() : QWidget(), QEvent(QEvent::Wheel)
 
 //Garde le point sous le curseur durant le zoom
     view->setTransformationAnchor(QGraphicsView::AnchorUnderMouse);
-
+	view->setDragMode(QGraphicsView::ScrollHandDrag);//Permet de bouger la vue avec la souris
 
 
     //On installe le filtre d'events
