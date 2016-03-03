@@ -60,13 +60,14 @@ Forme Application::DoForForme(const Forme &F) const
 QList<Forme> Application::DoForEns(const QList<Forme> &EnsForme) const
 {
 	QList<Forme> EnsT;
-	EnsT.reserve(EnsForme.size());//Préalloue le nombre d'élement pour eviter les réallocations
+	EnsT.reserve(EnsForme.size());//Préalloue le nombre d'élement pour éviter les réallocations
 	for (int i=0;i<EnsForme.size();++i)
 	{
 		EnsT.append(this->DoForForme(EnsForme.at(i)));
 	}
 	return EnsT;
 }
+
 
 bool operator ==(Application const &A, Application const &B)
 {

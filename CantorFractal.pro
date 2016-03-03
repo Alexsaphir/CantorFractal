@@ -7,7 +7,8 @@ SOURCES += \
     fractale.cpp \
     forme.cpp \
     homothetie.cpp \
-    rotation.cpp
+    rotation.cpp \
+    window.cpp
 
 HEADERS += \
     affichage.h \
@@ -15,7 +16,8 @@ HEADERS += \
     fractale.h \
     forme.h \
     homothetie.h \
-    rotation.h
+    rotation.h \
+    window.h
 
 DISTFILES += \
     README \
