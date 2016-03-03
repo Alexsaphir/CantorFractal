@@ -14,6 +14,7 @@ protected:
 private:
 	void Zoom(QGraphicsSceneWheelEvent *event);
 	void refreshView();
+	void loadExistingFractal(quint64);
 
 private:
 	QWidget *SDI_Area;

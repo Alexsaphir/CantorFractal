@@ -14,6 +14,8 @@ class Fractale
 public:
 	Fractale();
 
+	void AddApplication(Application A);
+
 	void AddHomothetie(qreal k);
 	void AddHomothetie(qreal k, QPointF Centre);
 	void AddHomothetie(qreal k, qreal x, qreal y);
@@ -31,6 +33,8 @@ public:
 	Forme getFromEnsForme(int i) const;
 	int getSizeEnsForme() const;
 	int getSizeEnsAppli() const;
+
+	void generateExisting(quint32 n);
 
 private:
 	QList<Application> EnsA;

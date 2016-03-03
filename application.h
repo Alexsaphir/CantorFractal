@@ -29,6 +29,7 @@ public:
 	bool isHomothetie() const;
 	bool isRotation() const;
 
+
 protected:
 	std::complex<qreal> y;//y représente la transformation
 	std::complex<qreal> w;//Représente le centre

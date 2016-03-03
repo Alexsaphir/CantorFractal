@@ -68,7 +68,6 @@ QList<Forme> Application::DoForEns(const QList<Forme> &EnsForme) const
 	return EnsT;
 }
 
-
 bool operator ==(Application const &A, Application const &B)
 {
 	if ( (A.getApplication() == B.getApplication()) && (A.getCentre() == B.getCentre()) )

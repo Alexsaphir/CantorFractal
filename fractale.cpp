@@ -10,6 +10,11 @@ bool Fractale::isLikeCantor() const
 	return isCantor;
 }
 
+void Fractale::AddApplication(Application A)
+{
+	EnsA.append(A);
+}
+
 void Fractale::AddHomothetie(qreal k)
 {
 	Homothetie H(k);
@@ -86,4 +91,19 @@ int Fractale::getSizeEnsForme() const
 int Fractale::getSizeEnsAppli() const
 {
 	return EnsA.size();
+}
+
+void Fractale::generateExisting(quint32 n)
+{
+	if(n==0)
+	{
+		//Cantor 1D
+		Forme F;
+		F.generateExisting(0);
+		for(int i=0;i<F.GetSize();++i)
+		{
+			this->AddHomothetie(1./3.,F.GetPoint(i));
+		}
+		this->AddForme(F);
+	}
 }
