@@ -4,6 +4,7 @@ Application::Application()
 {
 	y=1+0i;
 	w=0+0i;
+	useConjB = false;
 }
 
 std::complex<qreal> Application::getApplication() const
@@ -42,7 +43,9 @@ bool Application::isRotation() const
 
 QPointF Application::DoForQPointF(const QPointF &P) const
 {
-	std::complex<qreal> z=P.x() +1i*P.y();
+	std::complex<qreal> z=P.x()+1i*P.y();
+	if (useConj())
+		z=P.x()-1i*P.y();
 	z=y*(z-w)+w;//Forme de la rotation ou de l'homothetie
 	return QPointF(z.real(),z.imag());
 }
@@ -66,6 +69,16 @@ QList<Forme> Application::DoForEns(const QList<Forme> &EnsForme) const
 		EnsT.append(this->DoForForme(EnsForme.at(i)));
 	}
 	return EnsT;
+}
+
+void Application::setuseConj(bool p)
+{
+	useConjB=p;
+}
+
+bool Application::useConj() const
+{
+	return useConjB;
 }
 
 bool operator ==(Application const &A, Application const &B)

@@ -24,15 +24,19 @@ public:
 
 	void setW(std::complex<qreal> W);
 	void setY(std::complex<qreal> Y);
+	void setuseConj(bool p);
 
 
 	bool isHomothetie() const;
 	bool isRotation() const;
+	bool useConj() const;
 
 
 protected:
 	std::complex<qreal> y;//y représente la transformation
 	std::complex<qreal> w;//Représente le centre
+private:
+	bool useConjB;
 };
 
 bool operator ==(Application const &A, Application const &B);

@@ -14,6 +14,7 @@ class Window : public QMainWindow
 public:
 	Window();
 
+	bool tweak;
 	Fractale *fractale;
 protected:
 	virtual bool eventFilter(QObject *obj, QEvent *event);
@@ -21,7 +22,8 @@ protected:
 private:
 	void Zoom(QGraphicsSceneWheelEvent *event);
 	void loadExistingFractal(quint64);
-	void refreshViewSpecial();
+	void refreshViewSpecialCantor();
+	void refreshViewColor();
 
 public slots:
 	void load();
