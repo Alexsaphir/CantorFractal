@@ -50,7 +50,7 @@ QPointF Application::DoForQPointF(const QPointF &P) const
 Forme Application::DoForForme(const Forme &F) const
 {
 	Forme tmp;
-	for (int i=0;F.GetSize();++i)
+	for (int i=0;i<F.GetSize();++i)
 	{
 		tmp.AddPoint(this->DoForQPointF(F.GetPoint(i)));
 	}
