@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	Window Fen;
 	Fen.fractale = new Fractale;
-	/*
+
 	//Triangle de spiernsky
 	Forme F;F.generateExisting(1);//genere triangle
 	Fen.fractale->AddForme(F);
@@ -25,28 +25,29 @@ int main(int argc, char *argv[])
 	{
 		Fen.fractale->AddHomothetie(1./2.,F.GetPoint(i));
 	}
-	//Fen.tweak=true;
-	*/
+	Fen.tweak=true;
+	Fen.show();
 
-	//Flocon de knock
-	std::complex<qreal> alpha=1./3.;
-	Forme F;F.generateExisting(1);
-	qDebug() << alpha.real() << alpha.imag();
-	Fen.fractale->AddForme(F);
-	Application F1,F2,F3;
-	F1.setY(alpha);
-	F2.setY(alpha);
-	F3.setY(alpha);
 
-	F1.setW();
-	F2.setW(1);
-	F3.setW();
-	//F1.setuseConj(true);
-	//F2.setuseConj(true);
-	Fen.fractale->AddApplication(F1);
+//	//Flocon de knock
+//	std::complex<qreal> alpha=1./3.;
+//	Forme F;F.generateExisting(1);
+//	qDebug() << alpha.real() << alpha.imag();
+//	Fen.fractale->AddForme(F);
+//	Application F1,F2,F3;
+//	F1.setY(alpha);
+//	F2.setY(alpha);
+//	F3.setY(alpha);
 
-	//Fen.show();
-	qDebug() <<F1.DoForQPointF(QPointF(1.,0.));
+//	F1.setW();
+//	F2.setW(1);
+//	F3.setW();
+//	//F1.setuseConj(true);
+//	//F2.setuseConj(true);
+//	Fen.fractale->AddApplication(F1);
+
+//	//Fen.show();
+//	qDebug() <<F1.DoForQPointF(QPointF(1.,0.));
 
 	return app.exec();
 }

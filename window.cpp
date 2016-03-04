@@ -60,7 +60,9 @@ void Window::load()
 		if(item==items.at(0))
 		{
 			//Création Cantor
-
+			if (fractale != NULL)
+				delete fractale;
+			view->scene()->clear();
 			fractale = new Fractale;
 			fractale->generateExisting(0);
 		}
