@@ -26,6 +26,7 @@ public:
 	void setm22(qreal m);
 	void setv1(qreal m);
 	void setv2(qreal m);
+	void setCentre(QPointF P);
 
 	qreal getm11() const;
 	qreal getm12() const;
@@ -33,6 +34,7 @@ public:
 	qreal getm22() const;
 	qreal getv1() const;
 	qreal getv2() const;
+	QPointF getCentre() const;
 
 
 	bool isHomothetie() const;
@@ -43,6 +45,7 @@ protected:
 	 qreal k;
 	 qreal m11, m12, m21, m22;
 	 qreal v1, v2;
+	 QPointF Centre;
 };
 
 bool operator ==(Application const &A, Application const &B);

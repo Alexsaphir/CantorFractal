@@ -12,6 +12,9 @@ Application::Application()
 
 	v1 = 0;
 	v2 = 0;
+
+	Centre.setX(0);
+	Centre.setY(0);
 }
 
 
@@ -59,6 +62,11 @@ qreal Application::getv2() const
 	return v2;
 }
 
+QPointF Application::getCentre() const
+{
+	return Centre;
+}
+
 void Application::setm11(qreal m) const
 {
 	m11 = m;
@@ -94,7 +102,10 @@ void Application::setv2(qreal m)
 	v2 = m;
 }
 
-
+void Application::setCentre(QPointF P)
+{
+	Centre = P;
+}
 
 QPointF Application::DoForQPointF(const QPointF &P) const
 {

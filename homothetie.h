@@ -10,8 +10,8 @@ class Homothetie : public Application
 {
 public:
 	Homothetie();
-	Homothetie(qreal k);//On est en centre (0,0)
-	Homothetie(qreal k, QPointF C);//rapport K de centre C;
+	Homothetie(qreal K);//On est en centre (0,0)
+	Homothetie(qreal K, QPointF C);//rapport K de centre C;
 
 	void setHomothetie(qreal k);
 	void setHomothetie(qreal k, QPointF C);

@@ -8,12 +8,12 @@ Homothetie::Homothetie() : Application()
 
 Homothetie::Homothetie(qreal k) : Application()
 {
-	y = k;
+	k = K;
 }
 
-Homothetie::Homothetie(qreal k, QPointF C) :Application()
+Homothetie::Homothetie(qreal K, QPointF C) :Application()
 {
-	y = k;
+	y = K;
 	w = C.x() + C.y()*1i;
 }
 
