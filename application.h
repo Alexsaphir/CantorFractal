@@ -16,27 +16,33 @@ class Application
 public:
 	Application();
 
-	std::complex<qreal> getApplication() const;
-	QPointF getCentre() const;
 	QPointF DoForQPointF(QPointF const &P) const;
 	Forme DoForForme(Forme const &F) const;
 	QList<Forme> DoForEns(const QList<Forme> &EnsForme) const;
 
-	void setW(std::complex<qreal> W);
-	void setY(std::complex<qreal> Y);
-	void setuseConj(bool p);
+	void setm11(qreal m);
+	void setm12(qreal m);
+	void setm21(qreal m);
+	void setm22(qreal m);
+	void setv1(qreal m);
+	void setv2(qreal m);
+
+	qreal getm11() const;
+	qreal getm12() const;
+	qreal getm21() const;
+	qreal getm22() const;
+	qreal getv1() const;
+	qreal getv2() const;
 
 
 	bool isHomothetie() const;
 	bool isRotation() const;
-	bool useConj() const;
 
 
 protected:
-	std::complex<qreal> y;//y représente la transformation
-	std::complex<qreal> w;//Représente le centre
-private:
-	bool useConjB;
+	 qreal k;
+	 qreal m11, m12, m21, m22;
+	 qreal v1, v2;
 };
 
 bool operator ==(Application const &A, Application const &B);

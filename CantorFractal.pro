@@ -7,7 +7,9 @@ SOURCES += \
     forme.cpp \
     homothetie.cpp \
     rotation.cpp \
-    window.cpp
+    window.cpp \
+    similitudedirecte.cpp \
+    similitudeindirecte.cpp
 
 HEADERS += \
     application.h \
@@ -15,7 +17,9 @@ HEADERS += \
     forme.h \
     homothetie.h \
     rotation.h \
-    window.h
+    window.h \
+    similitudedirecte.h \
+    similitudeindirecte.h
 
 DISTFILES += \
     README \
