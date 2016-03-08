@@ -16,10 +16,6 @@ class Application
 public:
 	Application();
 
-	QPointF DoForQPointF(QPointF const &P) const;
-	Forme DoForForme(Forme const &F) const;
-	QList<Forme> DoForEns(const QList<Forme> &EnsForme) const;
-
 	void setm11(qreal m);
 	void setm12(qreal m);
 	void setm21(qreal m);
@@ -35,17 +31,22 @@ public:
 	qreal getv1() const;
 	qreal getv2() const;
 	QPointF getCentre() const;
+	qreal getTheta() const;//Calculer a partir de la matrice de rotation M
 
 
 	bool isHomothetie() const;
 	bool isRotation() const;
 
 
+	QPointF DoForQPointF(QPointF const &P) const;
+	Forme DoForForme(Forme const &F) const;
+	QList<Forme> DoForEns(const QList<Forme> &EnsForme) const;
+
 protected:
-	 qreal k;
-	 qreal m11, m12, m21, m22;
-	 qreal v1, v2;
-	 QPointF Centre;
+	qreal k;
+	qreal m11, m12, m21, m22;
+	qreal v1, v2;
+	QPointF Centre;
 };
 
 bool operator ==(Application const &A, Application const &B);
