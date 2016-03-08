@@ -2,10 +2,23 @@
 
 SimilitudeDirecte::SimilitudeDirecte() : Application()
 {
-
+	//Application id grace au constructeur de Application()
 }
 
-SimilitudeDirecte::SimilitudeDirecte(qreal K, qreal theta, QPointF P) :Application()
+SimilitudeDirecte::SimilitudeDirecte(qreal K, qreal theta, QPointF P) : Application()
+{
+	k=K;
+
+	m11 = qCos(theta);
+	m12 = -qSin(theta);
+	m21 = qSin(theta);
+	m22 = qCos(theta);
+
+	v1 = P.x();
+	v2 = P.y();
+}
+
+SimilitudeDirecte::SimilitudeDirecte(qreal K, qreal theta, QPointF P, QPointF C) : Application()
 {
 	k=K;
 
@@ -17,11 +30,23 @@ SimilitudeDirecte::SimilitudeDirecte(qreal K, qreal theta, QPointF P) :Applicati
 	v1 = P.x();
 	v2 = P.y();
 
-	Centre.setX(0);
-	Centre.setY(0);
+	Centre = C;
 }
 
-SimilitudeDirecte::SimilitudeDirecte(qreal K, qreal theta, QPointF P, QPointF C) : Application()
+void SimilitudeDirecte::setSimilitudeDirecte(qreal K, qreal theta, QPointF P)
+{
+	k=K;
+
+	m11 = qCos(theta);
+	m12 = -qSin(theta);
+	m21 = qSin(theta);
+	m22 = qCos(theta);
+
+	v1 = P.x();
+	v2 = P.y();
+}
+
+void SimilitudeDirecte::setSimilitudeDirecte(qreal K, qreal theta, QPointF P, QPointF C)
 {
 	k=K;
 

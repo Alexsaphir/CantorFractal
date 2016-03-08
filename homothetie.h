@@ -13,10 +13,9 @@ public:
 	Homothetie(qreal K);//On est en centre (0,0)
 	Homothetie(qreal K, QPointF C);//rapport K de centre C;
 
-	void setHomothetie(qreal k);
-	void setHomothetie(qreal k, QPointF C);
+	void setHomothetie(qreal K);
+	void setHomothetie(qreal K, QPointF C);
 
-	qreal getHomothetie() const;
 };
 
 #endif // HOMOTHETIE_H

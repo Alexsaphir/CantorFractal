@@ -4,6 +4,7 @@
 
 Homothetie::Homothetie() : Application()
 {
+	//Le constructeur de Application est appellé et *this= Id
 }
 
 Homothetie::Homothetie(qreal k) : Application()
@@ -13,22 +14,17 @@ Homothetie::Homothetie(qreal k) : Application()
 
 Homothetie::Homothetie(qreal K, QPointF C) :Application()
 {
-	y = K;
-	w = C.x() + C.y()*1i;
+	k = K;
+	Centre = C;
 }
 
-void Homothetie::setHomothetie(qreal k)
+void Homothetie::setHomothetie(qreal K)
 {
-	y = k;
+	k = K;
 }
 
-void Homothetie::setHomothetie(qreal k, QPointF C)
+void Homothetie::setHomothetie(qreal K, QPointF C)
 {
-	y = k;
-	w = C.x() + C.y()*1i;
-}
-
-qreal Homothetie::getHomothetie() const
-{
-	return y.real();
+	k = K;
+	Centre = C;
 }

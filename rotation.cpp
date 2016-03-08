@@ -6,32 +6,42 @@ Rotation::Rotation() : Application()
 
 Rotation::Rotation(double theta) : Application()
 {
-	//y=exp(1i*theta);
-	//on traduit l'exp par son equivalent en cos+isin
-	y=qCos(theta)+1i*qSin(theta);
+	//Matrice de rotation
+	m11 = qCos(theta);
+	m12 = -qSin(theta);
+	m21 = qSin(theta);
+	m22 = qCos(theta);
+	//Centre 0
 
 }
 
 Rotation::Rotation(qreal theta, QPointF C) : Application()
 {
-	//y=exp(1i*theta);
-	//on traduit l'exp par son equivalent en cos+isin
-	y=qCos(theta)+1i*qSin(theta);
-	w = C.x() + C.y()*1i;
+	//Matrice de rotation
+	m11 = qCos(theta);
+	m12 = -qSin(theta);
+	m21 = qSin(theta);
+	m22 = qCos(theta);
+
+	Centre=C;
 }
 
 void Rotation::setRotation(qreal theta)
 {
-	y=qCos(theta)+1i*qSin(theta);
+	//Matrice de rotation
+	m11 = qCos(theta);
+	m12 = -qSin(theta);
+	m21 = qSin(theta);
+	m22 = qCos(theta);
 }
 
 void Rotation::setRotation(qreal theta, QPointF C)
 {
-	y=qCos(theta)+1i*qSin(theta);
-	w = C.x() + C.y()*1i;
-}
+	//Matrice de rotation
+	m11 = qCos(theta);
+	m12 = -qSin(theta);
+	m21 = qSin(theta);
+	m22 = qCos(theta);
 
-qreal Rotation::getRotation() const
-{
-	return qAcos(y.real());//qAcos <=> arccos
+	Centre=C;
 }

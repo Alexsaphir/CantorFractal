@@ -13,6 +13,9 @@ public:
 	SimilitudeDirecte();
 	SimilitudeDirecte(qreal K, qreal theta, QPointF P);
 	SimilitudeDirecte(qreal K, qreal theta, QPointF P, QPointF C);
+
+	void setSimilitudeDirecte(qreal K, qreal theta, QPointF P);
+	void setSimilitudeDirecte(qreal K, qreal theta, QPointF P, QPointF C);
 };
 
 #endif // SIMILITUDEDIRECTE_H

@@ -17,11 +17,6 @@ Application::Application()
 	Centre.setY(0);
 }
 
-void Application::setm11(qreal m) const
-{
-	m11 = m;
-}
-
 void Application::setm11(qreal m)
 {
 	m11 = m;
@@ -93,7 +88,6 @@ QPointF Application::getCentre() const
 }
 
 qreal Application::getTheta() const
-
 {
 	return qAsin(m21);//Toujours egale que ce soit une similitude directe ou indirecte
 }
@@ -146,9 +140,7 @@ QList<Forme> Application::DoForEns(const QList<Forme> &EnsForme) const
 
 bool operator ==(Application const &A, Application const &B)
 {
-	if ( (A.getApplication() == B.getApplication()) && (A.getCentre() == B.getCentre()) )
+	//Faire une liste de poiuiteur de fct pour chaque varialbe de Application
 		return true;
 	return false;
 }
-
-

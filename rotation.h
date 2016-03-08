@@ -16,7 +16,6 @@ public:
 	void setRotation(qreal theta);
 	void setRotation(qreal theta, QPointF C);
 
-	qreal getRotation() const;
 };
 
 #endif // ROTATION_H

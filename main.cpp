@@ -3,6 +3,7 @@
 #include <QDebug>
 
 #include "window.h"
+#include "similitudedirecte.h"
 #include <complex>
 
 #include <QGraphicsRectItem>
@@ -13,20 +14,20 @@ int main(int argc, char *argv[])
 {
 	QApplication app(argc, argv);
 
+	SimilitudeDirecte S(1,0,QPointF(0,0));
 
+//	Window Fen;
+//	Fen.fractale = new Fractale;
 
-	Window Fen;
-	Fen.fractale = new Fractale;
-
-	//Triangle de spiernsky
-	Forme F;F.generateExisting(1);//genere triangle
-	Fen.fractale->AddForme(F);
-	for(int i=0;i<F.GetSize();++i)
-	{
-		Fen.fractale->AddHomothetie(1./2.,F.GetPoint(i));
-	}
-	Fen.tweak=true;
-	Fen.show();
+//	//Triangle de spiernsky
+//	Forme F;F.generateExisting(1);//genere triangle
+//	Fen.fractale->AddForme(F);
+//	for(int i=0;i<F.GetSize();++i)
+//	{
+//		Fen.fractale->AddHomothetie(1./2.,F.GetPoint(i));
+//	}
+//	Fen.tweak=true;
+//	Fen.show();
 
 
 //	//Flocon de knock

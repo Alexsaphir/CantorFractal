@@ -31,7 +31,7 @@ public:
 	qreal getv1() const;
 	qreal getv2() const;
 	QPointF getCentre() const;
-	qreal getTheta() const;//Calculer a partir de la matrice de rotation M
+	qreal getTheta() const;//Calculer à partir de la matrice de rotation M
 
 
 	bool isHomothetie() const;
