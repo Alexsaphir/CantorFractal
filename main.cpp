@@ -28,24 +28,9 @@ int main(int argc, char *argv[])
 //	}
 //	Fen.tweak=true;
 //	Fen.show();
-
-
-	//Flocon de knock
-	Forme F;F.generateExisting(0);
-	Fen.fractale->AddForme(F);
-	SimilitudeDirecte S1,S2,S3,S4;
-	S1.setK(1./3.);
-	S1.setCentre(F.GetPoint(0));
-	S2.setK(1./3.);
-	S2.setCentre();
-
-	Fen.fractale->AddApplication(S1);
-	Fen.fractale->AddApplication(S2);
-	//Fen.fractale->AddApplication(S3);
-	//Fen.fractale->AddApplication(S4);
-
+	Fen.tweak=true;
+	Fen.fractale->generateExisting(1);
 	Fen.show();
-//	qDebug() <<F1.DoForQPointF(QPointF(1.,0.));
 
 	return app.exec();
 }

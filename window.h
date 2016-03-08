@@ -5,6 +5,7 @@
 
 #include <QtGlobal>
 #include <QtMath>
+#include <QtPrintSupport/QPrinter>
 
 #include "fractale.h"
 

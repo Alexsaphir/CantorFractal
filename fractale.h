@@ -10,7 +10,11 @@
 #include "application.h"
 #include "homothetie.h"
 #include "rotation.h"
+#include "similitudedirecte.h"
+#include "similitudeindirecte.h"
+
 #include "forme.h"
+
 
 class Fractale
 {

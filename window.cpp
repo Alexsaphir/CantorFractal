@@ -47,28 +47,28 @@ Window::Window() : QMainWindow()
 
 void Window::load()
 {
-	qDebug() << "call load";
-
 	QStringList items;
-	items << "Cantor";
+	items << "Cantor" << "triangle de sierpinski" << "Courbe de Koch" << "Flocon de Koch";
 
 	bool ok;
 	QString item = QInputDialog::getItem(this, "Séléction Fractale", "Fractale:", items, 0, false, &ok);
 	if (ok && !item.isEmpty())
 
 	{
-		if(item==items.at(0))
-		{
-			//Création Cantor
-			if (fractale != NULL)
-				delete fractale;
-			view->scene()->clear();
-			fractale = new Fractale;
-			fractale->generateExisting(0);
-		}
+		if (fractale != NULL)
+			delete fractale;
+		view->scene()->clear();
+		tweak=false;
+		step=0;
+		fractale = new Fractale;
+		fractale->generateExisting(items.indexOf(item));
+		if(items.indexOf(item)==1)
+			tweak=1;
+
+		refreshView();
+		B_next->setDisabled(false);//!!!!!!!!!!!
 	}
-	refreshView();
-	B_next->setDisabled(false);//!!!!!!!!!!!
+
 }
 
 void Window::refreshView()
@@ -109,7 +109,7 @@ void Window::refreshView()
 			view->scene()->addPath(path, Pen1);
 		}
 	}
-//Mise au point
+	//Mise au point
 	if (step==0)
 	{
 		view->fitInView( view->scene()->sceneRect(), Qt::KeepAspectRatio );
@@ -133,7 +133,7 @@ void Window::refreshViewSpecialCantor()
 		scene->addLine(x,h*step,y,h*step,Pen1);
 
 	}
-//Mise au point
+	//Mise au point
 	if (step==0)
 	{
 		view->fitInView( view->scene()->sceneRect(), Qt::KeepAspectRatio );
@@ -165,10 +165,10 @@ void Window::refreshViewColor()
 		}
 	}
 	//Mise au point
-		if (step==0)
-		{
-			view->fitInView( view->scene()->sceneRect(), Qt::KeepAspectRatio );
-		}
+	if (step==0)
+	{
+		view->fitInView( view->scene()->sceneRect(), Qt::KeepAspectRatio );
+	}
 	++step;
 }
 
@@ -191,3 +191,14 @@ void Window::Zoom(QGraphicsSceneWheelEvent *event)
 	//qreal factor = view->transform().scale(scaleFactor, scaleFactor).mapRect(QRectF(0, 0, 1, 1)).width();
 	view->scale(scaleFactor, scaleFactor);//Applique le zoom
 }
+
+
+/*QPrinter printer(QPrinter::HighResolution);
+	printer.setOutputFileName("print.ps");
+	QPainter painter;
+	painter.begin(&printer);
+
+	view->render(&painter);
+
+	painter.end();
+	*/

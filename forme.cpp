@@ -37,14 +37,14 @@ void Forme::generateExisting(quint32 n)
 	if(n==0)
 	{
 		//Segment0-1
-		this->AddPoint(QPointF(-1./2.,0.));
-		this->AddPoint(QPointF(1./2.,0.));
+		this->AddPoint(QPointF(0.,0.));
+		this->AddPoint(QPointF(1.,0.));
 	}
 	else if(n==1)
 	{
 		//Triangle
-		this->AddPoint(QPointF(-1./2.,0.));
-		this->AddPoint(QPointF(1./2.,0.));
-		this->AddPoint(QPointF(0.,qSqrt(3./4.)));
+		this->AddPoint(QPointF(0.,0.));
+		this->AddPoint(QPointF(1.,0.));
+		this->AddPoint(QPointF(1./2.,qSqrt(3./4.)));
 	}
 }
