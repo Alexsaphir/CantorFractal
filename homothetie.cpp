@@ -7,7 +7,7 @@ Homothetie::Homothetie() : Application()
 	//Le constructeur de Application est appellé et *this= Id
 }
 
-Homothetie::Homothetie(qreal k) : Application()
+Homothetie::Homothetie(qreal K) : Application()
 {
 	k = K;
 }

@@ -27,7 +27,7 @@ public:
 	void AddRotation(qreal theta, QPointF Centre);
 	void AddRotation(qreal theta, qreal x, qreal y);
 
-	void AddForme(const Forme &F);
+	void AddForme(Forme F);
 
 	bool isLikeCantor() const;
 	void setLikeCantor(bool p);

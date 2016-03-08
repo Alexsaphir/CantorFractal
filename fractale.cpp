@@ -57,7 +57,7 @@ void Fractale::AddRotation(qreal theta, qreal x, qreal y)
 
 
 
-void Fractale::AddForme(const Forme &F)
+void Fractale::AddForme( Forme F)
 {
 	EnsF.append(F);
 }

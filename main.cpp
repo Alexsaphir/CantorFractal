@@ -4,6 +4,7 @@
 
 #include "window.h"
 #include "similitudedirecte.h"
+#include "application.h"
 #include <complex>
 
 #include <QGraphicsRectItem>
@@ -14,10 +15,9 @@ int main(int argc, char *argv[])
 {
 	QApplication app(argc, argv);
 
-	SimilitudeDirecte S(1,0,QPointF(0,0));
 
-//	Window Fen;
-//	Fen.fractale = new Fractale;
+	Window Fen;
+	Fen.fractale = new Fractale;
 
 //	//Triangle de spiernsky
 //	Forme F;F.generateExisting(1);//genere triangle
@@ -30,24 +30,21 @@ int main(int argc, char *argv[])
 //	Fen.show();
 
 
-//	//Flocon de knock
-//	std::complex<qreal> alpha=1./3.;
-//	Forme F;F.generateExisting(1);
-//	qDebug() << alpha.real() << alpha.imag();
-//	Fen.fractale->AddForme(F);
-//	Application F1,F2,F3;
-//	F1.setY(alpha);
-//	F2.setY(alpha);
-//	F3.setY(alpha);
+	//Flocon de knock
+	Forme F;F.generateExisting(0);
+	Fen.fractale->AddForme(F);
+	SimilitudeDirecte S1,S2,S3,S4;
+	S1.setK(1./3.);
+	S1.setCentre(F.GetPoint(0));
+	S2.setK(1./3.);
+	S2.setCentre();
 
-//	F1.setW();
-//	F2.setW(1);
-//	F3.setW();
-//	//F1.setuseConj(true);
-//	//F2.setuseConj(true);
-//	Fen.fractale->AddApplication(F1);
+	Fen.fractale->AddApplication(S1);
+	Fen.fractale->AddApplication(S2);
+	//Fen.fractale->AddApplication(S3);
+	//Fen.fractale->AddApplication(S4);
 
-//	//Fen.show();
+	Fen.show();
 //	qDebug() <<F1.DoForQPointF(QPointF(1.,0.));
 
 	return app.exec();

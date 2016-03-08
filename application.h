@@ -23,6 +23,7 @@ public:
 	void setv1(qreal m);
 	void setv2(qreal m);
 	void setCentre(QPointF P);
+	void setK(qreal K);
 
 	qreal getm11() const;
 	qreal getm12() const;
@@ -31,6 +32,7 @@ public:
 	qreal getv1() const;
 	qreal getv2() const;
 	QPointF getCentre() const;
+	qreal getK() const;
 	qreal getTheta() const;//Calculer à partir de la matrice de rotation M
 
 

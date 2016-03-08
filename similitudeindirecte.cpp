@@ -33,7 +33,7 @@ SimilitudeIndirecte::SimilitudeIndirecte(qreal K, qreal theta, QPointF P, QPoint
 	Centre = C;
 }
 
-SimilitudeIndirecte::setSimilitudeIndirecte(qreal K, qreal theta, QPointF P)
+void SimilitudeIndirecte::setSimilitudeIndirecte(qreal K, qreal theta, QPointF P)
 {
 	k=K;
 
@@ -46,7 +46,7 @@ SimilitudeIndirecte::setSimilitudeIndirecte(qreal K, qreal theta, QPointF P)
 	v2 = P.y();
 }
 
-SimilitudeIndirecte::setSimilitudeIndirecte(qreal K, qreal theta, QPointF P, QPointF C)
+void SimilitudeIndirecte::setSimilitudeIndirecte(qreal K, qreal theta, QPointF P, QPointF C)
 {
 	k=K;
 

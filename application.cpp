@@ -52,6 +52,11 @@ void Application::setCentre(QPointF P)
 	Centre = P;
 }
 
+void Application::setK(qreal K)
+{
+	k = K;
+}
+
 qreal Application::getm11() const
 {
 	return m11;
@@ -85,6 +90,11 @@ qreal Application::getv2() const
 QPointF Application::getCentre() const
 {
 	return Centre;
+}
+
+qreal Application::getK() const
+{
+	return k;
 }
 
 qreal Application::getTheta() const
