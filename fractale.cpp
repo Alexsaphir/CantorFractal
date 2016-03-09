@@ -64,6 +64,7 @@ void Fractale::AddForme( Forme F)
 
 void Fractale::RunOnce()
 {
+
 	QList<Forme> Tmp;
 	for(int i=0;i<EnsA.size();++i)
 	{
@@ -171,5 +172,76 @@ void Fractale::generateExisting(quint32 n)
 
 		//this->AddApplication(S3);
 		//this->AddApplication(S4);
+	}
+	else if(n==4)
+	{
+		std::complex<qreal> beta=1./2.-1i*qSqrt(3.)/6.;
+		//std::complex<qreal> beta(0-1i*0.5);
+		Forme F1,F2;
+		F1.generateExisting(0);//genere segment
+		F2.AddPoint(QPointF(0.,0.));
+		F2.AddPoint(QPointF(std::real(beta),std::imag(beta)));
+		this->AddForme(F1);
+		this->AddForme(F2);
+
+		SimilitudeIndirecte S1,S2;
+		S1.setSimilitudeIndirecte(abs(beta), arg(beta), QPointF(0.,0.));
+		S2.setSimilitudeIndirecte(1-abs(beta)*abs(beta), 0, QPointF(abs(beta)*abs(beta),0.));
+
+		this->AddApplication(S1);
+		this->AddApplication(S2);
+
+	}
+	else if(n==5)
+	{
+		Forme F;
+		F.generateExisting(0);
+		this->AddForme(F);
+		SimilitudeDirecte S1,S2;
+
+		S1.setK(qSqrt(2.)/2);
+		S1.setTheta(M_PI/4.);
+
+		S2.setK(qSqrt(2.)/2);
+		S2.setTheta(-M_PI/4.);
+		S2.setCentre(QPointF(1.,0.));
+
+		this->AddApplication(S1);
+		this->AddApplication(S2);
+	}
+	else if(n==6)
+	{
+		//pentakun
+
+		Forme F;
+		for(qreal i=0.;i<5.;++i)
+			F.AddPoint(QPointF(-qSin(2.*i*M_PI/5.), qCos(2.*i*M_PI/5.)));
+		this->AddForme(F);
+		for(int i=0;i<5;++i)
+		{
+			this->AddHomothetie((3.-qSqrt(5.))/2.,F.GetPoint(i));
+		}
+	}
+	else if(n==7)
+	{
+		Forme F;
+		F.AddPoint(QPointF(0.,0.));
+		F.AddPoint(QPointF(1.,0.));
+		F.AddPoint(QPointF(1.,1.));
+		F.AddPoint(QPointF(0.,1.));
+		this->AddForme(F);
+
+		for (int i=0;i<4;++i)
+			this->AddHomothetie(1./3.,F.GetPoint(i));
+		SimilitudeDirecte S;
+		S.setK(1./3.);
+		QList<QPointF> P;
+		P << QPointF(1./2.,0.) << QPointF(1.,1./2.) << QPointF(1./2.,1.) << QPointF(0.,1./2.);
+		for (qreal i=0.;i<4.;++i)
+		{
+			S.setCentre(P.at(i));
+			this->AddApplication(S);
+		}
+
 	}
 }

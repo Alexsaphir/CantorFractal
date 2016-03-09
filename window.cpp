@@ -48,7 +48,7 @@ Window::Window() : QMainWindow()
 void Window::load()
 {
 	QStringList items;
-	items << "Cantor" << "triangle de sierpinski" << "Courbe de Koch" << "Flocon de Koch";
+	items << "Cantor" << "triangle de sierpinski" << "Courbe de Koch" << "Flocon de Koch" << "Hata's tree-like set" << "Lévy Curve" << "PentaKun" << "sierpinski carpet";
 
 	bool ok;
 	QString item = QInputDialog::getItem(this, "Séléction Fractale", "Fractale:", items, 0, false, &ok);
@@ -62,7 +62,7 @@ void Window::load()
 		step=0;
 		fractale = new Fractale;
 		fractale->generateExisting(items.indexOf(item));
-		if(items.indexOf(item)==1)
+		if(items.indexOf(item)==1 || items.indexOf(item)==7)
 			tweak=1;
 
 		refreshView();
