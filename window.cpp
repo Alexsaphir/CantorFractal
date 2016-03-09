@@ -43,6 +43,8 @@ Window::Window() : QMainWindow()
 
 	step=0;
 	tweak = false;
+	this->show();
+	this->load();
 }
 
 void Window::load()

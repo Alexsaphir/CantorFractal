@@ -17,19 +17,6 @@ int main(int argc, char *argv[])
 
 
 	Window Fen;
-	Fen.fractale = new Fractale;
-
-//	//Triangle de spiernsky
-//	Forme F;F.generateExisting(1);//genere triangle
-//	Fen.fractale->AddForme(F);
-//	for(int i=0;i<F.GetSize();++i)
-//	{
-//		Fen.fractale->AddHomothetie(1./2.,F.GetPoint(i));
-//	}
-//	Fen.tweak=true;
-//	Fen.show();
-	Fen.tweak=true;
-	Fen.fractale->generateExisting(1);
 	Fen.show();
 
 	return app.exec();
