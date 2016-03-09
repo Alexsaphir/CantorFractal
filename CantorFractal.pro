@@ -24,4 +24,7 @@ HEADERS += \
 DISTFILES += \
     README \
     Triangle \
-    TODO
+    TODO \
+    HataTreeLike \
+    Source \
+    Script_Scilab/script.sce
