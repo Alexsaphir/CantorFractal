@@ -143,35 +143,31 @@ void Fractale::generateExisting(quint32 n)
 	}
 	else if(n==3)
 	{
-		Forme F;
-		SimilitudeDirecte S1,S2,S3,S4;
-		qreal k(7./18.);
+		Forme F1,F2,F3;
+		SimilitudeDirecte S1,S2,S3,S4,S5,S6,S7;
 		//F.generateExisting(0);
-		F.AddPoint(QPointF(0.,0.));
-		F.AddPoint(QPointF(1.,0.));
-		this->AddForme(F);
-//Vecteur (0,1)
-		S1.setSimilitudeDirecte(k, 0.		,	QPointF(0.,0.)								);
-		S2.setSimilitudeDirecte(1./4., M_PI/3.	,	QPointF(0.,0.), QPointF(1./4.,0.)			);
-		S3.setSimilitudeDirecte(1./4., -M_PI/3.	,	QPointF(1.,0.), QPointF(-1./4.,0.)	);
-		S4.setSimilitudeDirecte(k, 0		,	QPointF(1.,0.), QPointF(0.,0.)			);
+		F1.AddPoint(QPointF(0.,0.));
+		F1.AddPoint(QPointF(1.,0.));
+		//Si triangle This is based on a dragon curve construction
+		F1.AddPoint(QPointF(1./2.,qSqrt(3.)/2.));
+		QPointF Centre;
+
+		S1.setSimilitudeDirecte(1./3.		,-2.*M_PI/3., Centre, QPointF(1./6., qSqrt(3.)/6.)	);
+		S2.setSimilitudeDirecte(1./3.		,M_PI/3.	, Centre, QPointF(1./6., qSqrt(3.)/6.)	);
+		S3.setSimilitudeDirecte(1./3.		,0.			, Centre, QPointF(1./3., qSqrt(3.)/3.)	);
+		S4.setSimilitudeDirecte(1./3.		,-M_PI/3.	, Centre, QPointF(2./3., qSqrt(3.)/3.)	);
+		S5.setSimilitudeDirecte(1./qSqrt(3.),M_PI/6.	, Centre, QPointF(1./3., 0.)			);
+		S6.setSimilitudeDirecte(1./3.		,M_PI		, Centre, QPointF(2./3., 0.)			);
+		S7.setSimilitudeDirecte(1./3.		,0.			, Centre, QPointF(2./3., 0.)			);
 
 
 		this->AddApplication(S1);
 		this->AddApplication(S2);
 		this->AddApplication(S3);
 		this->AddApplication(S4);
-
-		S3.setCentre(QPointF(3./4.,1./2.));
-		S4.setCentre(QPointF(3./4.,1./2.));
-
-		S3.setv1(-0.1473291);
-		S3.setv2(-0.3444979);
-		S4.setv1(0.1666667 );
-		S4.setv2(0.3333333 );
-
-		//this->AddApplication(S3);
-		//this->AddApplication(S4);
+		this->AddApplication(S5);
+		this->AddApplication(S6);
+		this->AddApplication(S7);
 	}
 	else if(n==4)
 	{
