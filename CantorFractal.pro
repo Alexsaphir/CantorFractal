@@ -22,9 +22,8 @@ HEADERS += \
     similitudeindirecte.h
 
 DISTFILES += \
-    README \
     Triangle \
     TODO \
     HataTreeLike \
     Source \
-    Script_Scilab/script.sce
+    Script_Scilab/script.sce \
