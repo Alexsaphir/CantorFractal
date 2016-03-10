@@ -1,5 +1,8 @@
 #include "window.h"
 
+///
+/// \brief Window::Window
+///
 Window::Window() : QMainWindow()
 {
 	//Type SDI
@@ -47,6 +50,9 @@ Window::Window() : QMainWindow()
 	this->load();
 }
 
+///
+/// \brief Window::load
+///
 void Window::load()
 {
 	QStringList items;
@@ -68,11 +74,14 @@ void Window::load()
 			tweak=1;
 
 		refreshView();
-		B_next->setDisabled(false);//!!!!!!!!!!!
+		B_next->setDisabled(false);// !!!!!!!!!!!
 	}
 
 }
 
+///
+/// \brief Window::refreshView
+///
 void Window::refreshView()
 {
 	//Permet d'afficher la fractale a l'écran
@@ -122,6 +131,9 @@ void Window::refreshView()
 	++step;
 }
 
+///
+/// \brief Window::refreshViewSpecialCantor
+///
 void Window::refreshViewSpecialCantor()
 {
 	qreal h=1./128.;//decalage
@@ -144,6 +156,9 @@ void Window::refreshViewSpecialCantor()
 	++step;
 }
 
+///
+/// \brief Window::refreshViewColor
+///
 void Window::refreshViewColor()
 {
 	scene->clear();
@@ -174,6 +189,12 @@ void Window::refreshViewColor()
 	++step;
 }
 
+///
+/// \brief Window::eventFilter
+/// \param obj
+/// \param event
+/// \return
+///
 bool Window::eventFilter(QObject *obj, QEvent *event)
 {
 
@@ -187,6 +208,10 @@ bool Window::eventFilter(QObject *obj, QEvent *event)
 	return false;
 }
 
+///
+/// \brief Window::Zoom
+/// \param event
+///
 void Window::Zoom(QGraphicsSceneWheelEvent *event)
 {
 	qreal scaleFactor=pow((double)2, event->delta() / 240.0);//Calcul le Facteur de zoom

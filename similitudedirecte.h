@@ -1,10 +1,6 @@
 #ifndef SIMILITUDEDIRECTE_H
 #define SIMILITUDEDIRECTE_H
 
-#include <QtGlobal>
-#include <QtMath>
-#include <QPointF>
-
 #include "application.h"
 
 class SimilitudeDirecte : public Application

@@ -1,10 +1,6 @@
 #ifndef APPLICATION_H
 #define APPLICATION_H
 
-#include <QtGlobal>
-#include <QtMath>
-#include <QPointF>
-
 #include <complex>
 #include <cmath>
 
@@ -45,7 +41,14 @@ public:
 	QList<Forme> DoForEns(const QList<Forme> &EnsForme) const;
 
 protected:
+	///
+	/// \brief k Rapport de l'application
+	///
 	qreal k;
+	///
+	/// \brief m11, m12, m21, m22 Décrit la matrice de rotation
+	/// \f[|I_2|\f]
+
 	qreal m11, m12, m21, m22;
 	qreal v1, v2;
 	QPointF Centre;

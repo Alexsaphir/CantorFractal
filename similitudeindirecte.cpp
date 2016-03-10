@@ -1,10 +1,19 @@
 #include "similitudeindirecte.h"
 
+///
+/// \brief SimilitudeIndirecte::SimilitudeIndirecte
+///
 SimilitudeIndirecte::SimilitudeIndirecte() : Application()
 {
 
 }
 
+///
+/// \brief SimilitudeIndirecte::SimilitudeIndirecte
+/// \param K
+/// \param theta
+/// \param P
+///
 SimilitudeIndirecte::SimilitudeIndirecte(qreal K, qreal theta, QPointF P) : Application()
 {
 	k=K;
@@ -18,6 +27,13 @@ SimilitudeIndirecte::SimilitudeIndirecte(qreal K, qreal theta, QPointF P) : Appl
 	v2 = P.y();
 }
 
+///
+/// \brief SimilitudeIndirecte::SimilitudeIndirecte
+/// \param K
+/// \param theta
+/// \param P
+/// \param C
+///
 SimilitudeIndirecte::SimilitudeIndirecte(qreal K, qreal theta, QPointF P, QPointF C) : Application()
 {
 	k=K;
@@ -33,6 +49,12 @@ SimilitudeIndirecte::SimilitudeIndirecte(qreal K, qreal theta, QPointF P, QPoint
 	Centre = C;
 }
 
+///
+/// \brief SimilitudeIndirecte::setSimilitudeIndirecte
+/// \param K
+/// \param theta
+/// \param P
+///
 void SimilitudeIndirecte::setSimilitudeIndirecte(qreal K, qreal theta, QPointF P)
 {
 	k=K;
@@ -46,6 +68,13 @@ void SimilitudeIndirecte::setSimilitudeIndirecte(qreal K, qreal theta, QPointF P
 	v2 = P.y();
 }
 
+///
+/// \brief SimilitudeIndirecte::setSimilitudeIndirecte
+/// \param K
+/// \param theta
+/// \param P
+/// \param C
+///
 void SimilitudeIndirecte::setSimilitudeIndirecte(qreal K, qreal theta, QPointF P, QPointF C)
 {
 	k=K;

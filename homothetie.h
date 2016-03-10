@@ -1,9 +1,6 @@
 #ifndef HOMOTHETIE_H
 #define HOMOTHETIE_H
 
-#include <QtGlobal>
-#include <QtMath>
-
 #include "application.h"
 
 class Homothetie : public Application

@@ -1,9 +1,6 @@
 #ifndef ROTATION_H
 #define ROTATION_H
 
-#include <QtGlobal>
-#include <QtMath>
-
 #include "application.h"
 
 class Rotation : public Application

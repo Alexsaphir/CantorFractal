@@ -1,67 +1,118 @@
 #include "fractale.h"
 
+///
+/// \brief Fractale::Fractale
+///
 Fractale::Fractale()
 {
 	isCantor = false;
 }
 
+///
+/// \brief Fractale::isLikeCantor
+/// \return
+///
 bool Fractale::isLikeCantor() const
 {
 	return isCantor;
 }
+
+///
+/// \brief Fractale::setLikeCantor
+/// \param p
+///
 void Fractale::setLikeCantor(bool p)
 {
 	isCantor = p;
 }
 
+///
+/// \brief Fractale::AddApplication
+/// \param A
+///
 void Fractale::AddApplication(Application A)
 {
 	EnsA.append(A);
 }
 
+///
+/// \brief Fractale::AddHomothetie
+/// \param k
+///
 void Fractale::AddHomothetie(qreal k)
 {
 	Homothetie H(k);
 	EnsA.append(H);
 }
 
+///
+/// \brief Fractale::AddHomothetie
+/// \param k
+/// \param Centre
+///
 void Fractale::AddHomothetie(qreal k, QPointF Centre)
 {
 	Homothetie H(k, Centre);
 	EnsA.append(H);
 }
 
+///
+/// \brief Fractale::AddHomothetie
+/// \param k
+/// \param x
+/// \param y
+///
 void Fractale::AddHomothetie(qreal k, qreal x, qreal y)
 {
 	Homothetie H(k,QPointF(x,y));
 	EnsA.append(H);
 }
 
+///
+/// \brief Fractale::AddRotation
+/// \param theta
+///
 void Fractale::AddRotation(qreal theta)
 {
 	Rotation H(theta);
 	EnsA.append(H);
 }
 
+///
+/// \brief Fractale::AddRotation
+/// \param theta
+/// \param Centre
+///
 void Fractale::AddRotation(qreal theta, QPointF Centre)
 {
 	Rotation H(theta, Centre);
 	EnsA.append(H);
 }
 
+///
+/// \brief Fractale::AddRotation
+/// \param theta
+/// \param x
+/// \param y
+///
 void Fractale::AddRotation(qreal theta, qreal x, qreal y)
 {
 	Rotation H(theta, QPointF(x,y));
 	EnsA.append(H);
 }
 
-
-
+///
+/// \brief Fractale::AddForme
+/// \param F
+///
 void Fractale::AddForme( Forme F)
 {
 	EnsF.append(F);
 }
 
+///
+/// \brief Fractale::RunOnce
+///
 void Fractale::RunOnce()
 {
 
@@ -83,21 +134,38 @@ void Fractale::RunOnce()
 	EnsF.swap(Tmp);
 }
 
+///
+/// \brief Fractale::getFromEnsForme
+/// \param i
+/// \return
+///
 Forme Fractale::getFromEnsForme(int i) const
 {
 	return EnsF.at(i);
 }
 
+///
+/// \brief Fractale::getSizeEnsForme
+/// \return
+///
 int Fractale::getSizeEnsForme() const
 {
 	return EnsF.size();
 }
 
+///
+/// \brief Fractale::getSizeEnsAppli
+/// \return
+///
 int Fractale::getSizeEnsAppli() const
 {
 	return EnsA.size();
 }
 
+///
+/// \brief Fractale::generateExisting
+/// \param n
+///
 void Fractale::generateExisting(quint32 n)
 {
 	if(n==0)

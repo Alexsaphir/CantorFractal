@@ -1,19 +1,11 @@
 #ifndef FRACTALE_H
 #define FRACTALE_H
 
-#include <QtGlobal>
-#include <QtMath>
-
-#include <QPointF>
-#include <QList>
-
-#include "application.h"
 #include "homothetie.h"
 #include "rotation.h"
 #include "similitudedirecte.h"
 #include "similitudeindirecte.h"
 
-#include "forme.h"
 
 
 class Fractale

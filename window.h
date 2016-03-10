@@ -1,10 +1,8 @@
 #ifndef WINDOW_H
 #define WINDOW_H
+
 #include <QtWidgets>
 #include <QInputDialog>
-
-#include <QtGlobal>
-#include <QtMath>
 #include <QtPrintSupport/QPrinter>
 
 #include "fractale.h"

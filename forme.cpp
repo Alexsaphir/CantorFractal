@@ -1,25 +1,47 @@
 #include "forme.h"
 
+///
+/// \brief Forme::Forme
+///
 Forme::Forme()
 {
 
 }
 
+///
+/// \brief Forme::GetSize
+/// \return Nombre de points constituant la forme
+///
 int Forme::GetSize() const
 {
 	return L.size();
 }
 
+///
+/// \brief Forme::GetPoint
+/// \param i
+/// \return
+///
 QPointF Forme::GetPoint(int i) const
 {
 	return L.at(i);
 }
 
+///
+/// \brief Forme::AddPoint
+/// \param P
+///
 void Forme::AddPoint(const QPointF &P)
 {
 	L.append(P);
 }
 
+///
+/// \brief operator ==
+/// \param A
+/// \param B
+/// \return
+///
 bool operator ==(Forme const &A, Forme const &B)
 {
 	if (A.GetSize() != B.GetSize())
@@ -32,6 +54,10 @@ bool operator ==(Forme const &A, Forme const &B)
 	return true;
 }
 
+///
+/// \brief Forme::generateExisting
+/// \param n
+///
 void Forme::generateExisting(quint32 n)
 {
 	if(n==0)

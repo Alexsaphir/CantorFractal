@@ -1,9 +1,16 @@
 #include "rotation.h"
 
+///
+/// \brief Rotation::Rotation
+///
 Rotation::Rotation() : Application()
 {
 }
 
+///
+/// \brief Rotation::Rotation
+/// \param theta
+///
 Rotation::Rotation(double theta) : Application()
 {
 	//Matrice de rotation
@@ -15,6 +22,11 @@ Rotation::Rotation(double theta) : Application()
 
 }
 
+///
+/// \brief Rotation::Rotation
+/// \param theta
+/// \param C
+///
 Rotation::Rotation(qreal theta, QPointF C) : Application()
 {
 	//Matrice de rotation
@@ -26,6 +38,10 @@ Rotation::Rotation(qreal theta, QPointF C) : Application()
 	Centre=C;
 }
 
+///
+/// \brief Rotation::setRotation
+/// \param theta
+///
 void Rotation::setRotation(qreal theta)
 {
 	//Matrice de rotation
@@ -35,6 +51,11 @@ void Rotation::setRotation(qreal theta)
 	m22 = qCos(theta);
 }
 
+///
+/// \brief Rotation::setRotation
+/// \param theta
+/// \param C
+///
 void Rotation::setRotation(qreal theta, QPointF C)
 {
 	//Matrice de rotation

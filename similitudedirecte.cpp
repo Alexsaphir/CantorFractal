@@ -1,10 +1,19 @@
 #include "similitudedirecte.h"
 
+///
+/// \brief SimilitudeDirecte::SimilitudeDirecte
+///
 SimilitudeDirecte::SimilitudeDirecte() : Application()
 {
 	//Application id grace au constructeur de Application()
 }
 
+///
+/// \brief SimilitudeDirecte::SimilitudeDirecte
+/// \param K
+/// \param theta
+/// \param C
+///
 SimilitudeDirecte::SimilitudeDirecte(qreal K, qreal theta, QPointF C) : Application()
 {
 	k=K;
@@ -17,6 +26,13 @@ SimilitudeDirecte::SimilitudeDirecte(qreal K, qreal theta, QPointF C) : Applicat
 	Centre = C;
 }
 
+///
+/// \brief SimilitudeDirecte::SimilitudeDirecte
+/// \param K
+/// \param theta
+/// \param C
+/// \param P
+///
 SimilitudeDirecte::SimilitudeDirecte(qreal K, qreal theta, QPointF C, QPointF P) : Application()
 {
 	k=K;
@@ -32,6 +48,12 @@ SimilitudeDirecte::SimilitudeDirecte(qreal K, qreal theta, QPointF C, QPointF P)
 	Centre = C;
 }
 
+///
+/// \brief SimilitudeDirecte::setSimilitudeDirecte
+/// \param K
+/// \param theta
+/// \param C
+///
 void SimilitudeDirecte::setSimilitudeDirecte(qreal K, qreal theta, QPointF C)
 {
 	k=K;
@@ -44,6 +66,13 @@ void SimilitudeDirecte::setSimilitudeDirecte(qreal K, qreal theta, QPointF C)
 	Centre = C;
 }
 
+///
+/// \brief SimilitudeDirecte::setSimilitudeDirecte
+/// \param K
+/// \param theta
+/// \param C
+/// \param P
+///
 void SimilitudeDirecte::setSimilitudeDirecte(qreal K, qreal theta, QPointF C, QPointF P)
 {
 	k=K;
@@ -59,6 +88,10 @@ void SimilitudeDirecte::setSimilitudeDirecte(qreal K, qreal theta, QPointF C, QP
 	Centre = C;
 }
 
+///
+/// \brief SimilitudeDirecte::setTheta
+/// \param theta
+///
 void SimilitudeDirecte::setTheta(qreal theta)
 {
 	m11 = qCos(theta);
