@@ -1,6 +1,5 @@
 #include <QApplication>
 #include <iostream>
-#include <QDebug>
 
 #include "window.h"
 
