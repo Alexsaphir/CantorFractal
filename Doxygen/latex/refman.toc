@@ -1,0 +1,62 @@
+\select@language {french}
+\contentsline {chapter}{\numberline {1}Index hi\IeC {\'e}rarchique}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Hi\IeC {\'e}rarchie des classes}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Index des classes}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Liste des classes}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Documentation des classes}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}R\IeC {\'e}f\IeC {\'e}rence de la classe Application}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}R\IeC {\'e}f\IeC {\'e}rence de la classe Forme}{5}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Documentation des fonctions membres}{6}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Add\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Point}{6}{subsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.1.2}generate\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Existing}{7}{subsubsection.3.2.1.2}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Point}{7}{subsubsection.3.2.1.3}
+\contentsline {subsubsection}{\numberline {3.2.1.4}Get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Size}{7}{subsubsection.3.2.1.4}
+\contentsline {section}{\numberline {3.3}R\IeC {\'e}f\IeC {\'e}rence de la classe Fractale}{7}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Documentation des fonctions membres}{8}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Add\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Application}{8}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Add\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Forme}{8}{subsubsection.3.3.1.2}
+\contentsline {subsubsection}{\numberline {3.3.1.3}Add\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Homothetie}{8}{subsubsection.3.3.1.3}
+\contentsline {subsubsection}{\numberline {3.3.1.4}Add\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Homothetie}{8}{subsubsection.3.3.1.4}
+\contentsline {subsubsection}{\numberline {3.3.1.5}Add\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Homothetie}{8}{subsubsection.3.3.1.5}
+\contentsline {subsubsection}{\numberline {3.3.1.6}Add\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Rotation}{9}{subsubsection.3.3.1.6}
+\contentsline {subsubsection}{\numberline {3.3.1.7}Add\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Rotation}{9}{subsubsection.3.3.1.7}
+\contentsline {subsubsection}{\numberline {3.3.1.8}Add\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Rotation}{9}{subsubsection.3.3.1.8}
+\contentsline {subsubsection}{\numberline {3.3.1.9}generate\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Existing}{9}{subsubsection.3.3.1.9}
+\contentsline {subsubsection}{\numberline {3.3.1.10}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}From\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ens\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Forme}{9}{subsubsection.3.3.1.10}
+\contentsline {subsubsection}{\numberline {3.3.1.11}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Size\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ens\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Appli}{9}{subsubsection.3.3.1.11}
+\contentsline {subsubsection}{\numberline {3.3.1.12}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Size\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ens\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Forme}{10}{subsubsection.3.3.1.12}
+\contentsline {subsubsection}{\numberline {3.3.1.13}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Like\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Cantor}{10}{subsubsection.3.3.1.13}
+\contentsline {subsubsection}{\numberline {3.3.1.14}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Like\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Cantor}{10}{subsubsection.3.3.1.14}
+\contentsline {section}{\numberline {3.4}R\IeC {\'e}f\IeC {\'e}rence de la classe Homothetie}{10}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Documentation des constructeurs et destructeur}{11}{subsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Homothetie}{11}{subsubsection.3.4.1.1}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Homothetie}{11}{subsubsection.3.4.1.2}
+\contentsline {subsection}{\numberline {3.4.2}Documentation des fonctions membres}{11}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Homothetie}{11}{subsubsection.3.4.2.1}
+\contentsline {subsubsection}{\numberline {3.4.2.2}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Homothetie}{12}{subsubsection.3.4.2.2}
+\contentsline {section}{\numberline {3.5}R\IeC {\'e}f\IeC {\'e}rence de la classe Q\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Main\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Window}{12}{section.3.5}
+\contentsline {section}{\numberline {3.6}R\IeC {\'e}f\IeC {\'e}rence de la classe Rotation}{13}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Documentation des constructeurs et destructeur}{13}{subsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.1.1}Rotation}{13}{subsubsection.3.6.1.1}
+\contentsline {subsection}{\numberline {3.6.2}Documentation des fonctions membres}{14}{subsection.3.6.2}
+\contentsline {subsubsection}{\numberline {3.6.2.1}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Rotation}{14}{subsubsection.3.6.2.1}
+\contentsline {subsubsection}{\numberline {3.6.2.2}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Rotation}{14}{subsubsection.3.6.2.2}
+\contentsline {section}{\numberline {3.7}R\IeC {\'e}f\IeC {\'e}rence de la classe Similitude\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Directe}{14}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Documentation des constructeurs et destructeur}{15}{subsection.3.7.1}
+\contentsline {subsubsection}{\numberline {3.7.1.1}Similitude\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Directe}{15}{subsubsection.3.7.1.1}
+\contentsline {subsubsection}{\numberline {3.7.1.2}Similitude\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Directe}{15}{subsubsection.3.7.1.2}
+\contentsline {subsection}{\numberline {3.7.2}Documentation des fonctions membres}{15}{subsection.3.7.2}
+\contentsline {subsubsection}{\numberline {3.7.2.1}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Similitude\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Directe}{16}{subsubsection.3.7.2.1}
+\contentsline {subsubsection}{\numberline {3.7.2.2}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Similitude\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Directe}{17}{subsubsection.3.7.2.2}
+\contentsline {subsubsection}{\numberline {3.7.2.3}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Theta}{17}{subsubsection.3.7.2.3}
+\contentsline {section}{\numberline {3.8}R\IeC {\'e}f\IeC {\'e}rence de la classe Similitude\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Indirecte}{17}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Documentation des constructeurs et destructeur}{18}{subsection.3.8.1}
+\contentsline {subsubsection}{\numberline {3.8.1.1}Similitude\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Indirecte}{18}{subsubsection.3.8.1.1}
+\contentsline {subsubsection}{\numberline {3.8.1.2}Similitude\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Indirecte}{18}{subsubsection.3.8.1.2}
+\contentsline {subsection}{\numberline {3.8.2}Documentation des fonctions membres}{18}{subsection.3.8.2}
+\contentsline {subsubsection}{\numberline {3.8.2.1}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Similitude\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Indirecte}{18}{subsubsection.3.8.2.1}
+\contentsline {subsubsection}{\numberline {3.8.2.2}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Similitude\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Indirecte}{19}{subsubsection.3.8.2.2}
+\contentsline {section}{\numberline {3.9}R\IeC {\'e}f\IeC {\'e}rence de la classe Window}{19}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}Documentation des fonctions membres}{20}{subsection.3.9.1}
+\contentsline {subsubsection}{\numberline {3.9.1.1}event\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Filter}{20}{subsubsection.3.9.1.1}
+\contentsline {chapter}{Index}{21}{section*.13}

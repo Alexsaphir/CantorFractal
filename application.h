@@ -46,11 +46,107 @@ protected:
 	///
 	qreal k;
 	///
-	/// \brief m11, m12, m21, m22 Décrit la matrice de rotation
-	/// \f[|I_2|\f]
-
-	qreal m11, m12, m21, m22;
-	qreal v1, v2;
+	/// \brief Décrit la matrice de rotation
+	/// \f[
+	/// \bf
+	///  \left( \begin{array}{ccc}
+	/// \bf m_{1,1} & \bf m_{1,2} \\
+	/// \bf m_{2,1} & \bf m_{2,2} \\
+	/// \end{array} \bf\right)
+	/// \bf=
+	/// \bf\left( \begin{array}{ccc}
+	/// \bf cos(\bf\theta) & \bf -sin(\bf\theta) \\
+	/// \bf sin(\bf\theta) & \bf cos(\bf\theta) \\
+	/// \end{array} \bf\right)
+	///  \bf ou
+	/// \bf\left( \begin{array}{ccc}
+	/// \bf cos(\bf\theta) & \bf sin(\bf\theta) \\
+	/// \bf sin(\bf\theta) & \bf -cos(\bf\theta) \\
+	/// \end{array} \bf\right)
+	/// \f]
+	qreal m11;
+	///
+	/// \brief Décrit la matrice de rotation
+	/// \f[
+	/// \bf
+	///  \left( \begin{array}{ccc}
+	/// \bf m_{1,1} & \bf m_{1,2} \\
+	/// \bf m_{2,1} & \bf m_{2,2} \\
+	/// \end{array} \bf\right)
+	/// \bf=
+	/// \bf\left( \begin{array}{ccc}
+	/// \bf cos(\bf\theta) & \bf -sin(\bf\theta) \\
+	/// \bf sin(\bf\theta) & \bf cos(\bf\theta) \\
+	/// \end{array} \bf\right)
+	///  \bf ou
+	/// \bf\left( \begin{array}{ccc}
+	///\bf cos(\bf\theta) & \bf sin(\bf\theta) \\
+	/// \bf sin(\bf\theta) & \bf -cos(\bf\theta) \\
+	/// \end{array} \bf\right)
+	/// \f]
+	qreal m12;
+	///
+	/// \brief Décrit la matrice de rotation
+	/// \f[
+	/// \bf
+	///  \left( \begin{array}{ccc}
+	/// \bf m_{1,1} & \bf m_{1,2} \\
+	/// \bf m_{2,1} & \bf m_{2,2} \\
+	/// \end{array} \bf\right)
+	/// \bf=
+	/// \bf\left( \begin{array}{ccc}
+	/// \bf cos(\bf\theta) & \bf -sin(\bf\theta) \\
+	/// \bf sin(\bf\theta) & \bf cos(\bf\theta) \\
+	/// \end{array} \bf\right)
+	///  \bf ou
+	/// \bf\left( \begin{array}{ccc}
+	/// \bf cos(\bf\theta) & \bf sin(\bf\theta) \\
+	/// \bf sin(\bf\theta) & \bf -cos(\bf\theta) \\
+	/// \end{array} \bf\right)
+	/// \f]
+	qreal m21;
+	///
+	/// \brief Décrit la matrice de rotation
+	/// \f[
+	/// \bf
+	///  \left( \begin{array}{ccc}
+	/// \bf m_{1,1} & \bf m_{1,2} \\
+	/// \bf m_{2,1} & \bf m_{2,2} \\
+	/// \end{array} \bf\right)
+	/// \bf=
+	/// \bf\left( \begin{array}{ccc}
+	/// \bf cos(\bf\theta) & \bf -sin(\bf\theta) \\
+	/// \bf sin(\bf\theta) & \bf cos(\bf\theta) \\
+	/// \end{array} \bf\right)
+	///  \bf ou
+	/// \bf\left( \begin{array}{ccc}
+	/// \bf cos(\bf\theta) & \bf sin(\bf\theta) \\
+	/// \bf sin(\bf\theta) & \bf -cos(\bf\theta) \\
+	/// \end{array} \bf\right)
+	/// \f]
+	qreal m22;
+	///
+	/// \brief v1 Parametre du vecteur de translation V
+	/// \f[\bf V\bf=
+	/// \bf\left( \begin{array}{ccc}
+	/// \bf v_{1}\\
+	/// \bf v_{2}\\
+	/// \end{array} \bf\right)
+	/// \f]
+	qreal v1;
+	///
+	/// \brief v2 Parametre du vecteur de translation V
+	/// \f[\bf V\bf=
+	/// \bf\left( \begin{array}{ccc}
+	/// \bf v_{1}\\
+	/// \bf v_{2}\\
+	/// \end{array} \bf\right)
+	/// \f]
+	qreal v2;
+	///
+	/// \brief
+	/// Centre de l'application
+	///
 	QPointF Centre;
 };
 

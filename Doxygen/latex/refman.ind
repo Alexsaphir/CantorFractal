@@ -1,0 +1,103 @@
+\begin{theindex}
+
+  \item {Add\+Application}
+    \subitem {Fractale}, \hyperpage{8}
+  \item {Add\+Forme}
+    \subitem {Fractale}, \hyperpage{8}
+  \item {Add\+Homothetie}
+    \subitem {Fractale}, \hyperpage{8}
+  \item {Add\+Point}
+    \subitem {Forme}, \hyperpage{6}
+  \item {Add\+Rotation}
+    \subitem {Fractale}, \hyperpage{9}
+  \item {Application}, \hyperpage{5}
+
+  \indexspace
+
+  \item {event\+Filter}
+    \subitem {Window}, \hyperpage{20}
+
+  \indexspace
+
+  \item {Forme}, \hyperpage{5}
+    \subitem {Add\+Point}, \hyperpage{6}
+    \subitem {generate\+Existing}, \hyperpage{7}
+    \subitem {Get\+Point}, \hyperpage{7}
+    \subitem {Get\+Size}, \hyperpage{7}
+  \item {Fractale}, \hyperpage{7}
+    \subitem {Add\+Application}, \hyperpage{8}
+    \subitem {Add\+Forme}, \hyperpage{8}
+    \subitem {Add\+Homothetie}, \hyperpage{8}
+    \subitem {Add\+Rotation}, \hyperpage{9}
+    \subitem {generate\+Existing}, \hyperpage{9}
+    \subitem {get\+From\+Ens\+Forme}, \hyperpage{9}
+    \subitem {get\+Size\+Ens\+Appli}, \hyperpage{9}
+    \subitem {get\+Size\+Ens\+Forme}, \hyperpage{10}
+    \subitem {is\+Like\+Cantor}, \hyperpage{10}
+    \subitem {set\+Like\+Cantor}, \hyperpage{10}
+
+  \indexspace
+
+  \item {generate\+Existing}
+    \subitem {Forme}, \hyperpage{7}
+    \subitem {Fractale}, \hyperpage{9}
+  \item {get\+From\+Ens\+Forme}
+    \subitem {Fractale}, \hyperpage{9}
+  \item {Get\+Point}
+    \subitem {Forme}, \hyperpage{7}
+  \item {Get\+Size}
+    \subitem {Forme}, \hyperpage{7}
+  \item {get\+Size\+Ens\+Appli}
+    \subitem {Fractale}, \hyperpage{9}
+  \item {get\+Size\+Ens\+Forme}
+    \subitem {Fractale}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Homothetie}, \hyperpage{10}
+    \subitem {Homothetie}, \hyperpage{11}
+    \subitem {set\+Homothetie}, \hyperpage{11, 12}
+
+  \indexspace
+
+  \item {is\+Like\+Cantor}
+    \subitem {Fractale}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Q\+Main\+Window}, \hyperpage{12}
+
+  \indexspace
+
+  \item {Rotation}, \hyperpage{13}
+    \subitem {Rotation}, \hyperpage{13}
+    \subitem {set\+Rotation}, \hyperpage{14}
+
+  \indexspace
+
+  \item {set\+Homothetie}
+    \subitem {Homothetie}, \hyperpage{11, 12}
+  \item {set\+Like\+Cantor}
+    \subitem {Fractale}, \hyperpage{10}
+  \item {set\+Rotation}
+    \subitem {Rotation}, \hyperpage{14}
+  \item {set\+Similitude\+Directe}
+    \subitem {Similitude\+Directe}, \hyperpage{15}, \hyperpage{17}
+  \item {set\+Similitude\+Indirecte}
+    \subitem {Similitude\+Indirecte}, \hyperpage{18, 19}
+  \item {set\+Theta}
+    \subitem {Similitude\+Directe}, \hyperpage{17}
+  \item {Similitude\+Directe}, \hyperpage{14}
+    \subitem {set\+Similitude\+Directe}, \hyperpage{15}, \hyperpage{17}
+    \subitem {set\+Theta}, \hyperpage{17}
+    \subitem {Similitude\+Directe}, \hyperpage{15}
+  \item {Similitude\+Indirecte}, \hyperpage{17}
+    \subitem {set\+Similitude\+Indirecte}, \hyperpage{18, 19}
+    \subitem {Similitude\+Indirecte}, \hyperpage{18}
+
+  \indexspace
+
+  \item {Window}, \hyperpage{19}
+    \subitem {event\+Filter}, \hyperpage{20}
+
+\end{theindex}
