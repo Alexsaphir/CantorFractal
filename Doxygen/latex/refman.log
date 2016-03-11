@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.3.10)  10 MAR 2016 23:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.3.10)  11 MAR 2016 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1090,18 +1090,22 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 10.
+(Font)              scaled to size 6.29996pt on input line 13.
  [3
 
-])
+]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 72.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 72.
+ [4] [5] [6])
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 139.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 139.
- [4]
+
+[7] [8
+
+]
 Package hyperref Info: Option `pageanchor' set `true' on input line 141.
 
 Chapitre 1.
@@ -1129,7 +1133,6 @@ LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 )
 [1
 
-
 ] [2
 
 ]
@@ -1138,238 +1141,625 @@ Chapitre 2.
 
 ]
 Chapitre 3.
-(./class_application.tex
-<class_application__inherit__graph.pdf, id=381, 443.6575pt x 156.585pt>
-File: class_application__inherit__graph.pdf Graphic file (type pdf)
+(./files.tex) [5] [6
 
-<use class_application__inherit__graph.pdf>
-Package pdftex.def Info: class_application__inherit__graph.pdf used on input li
-ne 10.
-(pdftex.def)             Requested size: 350.0pt x 123.52875pt.
-) (./class_forme.tex
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 3.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 10.79993pt on input line 3.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 16.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 16.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 34.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 6.29996pt on input line 34.
-LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
-(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 34.
-LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
-(Font)              scaled to size 8.99994pt on input line 34.
- [5 <./class_application__inherit__graph.pdf>] [6]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 41.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 41.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 50.
+]
+Chapitre 4.
+(./class_application.tex
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
+<class_application__inherit__graph.pdf, id=956, 443.6575pt x 156.585pt>
+File: class_application__inherit__graph.pdf Graphic file (type pdf)
 
-LaTeX Font Warning: Font shape `T1/pcr/bc/it' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 50.
+<use class_application__inherit__graph.pdf>
+Package pdftex.def Info: class_application__inherit__graph.pdf used on input li
+ne 13.
+(pdftex.def)             Requested size: 350.0pt x 123.52875pt.
 
+<class_application__coll__graph.pdf, id=957, 190.7125pt x 233.87375pt>
+File: class_application__coll__graph.pdf Graphic file (type pdf)
 
-Underfull \hbox (badness 10000) detected at line 76
+<use class_application__coll__graph.pdf>
+Package pdftex.def Info: class_application__coll__graph.pdf used on input line 
+22.
+(pdftex.def)             Requested size: 190.0pt x 233.00954pt.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 25.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 10.79993pt on input line 25.
+ [7 <./class_application__inherit__graph.pdf> <./class_application__coll__graph
+.pdf
+
+pdfTeX warning: pdflatex (file ./class_application__coll__graph.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
+>]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 29.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 29.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 29.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 29.
+LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 78.
+LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 78.
+ [8]
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 8.99994pt on input line 102.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 6.29996pt on input line 102.
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 116.
+LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
+(Font)              scaled to size 8.99994pt on input line 116.
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 116.
+LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
+(Font)              scaled to size 6.29996pt on input line 116.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 123.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.99994pt on input line 123.
+
+Underfull \hbox (badness 10000) detected at line 126
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 90
-[][][]
- []
-
-) (./class_fractale.tex [7] [8]
-Underfull \hbox (badness 10000) detected at line 221
+Underfull \hbox (badness 10000) detected at line 145
 [][][]
  []
 
 [9]
-Underfull \hbox (badness 10000) detected at line 235
+Underfull \hbox (badness 10000) detected at line 164
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 249
+Underfull \hbox (badness 10000) detected at line 178
 [][][]
  []
 
 
+Underfull \hbox (badness 10000) detected at line 192
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 206
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 220
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 234
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 248
+[][][]
+ []
+
+[10]
+Underfull \hbox (badness 10000) detected at line 262
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 276
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 290
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 304
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 318
+[][][]
+ []
+
+[11]
+
+LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
+(Font)              using `T1/pcr/m/n' instead on input line 454.
+
+[12]) (./class_forme.tex [13]
+<class_forme__coll__graph.pdf, id=1138, 174.6525pt x 167.62625pt>
+File: class_forme__coll__graph.pdf Graphic file (type pdf)
+
+<use class_forme__coll__graph.pdf>
+Package pdftex.def Info: class_forme__coll__graph.pdf used on input line 13.
+(pdftex.def)             Requested size: 174.0pt x 167.0094pt.
+ [14 <./class_forme__coll__graph.pdf>]
+
+LaTeX Font Warning: Font shape `T1/pcr/bc/it' undefined
+(Font)              using `T1/pcr/bc/n' instead on input line 75.
+
+
+Underfull \hbox (badness 10000) detected at line 103
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 117
+[][][]
+ []
+
+) (./class_fractale.tex
+<class_fractale__coll__graph.pdf, id=1176, 345.29pt x 167.62625pt>
+File: class_fractale__coll__graph.pdf Graphic file (type pdf)
+
+<use class_fractale__coll__graph.pdf>
+Package pdftex.def Info: class_fractale__coll__graph.pdf used on input line 13.
+
+(pdftex.def)             Requested size: 344.0pt x 167.00172pt.
+
+Underfull \vbox (badness 2393) has occurred while \output is active []
+
+ [15]
+[16 <./class_fractale__coll__graph.pdf>] [17]
 Underfull \hbox (badness 10000) detected at line 263
 [][][]
  []
 
+[18]
+Underfull \hbox (badness 10000) detected at line 277
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 291
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 305
+[][][]
+ []
+
 ) (./class_homothetie.tex
-<class_homothetie__inherit__graph.pdf, id=503, 147.55125pt x 156.585pt>
+<class_homothetie__inherit__graph.pdf, id=1302, 147.55125pt x 156.585pt>
 File: class_homothetie__inherit__graph.pdf Graphic file (type pdf)
 
 <use class_homothetie__inherit__graph.pdf>
 Package pdftex.def Info: class_homothetie__inherit__graph.pdf used on input lin
-e 10.
+e 13.
 (pdftex.def)             Requested size: 147.0pt x 156.004pt.
-
-<class_homothetie__coll__graph.pdf, id=504, 147.55125pt x 156.585pt>
+ [19]
+<class_homothetie__coll__graph.pdf, id=1307, 190.7125pt x 291.0875pt>
 File: class_homothetie__coll__graph.pdf Graphic file (type pdf)
 
 <use class_homothetie__coll__graph.pdf>
 Package pdftex.def Info: class_homothetie__coll__graph.pdf used on input line 2
-0.
-(pdftex.def)             Requested size: 147.0pt x 156.004pt.
+2.
+(pdftex.def)             Requested size: 190.0pt x 290.0119pt.
+ [20 <./class_homothetie__inherit__graph.pdf> <./class_homothetie__coll__graph.
+pdf
 
-Underfull \vbox (badness 1052) has occurred while \output is active []
-
- [10 <./class_homothetie__inherit__graph.pdf>] [11 <./class_homothetie__coll__g
-raph.pdf>])
-(./class_q_main_window.tex
-<class_q_main_window__inherit__graph.pdf, id=546, 160.6pt x 156.585pt>
+pdfTeX warning: pdflatex (file ./class_homothetie__coll__graph.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+>]) (./class_q_main_window.tex
+<class_q_main_window__inherit__graph.pdf, id=1360, 160.6pt x 156.585pt>
 File: class_q_main_window__inherit__graph.pdf Graphic file (type pdf)
 
 <use class_q_main_window__inherit__graph.pdf>
 Package pdftex.def Info: class_q_main_window__inherit__graph.pdf used on input 
-line 10.
+line 9.
 (pdftex.def)             Requested size: 160.0pt x 156.004pt.
-) (./class_rotation.tex
-<class_rotation__inherit__graph.pdf, id=547, 145.54375pt x 156.585pt>
+
+Underfull \vbox (badness 4024) has occurred while \output is active []
+
+ [21])
+(./class_rotation.tex
+<class_rotation__inherit__graph.pdf, id=1368, 145.54375pt x 156.585pt>
 File: class_rotation__inherit__graph.pdf Graphic file (type pdf)
 
 <use class_rotation__inherit__graph.pdf>
 Package pdftex.def Info: class_rotation__inherit__graph.pdf used on input line 
-10.
+13.
 (pdftex.def)             Requested size: 145.0pt x 156.01117pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12 <./class_q_main_window__inherit__graph.pdf>]
-<class_rotation__coll__graph.pdf, id=558, 145.54375pt x 156.585pt>
+<class_rotation__coll__graph.pdf, id=1369, 190.7125pt x 291.0875pt>
 File: class_rotation__coll__graph.pdf Graphic file (type pdf)
 
 <use class_rotation__coll__graph.pdf>
-Package pdftex.def Info: class_rotation__coll__graph.pdf used on input line 20.
+Package pdftex.def Info: class_rotation__coll__graph.pdf used on input line 22.
 
-(pdftex.def)             Requested size: 145.0pt x 156.01117pt.
- [13 <./class_rotation__inherit__graph.pdf> <./class_rotation__coll__graph.pdf
+(pdftex.def)             Requested size: 190.0pt x 290.0119pt.
 
-pdfTeX warning: pdflatex (file ./class_rotation__coll__graph.pdf): PDF inclusio
-n: multiple pdfs with page group included in a single page
->]) (./class_similitude_directe.tex
-<class_similitude_directe__inherit__graph.pdf, id=591, 171.64125pt x 156.585pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22 <./class_q_main_window__inherit__graph.pdf> <./class_rotation__inherit__gr
+aph.pdf
+
+pdfTeX warning: pdflatex (file ./class_rotation__inherit__graph.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
+>] [23 <./class_rotation__coll__graph.pdf>]) (./class_similitude_directe.tex
+<class_similitude_directe__inherit__graph.pdf, id=1418, 171.64125pt x 156.585pt
+>
 File: class_similitude_directe__inherit__graph.pdf Graphic file (type pdf)
-<use class_similitude_directe__inherit__graph.pdf>
+ <use class_similitude_directe__inherit__graph.pdf>
 Package pdftex.def Info: class_similitude_directe__inherit__graph.pdf used on i
-nput line 10.
+nput line 13.
 (pdftex.def)             Requested size: 171.0pt x 155.99922pt.
 
-<class_similitude_directe__coll__graph.pdf, id=592, 171.64125pt x 156.585pt>
+<class_similitude_directe__coll__graph.pdf, id=1419, 190.7125pt x 291.0875pt>
 File: class_similitude_directe__coll__graph.pdf Graphic file (type pdf)
 
 <use class_similitude_directe__coll__graph.pdf>
 Package pdftex.def Info: class_similitude_directe__coll__graph.pdf used on inpu
-t line 20.
-(pdftex.def)             Requested size: 171.0pt x 155.99922pt.
+t line 22.
+(pdftex.def)             Requested size: 190.0pt x 290.0119pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14 <./class_similitude_directe__inherit__graph.pdf>] [15 <./class_similitude_
-directe__coll__graph.pdf>] [16]) (./class_similitude_indirecte.tex
-<class_similitude_indirecte__inherit__graph.pdf, id=643, 177.66376pt x 156.585p
-t>
+ [24 <./class_similitude_directe__inherit__graph.pdf>] [25 <./class_similitude_
+directe__coll__graph.pdf>]) (./class_similitude_indirecte.tex
+<class_similitude_indirecte__inherit__graph.pdf, id=1469, 177.66376pt x 156.585
+pt>
 File: class_similitude_indirecte__inherit__graph.pdf Graphic file (type pdf)
  <use class_similitude_indirecte__inherit__graph.pdf>
 Package pdftex.def Info: class_similitude_indirecte__inherit__graph.pdf used on
- input line 10.
+ input line 13.
 (pdftex.def)             Requested size: 177.0pt x 156.004pt.
-
-<class_similitude_indirecte__coll__graph.pdf, id=644, 177.66376pt x 156.585pt>
+ [26]
+<class_similitude_indirecte__coll__graph.pdf, id=1474, 190.7125pt x 291.0875pt>
 File: class_similitude_indirecte__coll__graph.pdf Graphic file (type pdf)
-
 <use class_similitude_indirecte__coll__graph.pdf>
 Package pdftex.def Info: class_similitude_indirecte__coll__graph.pdf used on in
-put line 20.
-(pdftex.def)             Requested size: 177.0pt x 156.004pt.
+put line 22.
+(pdftex.def)             Requested size: 190.0pt x 290.0119pt.
+ [27 <./class_similitude_indirecte__inherit__graph.pdf> <./class_similitude_ind
+irecte__coll__graph.pdf
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17 <./class_similitude_indirecte__inherit__graph.pdf>] [18 <./class_similitud
-e_indirecte__coll__graph.pdf>]) (./class_window.tex
-<class_window__inherit__graph.pdf, id=685, 160.6pt x 156.585pt>
+pdfTeX warning: pdflatex (file ./class_similitude_indirecte__coll__graph.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>]) (./class_window.tex [28]
+<class_window__inherit__graph.pdf, id=1518, 160.6pt x 156.585pt>
 File: class_window__inherit__graph.pdf Graphic file (type pdf)
 
 <use class_window__inherit__graph.pdf>
-Package pdftex.def Info: class_window__inherit__graph.pdf used on input line 10
+Package pdftex.def Info: class_window__inherit__graph.pdf used on input line 13
 .
 (pdftex.def)             Requested size: 160.0pt x 156.004pt.
 
-<class_window__coll__graph.pdf, id=686, 285.065pt x 167.62625pt>
+<class_window__coll__graph.pdf, id=1519, 500.87125pt x 504.88625pt>
 File: class_window__coll__graph.pdf Graphic file (type pdf)
 
 <use class_window__coll__graph.pdf>
-Package pdftex.def Info: class_window__coll__graph.pdf used on input line 20.
-(pdftex.def)             Requested size: 284.0pt x 166.99916pt.
- [19 <./class_window__inherit__graph.pdf> <./class_window__coll__graph.pdf
+Package pdftex.def Info: class_window__coll__graph.pdf used on input line 22.
+(pdftex.def)             Requested size: 350.0pt x 352.81705pt.
+ [29 <./class_window__inherit__graph.pdf> <./class_window__coll__graph.pdf
 
 pdfTeX warning: pdflatex (file ./class_window__coll__graph.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->]
-
-LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 62.
-
-
-Underfull \hbox (badness 10000) detected at line 74
+>] [30]
+Underfull \hbox (badness 10000) detected at line 119
 [][][]
  []
 
-) [20] (./refman.ind [21
+[31]) [32]
+Chapitre 5.
+(./application_8cpp.tex
+<application_8cpp__incl.pdf, id=1612, 362.35374pt x 269.005pt>
+File: application_8cpp__incl.pdf Graphic file (type pdf)
+
+<use application_8cpp__incl.pdf>
+Package pdftex.def Info: application_8cpp__incl.pdf used on input line 8.
+(pdftex.def)             Requested size: 350.0pt x 259.83858pt.
+ [33
+
+ <./application_8cpp__incl.pdf>]
+Underfull \hbox (badness 10000) detected at line 38
+[][][]
+ []
+
+) (./application_8h.tex
+<application_8h__incl.pdf, id=1629, 362.35374pt x 212.795pt>
+File: application_8h__incl.pdf Graphic file (type pdf)
+
+<use application_8h__incl.pdf>
+Package pdftex.def Info: application_8h__incl.pdf used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 205.54393pt.
+
+<application_8h__dep__incl.pdf, id=1630, 623.32875pt x 325.215pt>
+File: application_8h__dep__incl.pdf Graphic file (type pdf)
+
+<use application_8h__dep__incl.pdf>
+Package pdftex.def Info: application_8h__dep__incl.pdf used on input line 17.
+(pdftex.def)             Requested size: 350.0pt x 182.61043pt.
+ [34 <./application_8h__incl.pdf> <./application_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./application_8h__dep__incl.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) detected at line 52
+[][][]
+ []
+
+) (./forme_8cpp.tex <forme_8cpp__incl.pdf, id=1651, 333.245pt x 212.795pt>
+File: forme_8cpp__incl.pdf Graphic file (type pdf)
+
+<use forme_8cpp__incl.pdf>
+Package pdftex.def Info: forme_8cpp__incl.pdf used on input line 8.
+(pdftex.def)             Requested size: 332.0pt x 212.01518pt.
+ [35 <./forme_8cpp__incl.pdf>]
+Underfull \hbox (badness 10000) detected at line 38
+[][][]
+ []
+
+) (./forme_8h.tex <forme_8h__incl.pdf, id=1672, 333.245pt x 156.585pt>
+File: forme_8h__incl.pdf Graphic file (type pdf)
+
+<use forme_8h__incl.pdf>
+Package pdftex.def Info: forme_8h__incl.pdf used on input line 11.
+(pdftex.def)             Requested size: 332.0pt x 156.01117pt.
+
+<forme_8h__dep__incl.pdf, id=1673, 623.32875pt x 381.425pt>
+File: forme_8h__dep__incl.pdf Graphic file (type pdf)
+
+<use forme_8h__dep__incl.pdf>
+Package pdftex.def Info: forme_8h__dep__incl.pdf used on input line 18.
+(pdftex.def)             Requested size: 350.0pt x 214.17271pt.
+ [36 <./forme_8h__incl.pdf> <./forme_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./forme_8h__dep__incl.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) detected at line 53
+[][][]
+ []
+
+) (./fractale_8cpp.tex
+<fractale_8cpp__incl.pdf, id=1696, 463.7325pt x 381.425pt>
+File: fractale_8cpp__incl.pdf Graphic file (type pdf)
+
+<use fractale_8cpp__incl.pdf>
+Package pdftex.def Info: fractale_8cpp__incl.pdf used on input line 8.
+(pdftex.def)             Requested size: 350.0pt x 287.8839pt.
+) (./fractale_8h.tex
+<fractale_8h__incl.pdf, id=1697, 463.7325pt x 325.215pt>
+File: fractale_8h__incl.pdf Graphic file (type pdf)
+
+<use fractale_8h__incl.pdf>
+Package pdftex.def Info: fractale_8h__incl.pdf used on input line 11.
+(pdftex.def)             Requested size: 350.0pt x 245.45891pt.
+ [37 <./fractale_8cpp__incl.pdf>]
+<fractale_8h__dep__incl.pdf, id=1710, 270.00874pt x 212.795pt>
+File: fractale_8h__dep__incl.pdf Graphic file (type pdf)
+
+<use fractale_8h__dep__incl.pdf>
+Package pdftex.def Info: fractale_8h__dep__incl.pdf used on input line 18.
+(pdftex.def)             Requested size: 269.0pt x 212.00543pt.
+) (./homothetie_8cpp.tex
+<homothetie_8cpp__incl.pdf, id=1712, 362.35374pt x 325.215pt>
+File: homothetie_8cpp__incl.pdf Graphic file (type pdf)
+
+<use homothetie_8cpp__incl.pdf>
+Package pdftex.def Info: homothetie_8cpp__incl.pdf used on input line 8.
+(pdftex.def)             Requested size: 350.0pt x 314.13321pt.
+) (./homothetie_8h.tex [38 <./fractale_8h__incl.pdf> <./fractale_8h__dep__incl.
+pdf
+
+pdfTeX warning: pdflatex (file ./fractale_8h__dep__incl.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>] <homothetie_8h__incl.pdf, id=1730, 362.35374pt x 269.005pt>
+File: homothetie_8h__incl.pdf Graphic file (type pdf)
+
+<use homothetie_8h__incl.pdf>
+Package pdftex.def Info: homothetie_8h__incl.pdf used on input line 8.
+(pdftex.def)             Requested size: 350.0pt x 259.83858pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39 <./homothetie_8cpp__incl.pdf>]
+<homothetie_8h__dep__incl.pdf, id=1741, 285.065pt x 269.005pt>
+File: homothetie_8h__dep__incl.pdf Graphic file (type pdf)
+
+<use homothetie_8h__dep__incl.pdf>
+Package pdftex.def Info: homothetie_8h__dep__incl.pdf used on input line 15.
+(pdftex.def)             Requested size: 284.0pt x 267.99867pt.
+) (./main_8cpp.tex
+<main_8cpp__incl.pdf, id=1743, 653.44125pt x 437.635pt>
+File: main_8cpp__incl.pdf Graphic file (type pdf)
+
+<use main_8cpp__incl.pdf>
+Package pdftex.def Info: main_8cpp__incl.pdf used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 234.40286pt.
+ [40 <./homothetie_8h__incl.pdf> <./homothetie_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./homothetie_8h__dep__incl.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+>]) (./rotation_8cpp.tex
+<rotation_8cpp__incl.pdf, id=1761, 362.35374pt x 325.215pt>
+File: rotation_8cpp__incl.pdf Graphic file (type pdf)
+
+<use rotation_8cpp__incl.pdf>
+Package pdftex.def Info: rotation_8cpp__incl.pdf used on input line 8.
+(pdftex.def)             Requested size: 350.0pt x 314.13321pt.
+) (./rotation_8h.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41 <./main_8cpp__incl.pdf>] <rotation_8h__incl.pdf, id=1775, 362.35374pt x 26
+9.005pt>
+File: rotation_8h__incl.pdf Graphic file (type pdf)
+
+<use rotation_8h__incl.pdf>
+Package pdftex.def Info: rotation_8h__incl.pdf used on input line 8.
+(pdftex.def)             Requested size: 350.0pt x 259.83858pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42 <./rotation_8cpp__incl.pdf>]
+<rotation_8h__dep__incl.pdf, id=1786, 270.00874pt x 269.005pt>
+File: rotation_8h__dep__incl.pdf Graphic file (type pdf)
+
+<use rotation_8h__dep__incl.pdf>
+Package pdftex.def Info: rotation_8h__dep__incl.pdf used on input line 15.
+(pdftex.def)             Requested size: 269.0pt x 268.00688pt.
+) (./similitudedirecte_8cpp.tex
+<similitudedirecte_8cpp__incl.pdf, id=1788, 362.35374pt x 325.215pt>
+File: similitudedirecte_8cpp__incl.pdf Graphic file (type pdf)
+
+<use similitudedirecte_8cpp__incl.pdf>
+Package pdftex.def Info: similitudedirecte_8cpp__incl.pdf used on input line 8.
+
+(pdftex.def)             Requested size: 350.0pt x 314.13321pt.
+ [43 <./rotation_8h__incl.pdf> <./rotation_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./rotation_8h__dep__incl.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>]) (./similitudedirecte_8h.tex
+<similitudedirecte_8h__incl.pdf, id=1805, 362.35374pt x 269.005pt>
+File: similitudedirecte_8h__incl.pdf Graphic file (type pdf)
+
+<use similitudedirecte_8h__incl.pdf>
+Package pdftex.def Info: similitudedirecte_8h__incl.pdf used on input line 8.
+(pdftex.def)             Requested size: 350.0pt x 259.83858pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44 <./similitudedirecte_8cpp__incl.pdf>]
+<similitudedirecte_8h__dep__incl.pdf, id=1816, 308.15125pt x 269.005pt>
+File: similitudedirecte_8h__dep__incl.pdf Graphic file (type pdf)
+
+<use similitudedirecte_8h__dep__incl.pdf>
+Package pdftex.def Info: similitudedirecte_8h__dep__incl.pdf used on input line
+ 15.
+(pdftex.def)             Requested size: 307.0pt x 268.0192pt.
+) (./similitudeindirecte_8cpp.tex
+<similitudeindirecte_8cpp__incl.pdf, id=1818, 362.35374pt x 325.215pt>
+File: similitudeindirecte_8cpp__incl.pdf Graphic file (type pdf)
+
+<use similitudeindirecte_8cpp__incl.pdf>
+Package pdftex.def Info: similitudeindirecte_8cpp__incl.pdf used on input line 
+8.
+(pdftex.def)             Requested size: 350.0pt x 314.13321pt.
+ [45 <./similitudedirecte_8h__incl.pdf> <./similitudedirecte_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./similitudedirecte_8h__dep__incl.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+>]) (./similitudeindirecte_8h.tex
+<similitudeindirecte_8h__incl.pdf, id=1835, 362.35374pt x 269.005pt>
+File: similitudeindirecte_8h__incl.pdf Graphic file (type pdf)
+
+<use similitudeindirecte_8h__incl.pdf>
+Package pdftex.def Info: similitudeindirecte_8h__incl.pdf used on input line 8.
+
+(pdftex.def)             Requested size: 350.0pt x 259.83858pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46 <./similitudeindirecte_8cpp__incl.pdf>]
+<similitudeindirecte_8h__dep__incl.pdf, id=1847, 315.1775pt x 269.005pt>
+File: similitudeindirecte_8h__dep__incl.pdf Graphic file (type pdf)
+
+<use similitudeindirecte_8h__dep__incl.pdf>
+Package pdftex.def Info: similitudeindirecte_8h__dep__incl.pdf used on input li
+ne 15.
+(pdftex.def)             Requested size: 314.0pt x 268.01509pt.
+) (./window_8cpp.tex
+<window_8cpp__incl.pdf, id=1849, 638.385pt x 437.635pt>
+File: window_8cpp__incl.pdf Graphic file (type pdf)
+
+<use window_8cpp__incl.pdf>
+Package pdftex.def Info: window_8cpp__incl.pdf used on input line 8.
+(pdftex.def)             Requested size: 350.0pt x 239.93872pt.
+ [47 <./similitudeindirecte_8h__incl.pdf> <./similitudeindirecte_8h__dep__incl.
+pdf
+
+pdfTeX warning: pdflatex (file ./similitudeindirecte_8h__dep__incl.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>]) (./window_8h.tex <window_8h__incl.pdf, id=1867, 638.385pt x 381.425pt>
+File: window_8h__incl.pdf Graphic file (type pdf)
+
+<use window_8h__incl.pdf>
+Package pdftex.def Info: window_8h__incl.pdf used on input line 11.
+(pdftex.def)             Requested size: 350.0pt x 209.1209pt.
+
+<window_8h__dep__incl.pdf, id=1868, 222.8325pt x 156.585pt>
+File: window_8h__dep__incl.pdf Graphic file (type pdf)
+
+<use window_8h__dep__incl.pdf>
+Package pdftex.def Info: window_8h__dep__incl.pdf used on input line 18.
+(pdftex.def)             Requested size: 222.0pt x 156.00162pt.
+
+Underfull \vbox (badness 4168) has occurred while \output is active []
+
+ [48 <./window_8cpp__incl.pdf> <./window_8h__incl.pdf
+
+pdfTeX warning: pdflatex (file ./window_8h__incl.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>]) [49 <./window_8h__dep__incl.pdf>] [50
+
+] (./refman.ind [51
 
 
+] [52] [53])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
 
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
- (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
+(./refman.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: D6963C9D67F2F1FCFEDE59B830229DDD;12997.
+(rerunfilecheck)             Checksum: AD87FFEEEEF107ECE00CB8C202AE3391;32113.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
- 14333 strings out of 493085
- 204765 string characters out of 6136917
- 297942 words of memory out of 5000000
- 17387 multiletter control sequences out of 15000+600000
- 62414 words of font info for 66 fonts, out of 8000000 for 9000
+ 14965 strings out of 493085
+ 220362 string characters out of 6136917
+ 307754 words of memory out of 5000000
+ 17716 multiletter control sequences out of 15000+600000
+ 69862 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,15n,43p,484b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,16n,43p,702b,606s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/he
-lvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb
-o8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (25 pages, 160328 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helveti
+c/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (61 pages, 392563 bytes).
 PDF statistics:
- 851 PDF objects out of 1000 (max. 8388607)
- 785 compressed objects within 8 object streams
- 153 named destinations out of 1000 (max. 500000)
- 549 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2253 PDF objects out of 2487 (max. 8388607)
+ 2069 compressed objects within 21 object streams
+ 376 named destinations out of 1000 (max. 500000)
+ 1489 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -19,8 +19,9 @@ int Forme::GetSize() const
 
 ///
 /// \brief Forme::GetPoint
-/// \param i
-/// \return
+/// \param i Indice du point
+/// \return Retourne le i-ème point(s) de la forme
+/// Nécessite que l'indice soit VALIDE.
 ///
 QPointF Forme::GetPoint(int i) const
 {
@@ -28,8 +29,9 @@ QPointF Forme::GetPoint(int i) const
 }
 
 ///
-/// \brief Forme::AddPoint
-/// \param P
+/// \brief Forme::AddPoint Ajoute le point P à la forme
+/// \param P QPointF
+///
 ///
 void Forme::AddPoint(const QPointF &P)
 {
@@ -37,9 +39,9 @@ void Forme::AddPoint(const QPointF &P)
 }
 
 ///
-/// \brief operator ==
-/// \param A
-/// \param B
+/// \brief operator == Teste si les deux formes sont egales
+/// \param A Forme 1
+/// \param B Forme 2
 /// \return
 ///
 bool operator ==(Forme const &A, Forme const &B)
@@ -55,7 +57,9 @@ bool operator ==(Forme const &A, Forme const &B)
 }
 
 ///
-/// \brief Forme::generateExisting
+/// \brief Forme::generateExisting Génére une forme par défaut
+/// \n		 n=0 : Segment
+/// \n		 n=1 : Triangle
 /// \param n
 ///
 void Forme::generateExisting(quint32 n)

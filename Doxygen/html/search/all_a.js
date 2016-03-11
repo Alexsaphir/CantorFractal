@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['m11',['m11',['../class_application.html#ae4f71662bf31fcbd52aac06c1741bead',1,'Application']]],
-  ['m12',['m12',['../class_application.html#a6c1095602143845a433dc1c2232479c8',1,'Application']]],
-  ['m21',['m21',['../class_application.html#a57f2364c5671f6ade315024cff46c975',1,'Application']]],
-  ['m22',['m22',['../class_application.html#aa3e7dad170dc62450e06855fdeea42af',1,'Application']]]
+  ['l',['L',['../class_forme.html#a182d4f4c76f05c2508881f8bf38dc332',1,'Forme']]],
+  ['load',['load',['../class_window.html#a0c61ace2c0af9829fc1c66f96edf64be',1,'Window']]],
+  ['loadexistingfractal',['loadExistingFractal',['../class_window.html#a6b9597000158ae977ff7f701b66ce2e0',1,'Window']]]
 ];

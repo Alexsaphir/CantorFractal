@@ -4,8 +4,6 @@
 #include <QtGlobal>
 #include <QtMath>
 
-
-
 #include <QList>
 #include <QPointF>
 
@@ -22,12 +20,10 @@ public:
 
 	void generateExisting(quint32 n=0);
 
-	enum Figure {
-		SEGMENT,
-		TRIANGLE
-	};
-
 private:
+	///
+	/// \brief Liste des points constituant la forme dans l'ordre de tracé
+	///
 	QList<QPointF> L;
 };
 

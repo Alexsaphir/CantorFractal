@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ishomothetie',['isHomothetie',['../class_application.html#a57a65ecc500e59551a01263823688dbc',1,'Application']]],
-  ['islikecantor',['isLikeCantor',['../class_fractale.html#a8a3f226eb475bb5645a81b3342a6c00d',1,'Fractale']]],
-  ['isrotation',['isRotation',['../class_application.html#a1803286658b5d45285249d26d2769421',1,'Application']]]
+  ['homothetie',['Homothetie',['../class_homothetie.html',1,'Homothetie'],['../class_homothetie.html#a0c2ab7e4afc80bf76f10d6cecc2891fe',1,'Homothetie::Homothetie()'],['../class_homothetie.html#ab9e23a5bfa3141fde6951a4eec5cbe6e',1,'Homothetie::Homothetie(qreal K)'],['../class_homothetie.html#a18b4271dabd8771540007efe8389827a',1,'Homothetie::Homothetie(qreal K, QPointF C)']]],
+  ['homothetie_2ecpp',['homothetie.cpp',['../homothetie_8cpp.html',1,'']]],
+  ['homothetie_2eh',['homothetie.h',['../homothetie_8h.html',1,'']]]
 ];

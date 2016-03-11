@@ -37,7 +37,14 @@ public:
 	void generateExisting(quint32 n);
 
 private:
+	///
+	/// \brief EnsA
+	/// Stocke l'ensemble des Applications définissant la fractale
+	///
 	QList<Application> EnsA;
+	///
+	/// \brief EnsF
+	/// Stocke L'ensemble des points constituant la fractale au cours du temps
 	QList<Forme> EnsF;
 
 	bool isCantor;

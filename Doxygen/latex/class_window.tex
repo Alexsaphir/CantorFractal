@@ -2,6 +2,10 @@
 \label{class_window}\index{Window@{Window}}
 
 
+{\ttfamily \#include \char`\"{}window.\+h\char`\"{}}
+
+
+
 Graphe d\textquotesingle{}héritage de Window\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -15,38 +19,81 @@ Graphe de collaboration de Window\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=284pt]{class_window__coll__graph}
+\includegraphics[width=350pt]{class_window__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Connecteurs publics}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_window_a0c61ace2c0af9829fc1c66f96edf64be}{}void \hyperlink{class_window_a0c61ace2c0af9829fc1c66f96edf64be}{load} ()\label{class_window_a0c61ace2c0af9829fc1c66f96edf64be}
-
-\begin{DoxyCompactList}\small\item\em \hyperlink{class_window_a0c61ace2c0af9829fc1c66f96edf64be}{Window\+::load}. \end{DoxyCompactList}\item 
-\hypertarget{class_window_ab2babfe1d3ae399e069000309cc3a7ae}{}void \hyperlink{class_window_ab2babfe1d3ae399e069000309cc3a7ae}{refresh\+View} ()\label{class_window_ab2babfe1d3ae399e069000309cc3a7ae}
-
-\begin{DoxyCompactList}\small\item\em \hyperlink{class_window_ab2babfe1d3ae399e069000309cc3a7ae}{Window\+::refresh\+View}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \hyperlink{class_window_a0c61ace2c0af9829fc1c66f96edf64be}{load} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_window_a0c61ace2c0af9829fc1c66f96edf64be}{Window\+::load} Affiche une fenetre permettant de choisir une fractale par defaut. \end{DoxyCompactList}\item 
+void \hyperlink{class_window_ab2babfe1d3ae399e069000309cc3a7ae}{refresh\+View} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_window_ab2babfe1d3ae399e069000309cc3a7ae}{Window\+::refresh\+View} Dessine la fractale. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_window_a74e6087da23d3c24e9fac0245e5ec92c}{}\hyperlink{class_window_a74e6087da23d3c24e9fac0245e5ec92c}{Window} ()\label{class_window_a74e6087da23d3c24e9fac0245e5ec92c}
-
-\begin{DoxyCompactList}\small\item\em \hyperlink{class_window_a74e6087da23d3c24e9fac0245e5ec92c}{Window\+::\+Window}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{class_window_a74e6087da23d3c24e9fac0245e5ec92c}{Window} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_window_a74e6087da23d3c24e9fac0245e5ec92c}{Window\+::\+Window} Constructeur par defaut de la classe \hyperlink{class_window}{Window} ~\newline
+ Crée les differents objets nécessaire. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Attributs publics}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_window_a52e7d4e63f98e761696b4e5e0296c053}{}bool {\bfseries tweak}\label{class_window_a52e7d4e63f98e761696b4e5e0296c053}
-
+bool \hyperlink{class_window_a52e7d4e63f98e761696b4e5e0296c053}{tweak}
 \item 
-\hypertarget{class_window_a022688408d51ba601784ebfef3f8da10}{}\hyperlink{class_fractale}{Fractale} $\ast$ {\bfseries fractale}\label{class_window_a022688408d51ba601784ebfef3f8da10}
-
+\hyperlink{class_fractale}{Fractale} $\ast$ \hyperlink{class_window_a022688408d51ba601784ebfef3f8da10}{fractale}
 \end{DoxyCompactItemize}
 \subsection*{Fonctions membres protégées}
 \begin{DoxyCompactItemize}
 \item 
 virtual bool \hyperlink{class_window_a7c7748b81d769f66a2131c2f66541da9}{event\+Filter} (Q\+Object $\ast$obj, Q\+Event $\ast$event)
-\begin{DoxyCompactList}\small\item\em \hyperlink{class_window_a7c7748b81d769f66a2131c2f66541da9}{Window\+::event\+Filter}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_window_a7c7748b81d769f66a2131c2f66541da9}{Window\+::event\+Filter} Filtre d\textquotesingle{}évenement pour capturer les evenemts spécifique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_window_ae089aa7bf8d19a66e1813f25d64435ca}{Zoom} (Q\+Graphics\+Scene\+Wheel\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_window_ae089aa7bf8d19a66e1813f25d64435ca}{Window\+::\+Zoom} Est Appelé quand l\textquotesingle{}évenement Q\+Event\+::\+Graphics\+Scene\+Wheel est capturé \end{DoxyCompactList}\item 
+void \hyperlink{class_window_a6b9597000158ae977ff7f701b66ce2e0}{load\+Existing\+Fractal} (quint64)
+\item 
+void \hyperlink{class_window_a2a3bd6eafe51a29fdb25513466091e7a}{refresh\+View\+Special\+Cantor} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_window_a2a3bd6eafe51a29fdb25513466091e7a}{Window\+::refresh\+View\+Special\+Cantor} Dessine de la fractale de type\+Cantor. \end{DoxyCompactList}\item 
+void \hyperlink{class_window_a857cb462b4515ded7a0bcb54879f10cf}{refresh\+View\+Color} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_window_a857cb462b4515ded7a0bcb54879f10cf}{Window\+::refresh\+View\+Color} Dessine la fractale en colorant l\textquotesingle{}intérieur de la figure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Widget $\ast$ \hyperlink{class_window_a55a97331e4e4e17aabcce45167d2f8af}{S\+D\+I\+\_\+\+Area}
+\item 
+Q\+Grid\+Layout $\ast$ \hyperlink{class_window_ae3851462bde6ad50160865489df3294c}{Grid\+Layout}
+\item 
+Q\+Tool\+Bar $\ast$ \hyperlink{class_window_a3577da92dfb4018b7f8629148adbd65f}{Tool\+Bar}
+\item 
+Q\+Graphics\+View $\ast$ \hyperlink{class_window_a0352598340064ec6dd7952dbad06ce0d}{view}
+\item 
+Q\+Graphics\+Scene $\ast$ \hyperlink{class_window_a3a8f9ea1c9cce8a8c3aafbbc6d282f66}{scene}
+\item 
+Q\+Pen \hyperlink{class_window_a72900826c57f670a89e50836bbc45f37}{Pen1}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_window_a2bb78498628b8ae47ef0aaf49b775640}{B\+\_\+next}
+\item 
+Q\+Push\+Button $\ast$ \hyperlink{class_window_a54aac5528cc1e222c7a007dfba3e200a}{B\+\_\+load}
+\item 
+quint32 \hyperlink{class_window_ac76fcc8528da0030c28384400096bca6}{step}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_window_a74e6087da23d3c24e9fac0245e5ec92c}{}\index{Window@{Window}!Window@{Window}}
+\index{Window@{Window}!Window@{Window}}
+\subsubsection[{Window}]{\setlength{\rightskip}{0pt plus 5cm}Window\+::\+Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_window_a74e6087da23d3c24e9fac0245e5ec92c}
+
+
+\hyperlink{class_window_a74e6087da23d3c24e9fac0245e5ec92c}{Window\+::\+Window} Constructeur par defaut de la classe \hyperlink{class_window}{Window} ~\newline
+ Crée les differents objets nécessaire. 
+
 
 
 \subsection{Documentation des fonctions membres}
@@ -60,7 +107,7 @@ virtual bool \hyperlink{class_window_a7c7748b81d769f66a2131c2f66541da9}{event\+F
 )\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{class_window_a7c7748b81d769f66a2131c2f66541da9}
 
 
-\hyperlink{class_window_a7c7748b81d769f66a2131c2f66541da9}{Window\+::event\+Filter}. 
+\hyperlink{class_window_a7c7748b81d769f66a2131c2f66541da9}{Window\+::event\+Filter} Filtre d\textquotesingle{}évenement pour capturer les evenemts spécifique. 
 
 
 \begin{DoxyParams}{Paramètres}
@@ -72,9 +119,112 @@ virtual bool \hyperlink{class_window_a7c7748b81d769f66a2131c2f66541da9}{event\+F
 \begin{DoxyReturn}{Renvoie}
 
 \end{DoxyReturn}
+\hypertarget{class_window_a0c61ace2c0af9829fc1c66f96edf64be}{}\index{Window@{Window}!load@{load}}
+\index{load@{load}!Window@{Window}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Window\+::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_window_a0c61ace2c0af9829fc1c66f96edf64be}
+
+
+\hyperlink{class_window_a0c61ace2c0af9829fc1c66f96edf64be}{Window\+::load} Affiche une fenetre permettant de choisir une fractale par defaut. 
+
+\hypertarget{class_window_a6b9597000158ae977ff7f701b66ce2e0}{}\index{Window@{Window}!load\+Existing\+Fractal@{load\+Existing\+Fractal}}
+\index{load\+Existing\+Fractal@{load\+Existing\+Fractal}!Window@{Window}}
+\subsubsection[{load\+Existing\+Fractal}]{\setlength{\rightskip}{0pt plus 5cm}void Window\+::load\+Existing\+Fractal (
+\begin{DoxyParamCaption}
+\item[{quint64}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_window_a6b9597000158ae977ff7f701b66ce2e0}
+\hypertarget{class_window_ab2babfe1d3ae399e069000309cc3a7ae}{}\index{Window@{Window}!refresh\+View@{refresh\+View}}
+\index{refresh\+View@{refresh\+View}!Window@{Window}}
+\subsubsection[{refresh\+View}]{\setlength{\rightskip}{0pt plus 5cm}void Window\+::refresh\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_window_ab2babfe1d3ae399e069000309cc3a7ae}
+
+
+\hyperlink{class_window_ab2babfe1d3ae399e069000309cc3a7ae}{Window\+::refresh\+View} Dessine la fractale. 
+
+\hypertarget{class_window_a857cb462b4515ded7a0bcb54879f10cf}{}\index{Window@{Window}!refresh\+View\+Color@{refresh\+View\+Color}}
+\index{refresh\+View\+Color@{refresh\+View\+Color}!Window@{Window}}
+\subsubsection[{refresh\+View\+Color}]{\setlength{\rightskip}{0pt plus 5cm}void Window\+::refresh\+View\+Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_window_a857cb462b4515ded7a0bcb54879f10cf}
+
+
+\hyperlink{class_window_a857cb462b4515ded7a0bcb54879f10cf}{Window\+::refresh\+View\+Color} Dessine la fractale en colorant l\textquotesingle{}intérieur de la figure. 
+
+\hypertarget{class_window_a2a3bd6eafe51a29fdb25513466091e7a}{}\index{Window@{Window}!refresh\+View\+Special\+Cantor@{refresh\+View\+Special\+Cantor}}
+\index{refresh\+View\+Special\+Cantor@{refresh\+View\+Special\+Cantor}!Window@{Window}}
+\subsubsection[{refresh\+View\+Special\+Cantor}]{\setlength{\rightskip}{0pt plus 5cm}void Window\+::refresh\+View\+Special\+Cantor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_window_a2a3bd6eafe51a29fdb25513466091e7a}
+
+
+\hyperlink{class_window_a2a3bd6eafe51a29fdb25513466091e7a}{Window\+::refresh\+View\+Special\+Cantor} Dessine de la fractale de type\+Cantor. 
+
+\hypertarget{class_window_ae089aa7bf8d19a66e1813f25d64435ca}{}\index{Window@{Window}!Zoom@{Zoom}}
+\index{Zoom@{Zoom}!Window@{Window}}
+\subsubsection[{Zoom}]{\setlength{\rightskip}{0pt plus 5cm}void Window\+::\+Zoom (
+\begin{DoxyParamCaption}
+\item[{Q\+Graphics\+Scene\+Wheel\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_window_ae089aa7bf8d19a66e1813f25d64435ca}
+
+
+\hyperlink{class_window_ae089aa7bf8d19a66e1813f25d64435ca}{Window\+::\+Zoom} Est Appelé quand l\textquotesingle{}évenement Q\+Event\+::\+Graphics\+Scene\+Wheel est capturé 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_window_a54aac5528cc1e222c7a007dfba3e200a}{}\index{Window@{Window}!B\+\_\+load@{B\+\_\+load}}
+\index{B\+\_\+load@{B\+\_\+load}!Window@{Window}}
+\subsubsection[{B\+\_\+load}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Push\+Button$\ast$ Window\+::\+B\+\_\+load\hspace{0.3cm}{\ttfamily [private]}}\label{class_window_a54aac5528cc1e222c7a007dfba3e200a}
+\hypertarget{class_window_a2bb78498628b8ae47ef0aaf49b775640}{}\index{Window@{Window}!B\+\_\+next@{B\+\_\+next}}
+\index{B\+\_\+next@{B\+\_\+next}!Window@{Window}}
+\subsubsection[{B\+\_\+next}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Push\+Button$\ast$ Window\+::\+B\+\_\+next\hspace{0.3cm}{\ttfamily [private]}}\label{class_window_a2bb78498628b8ae47ef0aaf49b775640}
+\hypertarget{class_window_a022688408d51ba601784ebfef3f8da10}{}\index{Window@{Window}!fractale@{fractale}}
+\index{fractale@{fractale}!Window@{Window}}
+\subsubsection[{fractale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fractale}$\ast$ Window\+::fractale}\label{class_window_a022688408d51ba601784ebfef3f8da10}
+\hypertarget{class_window_ae3851462bde6ad50160865489df3294c}{}\index{Window@{Window}!Grid\+Layout@{Grid\+Layout}}
+\index{Grid\+Layout@{Grid\+Layout}!Window@{Window}}
+\subsubsection[{Grid\+Layout}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Grid\+Layout$\ast$ Window\+::\+Grid\+Layout\hspace{0.3cm}{\ttfamily [private]}}\label{class_window_ae3851462bde6ad50160865489df3294c}
+\hypertarget{class_window_a72900826c57f670a89e50836bbc45f37}{}\index{Window@{Window}!Pen1@{Pen1}}
+\index{Pen1@{Pen1}!Window@{Window}}
+\subsubsection[{Pen1}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Pen Window\+::\+Pen1\hspace{0.3cm}{\ttfamily [private]}}\label{class_window_a72900826c57f670a89e50836bbc45f37}
+\hypertarget{class_window_a3a8f9ea1c9cce8a8c3aafbbc6d282f66}{}\index{Window@{Window}!scene@{scene}}
+\index{scene@{scene}!Window@{Window}}
+\subsubsection[{scene}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Graphics\+Scene$\ast$ Window\+::scene\hspace{0.3cm}{\ttfamily [private]}}\label{class_window_a3a8f9ea1c9cce8a8c3aafbbc6d282f66}
+\hypertarget{class_window_a55a97331e4e4e17aabcce45167d2f8af}{}\index{Window@{Window}!S\+D\+I\+\_\+\+Area@{S\+D\+I\+\_\+\+Area}}
+\index{S\+D\+I\+\_\+\+Area@{S\+D\+I\+\_\+\+Area}!Window@{Window}}
+\subsubsection[{S\+D\+I\+\_\+\+Area}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Widget$\ast$ Window\+::\+S\+D\+I\+\_\+\+Area\hspace{0.3cm}{\ttfamily [private]}}\label{class_window_a55a97331e4e4e17aabcce45167d2f8af}
+\hypertarget{class_window_ac76fcc8528da0030c28384400096bca6}{}\index{Window@{Window}!step@{step}}
+\index{step@{step}!Window@{Window}}
+\subsubsection[{step}]{\setlength{\rightskip}{0pt plus 5cm}quint32 Window\+::step\hspace{0.3cm}{\ttfamily [private]}}\label{class_window_ac76fcc8528da0030c28384400096bca6}
+\hypertarget{class_window_a3577da92dfb4018b7f8629148adbd65f}{}\index{Window@{Window}!Tool\+Bar@{Tool\+Bar}}
+\index{Tool\+Bar@{Tool\+Bar}!Window@{Window}}
+\subsubsection[{Tool\+Bar}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Tool\+Bar$\ast$ Window\+::\+Tool\+Bar\hspace{0.3cm}{\ttfamily [private]}}\label{class_window_a3577da92dfb4018b7f8629148adbd65f}
+\hypertarget{class_window_a52e7d4e63f98e761696b4e5e0296c053}{}\index{Window@{Window}!tweak@{tweak}}
+\index{tweak@{tweak}!Window@{Window}}
+\subsubsection[{tweak}]{\setlength{\rightskip}{0pt plus 5cm}bool Window\+::tweak}\label{class_window_a52e7d4e63f98e761696b4e5e0296c053}
+\hypertarget{class_window_a0352598340064ec6dd7952dbad06ce0d}{}\index{Window@{Window}!view@{view}}
+\index{view@{view}!Window@{Window}}
+\subsubsection[{view}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Graphics\+View$\ast$ Window\+::view\hspace{0.3cm}{\ttfamily [private]}}\label{class_window_a0352598340064ec6dd7952dbad06ce0d}
 
 
 La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
 \item 
-window.\+h\item 
-window.\+cpp\end{DoxyCompactItemize}
+\hyperlink{window_8h}{window.\+h}\item 
+\hyperlink{window_8cpp}{window.\+cpp}\end{DoxyCompactItemize}

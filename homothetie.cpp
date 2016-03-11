@@ -10,7 +10,8 @@ Homothetie::Homothetie() : Application()
 
 ///
 /// \brief Homothetie::Homothetie
-/// \param K
+/// Construit une Homothetie de rapport k
+/// \param K Rapport de l'Homothetie
 ///
 Homothetie::Homothetie(qreal K) : Application()
 {
@@ -19,8 +20,9 @@ Homothetie::Homothetie(qreal K) : Application()
 
 ///
 /// \brief Homothetie::Homothetie
-/// \param K
-/// \param C
+/// Construit une Homothetie de rapport k et de centre C
+/// \param K Rapport de l'Homothetie
+/// \param C Centre de l'Homothetie
 ///
 Homothetie::Homothetie(qreal K, QPointF C) :Application()
 {
@@ -30,7 +32,8 @@ Homothetie::Homothetie(qreal K, QPointF C) :Application()
 
 ///
 /// \brief Homothetie::setHomothetie
-/// \param K
+/// Définie une Homothetie de rapport k
+/// \param K Rapport de l'Homothetie
 ///
 void Homothetie::setHomothetie(qreal K)
 {
@@ -39,8 +42,9 @@ void Homothetie::setHomothetie(qreal K)
 
 ///
 /// \brief Homothetie::setHomothetie
-/// \param K
-/// \param C
+/// Définie une Homothetie de rapport k et de centre C
+/// \param K Rapport de l'Homothetie
+/// \param C Centre de l'Homothetie
 ///
 void Homothetie::setHomothetie(qreal K, QPointF C)
 {

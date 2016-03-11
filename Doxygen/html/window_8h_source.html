@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -83,14 +84,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="title">window.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef WINDOW_H</span></div>
+<a href="window_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef WINDOW_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define WINDOW_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QtWidgets&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QInputDialog&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QtPrintSupport/QPrinter&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;fractale.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fractale_8h.html">fractale.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_window.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_window.html">Window</a> : <span class="keyword">public</span> <a class="code" href="class_q_main_window.html">QMainWindow</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
@@ -98,16 +99,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_window.html#a74e6087da23d3c24e9fac0245e5ec92c">Window</a>();</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">bool</span> tweak;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_fractale.html">Fractale</a> *fractale;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_window.html#a52e7d4e63f98e761696b4e5e0296c053">   16</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_window.html#a52e7d4e63f98e761696b4e5e0296c053">tweak</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_window.html#a022688408d51ba601784ebfef3f8da10">   17</a></span>&#160;    <a class="code" href="class_fractale.html">Fractale</a> *<a class="code" href="class_window.html#a022688408d51ba601784ebfef3f8da10">fractale</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_window.html#a7c7748b81d769f66a2131c2f66541da9">eventFilter</a>(QObject *obj, QEvent *event);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> Zoom(QGraphicsSceneWheelEvent *event);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> loadExistingFractal(quint64);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> refreshViewSpecialCantor();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> refreshViewColor();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_window.html#ae089aa7bf8d19a66e1813f25d64435ca">Zoom</a>(QGraphicsSceneWheelEvent *event);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_window.html#a6b9597000158ae977ff7f701b66ce2e0">loadExistingFractal</a>(quint64);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_window.html#a2a3bd6eafe51a29fdb25513466091e7a">refreshViewSpecialCantor</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_window.html#a857cb462b4515ded7a0bcb54879f10cf">refreshViewColor</a>();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span> slots:</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_window.html#a0c61ace2c0af9829fc1c66f96edf64be">load</a>();</div>
@@ -115,30 +116,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QWidget *SDI_Area;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QGridLayout *GridLayout;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    QToolBar *ToolBar;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_window.html#a55a97331e4e4e17aabcce45167d2f8af">   33</a></span>&#160;    QWidget *<a class="code" href="class_window.html#a55a97331e4e4e17aabcce45167d2f8af">SDI_Area</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_window.html#ae3851462bde6ad50160865489df3294c">   34</a></span>&#160;    QGridLayout *<a class="code" href="class_window.html#ae3851462bde6ad50160865489df3294c">GridLayout</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_window.html#a3577da92dfb4018b7f8629148adbd65f">   35</a></span>&#160;    QToolBar *<a class="code" href="class_window.html#a3577da92dfb4018b7f8629148adbd65f">ToolBar</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QGraphicsView *view;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QGraphicsScene *scene;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QPen Pen1;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_window.html#a0352598340064ec6dd7952dbad06ce0d">   37</a></span>&#160;    QGraphicsView *<a class="code" href="class_window.html#a0352598340064ec6dd7952dbad06ce0d">view</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_window.html#a3a8f9ea1c9cce8a8c3aafbbc6d282f66">   38</a></span>&#160;    QGraphicsScene *<a class="code" href="class_window.html#a3a8f9ea1c9cce8a8c3aafbbc6d282f66">scene</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_window.html#a72900826c57f670a89e50836bbc45f37">   39</a></span>&#160;    QPen <a class="code" href="class_window.html#a72900826c57f670a89e50836bbc45f37">Pen1</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    QPushButton *B_next;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QPushButton *B_load;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_window.html#a2bb78498628b8ae47ef0aaf49b775640">   42</a></span>&#160;    QPushButton *<a class="code" href="class_window.html#a2bb78498628b8ae47ef0aaf49b775640">B_next</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_window.html#a54aac5528cc1e222c7a007dfba3e200a">   43</a></span>&#160;    QPushButton *<a class="code" href="class_window.html#a54aac5528cc1e222c7a007dfba3e200a">B_load</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    quint32 step;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_window.html#ac76fcc8528da0030c28384400096bca6">   46</a></span>&#160;    quint32 <a class="code" href="class_window.html#ac76fcc8528da0030c28384400096bca6">step</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif // WINDOW_H</span></div>
-<div class="ttc" id="class_window_html_a7c7748b81d769f66a2131c2f66541da9"><div class="ttname"><a href="class_window.html#a7c7748b81d769f66a2131c2f66541da9">Window::eventFilter</a></div><div class="ttdeci">virtual bool eventFilter(QObject *obj, QEvent *event)</div><div class="ttdoc">Window::eventFilter. </div><div class="ttdef"><b>Definition:</b> window.cpp:198</div></div>
-<div class="ttc" id="class_window_html_a0c61ace2c0af9829fc1c66f96edf64be"><div class="ttname"><a href="class_window.html#a0c61ace2c0af9829fc1c66f96edf64be">Window::load</a></div><div class="ttdeci">void load()</div><div class="ttdoc">Window::load. </div><div class="ttdef"><b>Definition:</b> window.cpp:56</div></div>
+<div class="ttc" id="class_window_html_a7c7748b81d769f66a2131c2f66541da9"><div class="ttname"><a href="class_window.html#a7c7748b81d769f66a2131c2f66541da9">Window::eventFilter</a></div><div class="ttdeci">virtual bool eventFilter(QObject *obj, QEvent *event)</div><div class="ttdoc">Window::eventFilter Filtre d&#39;évenement pour capturer les evenemts spécifique. </div><div class="ttdef"><b>Definition:</b> window.cpp:205</div></div>
+<div class="ttc" id="class_window_html_a0c61ace2c0af9829fc1c66f96edf64be"><div class="ttname"><a href="class_window.html#a0c61ace2c0af9829fc1c66f96edf64be">Window::load</a></div><div class="ttdeci">void load()</div><div class="ttdoc">Window::load Affiche une fenetre permettant de choisir une fractale par defaut. </div><div class="ttdef"><b>Definition:</b> window.cpp:59</div></div>
+<div class="ttc" id="class_window_html_a857cb462b4515ded7a0bcb54879f10cf"><div class="ttname"><a href="class_window.html#a857cb462b4515ded7a0bcb54879f10cf">Window::refreshViewColor</a></div><div class="ttdeci">void refreshViewColor()</div><div class="ttdoc">Window::refreshViewColor Dessine la fractale en colorant l&#39;intérieur de la figure. </div><div class="ttdef"><b>Definition:</b> window.cpp:168</div></div>
 <div class="ttc" id="class_window_html"><div class="ttname"><a href="class_window.html">Window</a></div><div class="ttdef"><b>Definition:</b> window.h:10</div></div>
+<div class="ttc" id="class_window_html_ac76fcc8528da0030c28384400096bca6"><div class="ttname"><a href="class_window.html#ac76fcc8528da0030c28384400096bca6">Window::step</a></div><div class="ttdeci">quint32 step</div><div class="ttdef"><b>Definition:</b> window.h:46</div></div>
+<div class="ttc" id="class_window_html_ae089aa7bf8d19a66e1813f25d64435ca"><div class="ttname"><a href="class_window.html#ae089aa7bf8d19a66e1813f25d64435ca">Window::Zoom</a></div><div class="ttdeci">void Zoom(QGraphicsSceneWheelEvent *event)</div><div class="ttdoc">Window::Zoom Est Appelé quand l&#39;évenement QEvent::GraphicsSceneWheel est capturé </div><div class="ttdef"><b>Definition:</b> window.cpp:223</div></div>
+<div class="ttc" id="class_window_html_ae3851462bde6ad50160865489df3294c"><div class="ttname"><a href="class_window.html#ae3851462bde6ad50160865489df3294c">Window::GridLayout</a></div><div class="ttdeci">QGridLayout * GridLayout</div><div class="ttdef"><b>Definition:</b> window.h:34</div></div>
+<div class="ttc" id="class_window_html_a0352598340064ec6dd7952dbad06ce0d"><div class="ttname"><a href="class_window.html#a0352598340064ec6dd7952dbad06ce0d">Window::view</a></div><div class="ttdeci">QGraphicsView * view</div><div class="ttdef"><b>Definition:</b> window.h:37</div></div>
 <div class="ttc" id="class_fractale_html"><div class="ttname"><a href="class_fractale.html">Fractale</a></div><div class="ttdef"><b>Definition:</b> fractale.h:11</div></div>
+<div class="ttc" id="fractale_8h_html"><div class="ttname"><a href="fractale_8h.html">fractale.h</a></div></div>
 <div class="ttc" id="class_q_main_window_html"><div class="ttname"><a href="class_q_main_window.html">QMainWindow</a></div></div>
-<div class="ttc" id="class_window_html_ab2babfe1d3ae399e069000309cc3a7ae"><div class="ttname"><a href="class_window.html#ab2babfe1d3ae399e069000309cc3a7ae">Window::refreshView</a></div><div class="ttdeci">void refreshView()</div><div class="ttdoc">Window::refreshView. </div><div class="ttdef"><b>Definition:</b> window.cpp:85</div></div>
-<div class="ttc" id="class_window_html_a74e6087da23d3c24e9fac0245e5ec92c"><div class="ttname"><a href="class_window.html#a74e6087da23d3c24e9fac0245e5ec92c">Window::Window</a></div><div class="ttdeci">Window()</div><div class="ttdoc">Window::Window. </div><div class="ttdef"><b>Definition:</b> window.cpp:6</div></div>
+<div class="ttc" id="class_window_html_ab2babfe1d3ae399e069000309cc3a7ae"><div class="ttname"><a href="class_window.html#ab2babfe1d3ae399e069000309cc3a7ae">Window::refreshView</a></div><div class="ttdeci">void refreshView()</div><div class="ttdoc">Window::refreshView Dessine la fractale. </div><div class="ttdef"><b>Definition:</b> window.cpp:89</div></div>
+<div class="ttc" id="class_window_html_a3577da92dfb4018b7f8629148adbd65f"><div class="ttname"><a href="class_window.html#a3577da92dfb4018b7f8629148adbd65f">Window::ToolBar</a></div><div class="ttdeci">QToolBar * ToolBar</div><div class="ttdef"><b>Definition:</b> window.h:35</div></div>
+<div class="ttc" id="class_window_html_a6b9597000158ae977ff7f701b66ce2e0"><div class="ttname"><a href="class_window.html#a6b9597000158ae977ff7f701b66ce2e0">Window::loadExistingFractal</a></div><div class="ttdeci">void loadExistingFractal(quint64)</div></div>
+<div class="ttc" id="class_window_html_a54aac5528cc1e222c7a007dfba3e200a"><div class="ttname"><a href="class_window.html#a54aac5528cc1e222c7a007dfba3e200a">Window::B_load</a></div><div class="ttdeci">QPushButton * B_load</div><div class="ttdef"><b>Definition:</b> window.h:43</div></div>
+<div class="ttc" id="class_window_html_a2a3bd6eafe51a29fdb25513466091e7a"><div class="ttname"><a href="class_window.html#a2a3bd6eafe51a29fdb25513466091e7a">Window::refreshViewSpecialCantor</a></div><div class="ttdeci">void refreshViewSpecialCantor()</div><div class="ttdoc">Window::refreshViewSpecialCantor Dessine de la fractale de typeCantor. </div><div class="ttdef"><b>Definition:</b> window.cpp:142</div></div>
+<div class="ttc" id="class_window_html_a3a8f9ea1c9cce8a8c3aafbbc6d282f66"><div class="ttname"><a href="class_window.html#a3a8f9ea1c9cce8a8c3aafbbc6d282f66">Window::scene</a></div><div class="ttdeci">QGraphicsScene * scene</div><div class="ttdef"><b>Definition:</b> window.h:38</div></div>
+<div class="ttc" id="class_window_html_a74e6087da23d3c24e9fac0245e5ec92c"><div class="ttname"><a href="class_window.html#a74e6087da23d3c24e9fac0245e5ec92c">Window::Window</a></div><div class="ttdeci">Window()</div><div class="ttdoc">Window::Window Constructeur par defaut de la classe Window   Crée les differents objets nécessaire...</div><div class="ttdef"><b>Definition:</b> window.cpp:8</div></div>
+<div class="ttc" id="class_window_html_a2bb78498628b8ae47ef0aaf49b775640"><div class="ttname"><a href="class_window.html#a2bb78498628b8ae47ef0aaf49b775640">Window::B_next</a></div><div class="ttdeci">QPushButton * B_next</div><div class="ttdef"><b>Definition:</b> window.h:42</div></div>
+<div class="ttc" id="class_window_html_a52e7d4e63f98e761696b4e5e0296c053"><div class="ttname"><a href="class_window.html#a52e7d4e63f98e761696b4e5e0296c053">Window::tweak</a></div><div class="ttdeci">bool tweak</div><div class="ttdef"><b>Definition:</b> window.h:16</div></div>
+<div class="ttc" id="class_window_html_a55a97331e4e4e17aabcce45167d2f8af"><div class="ttname"><a href="class_window.html#a55a97331e4e4e17aabcce45167d2f8af">Window::SDI_Area</a></div><div class="ttdeci">QWidget * SDI_Area</div><div class="ttdef"><b>Definition:</b> window.h:33</div></div>
+<div class="ttc" id="class_window_html_a022688408d51ba601784ebfef3f8da10"><div class="ttname"><a href="class_window.html#a022688408d51ba601784ebfef3f8da10">Window::fractale</a></div><div class="ttdeci">Fractale * fractale</div><div class="ttdef"><b>Definition:</b> window.h:17</div></div>
+<div class="ttc" id="class_window_html_a72900826c57f670a89e50836bbc45f37"><div class="ttname"><a href="class_window.html#a72900826c57f670a89e50836bbc45f37">Window::Pen1</a></div><div class="ttdeci">QPen Pen1</div><div class="ttdef"><b>Definition:</b> window.h:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

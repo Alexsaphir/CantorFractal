@@ -2,6 +2,8 @@
 
 ///
 /// \brief Window::Window
+/// Constructeur par defaut de la classe Window
+/// \n Crée les differents objets nécessaire
 ///
 Window::Window() : QMainWindow()
 {
@@ -52,6 +54,7 @@ Window::Window() : QMainWindow()
 
 ///
 /// \brief Window::load
+/// Affiche une fenetre permettant de choisir une fractale par defaut
 ///
 void Window::load()
 {
@@ -81,6 +84,7 @@ void Window::load()
 
 ///
 /// \brief Window::refreshView
+/// Dessine la fractale
 ///
 void Window::refreshView()
 {
@@ -133,6 +137,7 @@ void Window::refreshView()
 
 ///
 /// \brief Window::refreshViewSpecialCantor
+/// Dessine de la fractale de typeCantor
 ///
 void Window::refreshViewSpecialCantor()
 {
@@ -158,6 +163,7 @@ void Window::refreshViewSpecialCantor()
 
 ///
 /// \brief Window::refreshViewColor
+/// Dessine la fractale en colorant l'intérieur de la figure
 ///
 void Window::refreshViewColor()
 {
@@ -191,6 +197,7 @@ void Window::refreshViewColor()
 
 ///
 /// \brief Window::eventFilter
+/// Filtre d'évenement pour capturer les evenemts spécifique
 /// \param obj
 /// \param event
 /// \return
@@ -210,6 +217,7 @@ bool Window::eventFilter(QObject *obj, QEvent *event)
 
 ///
 /// \brief Window::Zoom
+/// Est Appelé quand l'évenement QEvent::GraphicsSceneWheel est capturé
 /// \param event
 ///
 void Window::Zoom(QGraphicsSceneWheelEvent *event)

@@ -10,7 +10,7 @@ Fractale::Fractale()
 
 ///
 /// \brief Fractale::isLikeCantor
-/// \return
+/// \return Retourne si la fractale est de type Cantor
 ///
 bool Fractale::isLikeCantor() const
 {
@@ -19,7 +19,8 @@ bool Fractale::isLikeCantor() const
 
 ///
 /// \brief Fractale::setLikeCantor
-/// \param p
+/// Attibut la valeur p à isCantor
+/// \param p Nouvelle Valeur pour isCantor
 ///
 void Fractale::setLikeCantor(bool p)
 {
@@ -28,7 +29,8 @@ void Fractale::setLikeCantor(bool p)
 
 ///
 /// \brief Fractale::AddApplication
-/// \param A
+/// Ajoute une Aplication à la fractale
+/// \param A Application
 ///
 void Fractale::AddApplication(Application A)
 {
@@ -37,7 +39,8 @@ void Fractale::AddApplication(Application A)
 
 ///
 /// \brief Fractale::AddHomothetie
-/// \param k
+/// Ajoute une Homothetie de rapport k à la fractale
+/// \param k Rapport de l'Homothetie
 ///
 void Fractale::AddHomothetie(qreal k)
 {
@@ -47,8 +50,9 @@ void Fractale::AddHomothetie(qreal k)
 
 ///
 /// \brief Fractale::AddHomothetie
-/// \param k
-/// \param Centre
+/// Ajoute une Homothetie de rapport k et de centre Centre à la fractale
+/// \param k Rapport de l'Homothetie
+/// \param Centre Centre de l'Homothetie
 ///
 void Fractale::AddHomothetie(qreal k, QPointF Centre)
 {
@@ -58,9 +62,10 @@ void Fractale::AddHomothetie(qreal k, QPointF Centre)
 
 ///
 /// \brief Fractale::AddHomothetie
-/// \param k
-/// \param x
-/// \param y
+/// Ajoute une Homothetie de rapport k et de centre (x, y) à la fractale
+/// \param k Rapport de l'Homothetie
+/// \param x Cx
+/// \param y Cy
 ///
 void Fractale::AddHomothetie(qreal k, qreal x, qreal y)
 {
@@ -70,7 +75,8 @@ void Fractale::AddHomothetie(qreal k, qreal x, qreal y)
 
 ///
 /// \brief Fractale::AddRotation
-/// \param theta
+/// Ajoute une Rotation d'angle theta à la fractale
+/// \param theta Angle de la rotation
 ///
 void Fractale::AddRotation(qreal theta)
 {
@@ -80,8 +86,9 @@ void Fractale::AddRotation(qreal theta)
 
 ///
 /// \brief Fractale::AddRotation
-/// \param theta
-/// \param Centre
+/// Ajoute une Rotation d'angle theta et de centre Centre à la fractale
+/// \param theta Angle de la rotation
+/// \param Centre Centre de la rotation
 ///
 void Fractale::AddRotation(qreal theta, QPointF Centre)
 {
@@ -91,9 +98,10 @@ void Fractale::AddRotation(qreal theta, QPointF Centre)
 
 ///
 /// \brief Fractale::AddRotation
-/// \param theta
-/// \param x
-/// \param y
+/// Ajoute une Rotation d'angle theta et de centre (x, y) à la fractale
+/// \param theta angle de la rotation
+/// \param x abcisse du centre de la rotation
+/// \param y ordonnée du centre de la rotation
 ///
 void Fractale::AddRotation(qreal theta, qreal x, qreal y)
 {
@@ -103,7 +111,8 @@ void Fractale::AddRotation(qreal theta, qreal x, qreal y)
 
 ///
 /// \brief Fractale::AddForme
-/// \param F
+/// Ajoute une Forme à la fractale
+/// \param F Forme
 ///
 void Fractale::AddForme( Forme F)
 {
@@ -112,6 +121,7 @@ void Fractale::AddForme( Forme F)
 
 ///
 /// \brief Fractale::RunOnce
+/// Calcul la fractale au rang suivant
 ///
 void Fractale::RunOnce()
 {
@@ -136,8 +146,8 @@ void Fractale::RunOnce()
 
 ///
 /// \brief Fractale::getFromEnsForme
-/// \param i
-/// \return
+/// \param i indice de la forme
+/// \return Retourne la Forme d'indice i
 ///
 Forme Fractale::getFromEnsForme(int i) const
 {
@@ -146,7 +156,7 @@ Forme Fractale::getFromEnsForme(int i) const
 
 ///
 /// \brief Fractale::getSizeEnsForme
-/// \return
+/// \return Retourne le nombre de Forme
 ///
 int Fractale::getSizeEnsForme() const
 {
@@ -155,7 +165,7 @@ int Fractale::getSizeEnsForme() const
 
 ///
 /// \brief Fractale::getSizeEnsAppli
-/// \return
+/// \return Retourne le nombre d'application définissant la fractale
 ///
 int Fractale::getSizeEnsAppli() const
 {
@@ -164,7 +174,16 @@ int Fractale::getSizeEnsAppli() const
 
 ///
 /// \brief Fractale::generateExisting
-/// \param n
+/// Génere une fractale selon des valeurs par defaut
+/// \param n Type de fractal par defaut
+/// \n n=0 : Cantor
+/// \n n=2 : Triangle de Sierpinski
+/// \n n=3 : Courbe de Koch
+/// \n n=4 : Flocon de Koch
+/// \n n=5 : Hata's tree-like set
+/// \n n=6 : Lévy Curve
+/// \n n=7 : PentaKun
+/// \n n=8 : Sierpinski carpet
 ///
 void Fractale::generateExisting(quint32 n)
 {

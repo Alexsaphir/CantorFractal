@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -83,13 +84,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="title">fractale.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FRACTALE_H</span></div>
+<a href="fractale_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FRACTALE_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FRACTALE_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;homothetie.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;rotation.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;similitudedirecte.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;similitudeindirecte.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="homothetie_8h.html">homothetie.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rotation_8h.html">rotation.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="similitudedirecte_8h.html">similitudedirecte.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="similitudeindirecte_8h.html">similitudeindirecte.h</a>&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
@@ -122,28 +123,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_fractale.html#a9394c7048ef36aedbe33ef2607c40155">generateExisting</a>(quint32 n);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QList&lt;Application&gt; EnsA;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QList&lt;Forme&gt; EnsF;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> isCantor;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif // FRACTALE_H</span></div>
-<div class="ttc" id="class_fractale_html_a41004fff17f45f2ad3fb6c8ae15f0697"><div class="ttname"><a href="class_fractale.html#a41004fff17f45f2ad3fb6c8ae15f0697">Fractale::AddHomothetie</a></div><div class="ttdeci">void AddHomothetie(qreal k)</div><div class="ttdoc">Fractale::AddHomothetie. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:42</div></div>
-<div class="ttc" id="class_forme_html"><div class="ttname"><a href="class_forme.html">Forme</a></div><div class="ttdef"><b>Definition:</b> forme.h:13</div></div>
-<div class="ttc" id="class_fractale_html_a395f48f89bd58d7eb5bee40eb9ebb23e"><div class="ttname"><a href="class_fractale.html#a395f48f89bd58d7eb5bee40eb9ebb23e">Fractale::AddApplication</a></div><div class="ttdeci">void AddApplication(Application A)</div><div class="ttdoc">Fractale::AddApplication. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:33</div></div>
-<div class="ttc" id="class_fractale_html_a14d1e1b757de8d3cbfb227d50c2dbd4c"><div class="ttname"><a href="class_fractale.html#a14d1e1b757de8d3cbfb227d50c2dbd4c">Fractale::setLikeCantor</a></div><div class="ttdeci">void setLikeCantor(bool p)</div><div class="ttdoc">Fractale::setLikeCantor. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:24</div></div>
-<div class="ttc" id="class_fractale_html_a4507964af35193bf4704aac4c3206c62"><div class="ttname"><a href="class_fractale.html#a4507964af35193bf4704aac4c3206c62">Fractale::getFromEnsForme</a></div><div class="ttdeci">Forme getFromEnsForme(int i) const </div><div class="ttdoc">Fractale::getFromEnsForme. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:142</div></div>
-<div class="ttc" id="class_fractale_html_aebd8ba372ee13067816e8335f0ad0b06"><div class="ttname"><a href="class_fractale.html#aebd8ba372ee13067816e8335f0ad0b06">Fractale::getSizeEnsAppli</a></div><div class="ttdeci">int getSizeEnsAppli() const </div><div class="ttdoc">Fractale::getSizeEnsAppli. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:160</div></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_fractale.html#a7a795b7b122c25964d521b3a2f9fedba">   44</a></span>&#160;    QList&lt;Application&gt; <a class="code" href="class_fractale.html#a7a795b7b122c25964d521b3a2f9fedba">EnsA</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_fractale.html#a64fec96bb92a674576c87bc1d54e5bbf">   48</a></span>&#160;    QList&lt;Forme&gt; <a class="code" href="class_fractale.html#a64fec96bb92a674576c87bc1d54e5bbf">EnsF</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_fractale.html#ade83766018a59502166dd0d56f801315">   50</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_fractale.html#ade83766018a59502166dd0d56f801315">isCantor</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif // FRACTALE_H</span></div>
+<div class="ttc" id="class_fractale_html_a41004fff17f45f2ad3fb6c8ae15f0697"><div class="ttname"><a href="class_fractale.html#a41004fff17f45f2ad3fb6c8ae15f0697">Fractale::AddHomothetie</a></div><div class="ttdeci">void AddHomothetie(qreal k)</div><div class="ttdoc">Fractale::AddHomothetie Ajoute une Homothetie de rapport k à la fractale. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:45</div></div>
+<div class="ttc" id="class_forme_html"><div class="ttname"><a href="class_forme.html">Forme</a></div><div class="ttdef"><b>Definition:</b> forme.h:11</div></div>
+<div class="ttc" id="class_fractale_html_a395f48f89bd58d7eb5bee40eb9ebb23e"><div class="ttname"><a href="class_fractale.html#a395f48f89bd58d7eb5bee40eb9ebb23e">Fractale::AddApplication</a></div><div class="ttdeci">void AddApplication(Application A)</div><div class="ttdoc">Fractale::AddApplication Ajoute une Aplication à la fractale. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:35</div></div>
+<div class="ttc" id="class_fractale_html_a14d1e1b757de8d3cbfb227d50c2dbd4c"><div class="ttname"><a href="class_fractale.html#a14d1e1b757de8d3cbfb227d50c2dbd4c">Fractale::setLikeCantor</a></div><div class="ttdeci">void setLikeCantor(bool p)</div><div class="ttdoc">Fractale::setLikeCantor Attibut la valeur p à isCantor. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:25</div></div>
+<div class="ttc" id="class_fractale_html_a4507964af35193bf4704aac4c3206c62"><div class="ttname"><a href="class_fractale.html#a4507964af35193bf4704aac4c3206c62">Fractale::getFromEnsForme</a></div><div class="ttdeci">Forme getFromEnsForme(int i) const </div><div class="ttdoc">Fractale::getFromEnsForme. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:152</div></div>
+<div class="ttc" id="class_fractale_html_a7a795b7b122c25964d521b3a2f9fedba"><div class="ttname"><a href="class_fractale.html#a7a795b7b122c25964d521b3a2f9fedba">Fractale::EnsA</a></div><div class="ttdeci">QList&lt; Application &gt; EnsA</div><div class="ttdoc">EnsA Stocke l&#39;ensemble des Applications définissant la fractale. </div><div class="ttdef"><b>Definition:</b> fractale.h:44</div></div>
+<div class="ttc" id="similitudeindirecte_8h_html"><div class="ttname"><a href="similitudeindirecte_8h.html">similitudeindirecte.h</a></div></div>
+<div class="ttc" id="class_fractale_html_aebd8ba372ee13067816e8335f0ad0b06"><div class="ttname"><a href="class_fractale.html#aebd8ba372ee13067816e8335f0ad0b06">Fractale::getSizeEnsAppli</a></div><div class="ttdeci">int getSizeEnsAppli() const </div><div class="ttdoc">Fractale::getSizeEnsAppli. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:170</div></div>
+<div class="ttc" id="rotation_8h_html"><div class="ttname"><a href="rotation_8h.html">rotation.h</a></div></div>
+<div class="ttc" id="similitudedirecte_8h_html"><div class="ttname"><a href="similitudedirecte_8h.html">similitudedirecte.h</a></div></div>
 <div class="ttc" id="class_fractale_html"><div class="ttname"><a href="class_fractale.html">Fractale</a></div><div class="ttdef"><b>Definition:</b> fractale.h:11</div></div>
-<div class="ttc" id="class_fractale_html_a27cf7a947501a5a7afe3afa893c0b9d2"><div class="ttname"><a href="class_fractale.html#a27cf7a947501a5a7afe3afa893c0b9d2">Fractale::RunOnce</a></div><div class="ttdeci">void RunOnce()</div><div class="ttdoc">Fractale::RunOnce. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:116</div></div>
+<div class="ttc" id="class_fractale_html_a64fec96bb92a674576c87bc1d54e5bbf"><div class="ttname"><a href="class_fractale.html#a64fec96bb92a674576c87bc1d54e5bbf">Fractale::EnsF</a></div><div class="ttdeci">QList&lt; Forme &gt; EnsF</div><div class="ttdoc">EnsF Stocke L&#39;ensemble des points constituant la fractale au cours du temps. </div><div class="ttdef"><b>Definition:</b> fractale.h:48</div></div>
+<div class="ttc" id="class_fractale_html_a27cf7a947501a5a7afe3afa893c0b9d2"><div class="ttname"><a href="class_fractale.html#a27cf7a947501a5a7afe3afa893c0b9d2">Fractale::RunOnce</a></div><div class="ttdeci">void RunOnce()</div><div class="ttdoc">Fractale::RunOnce Calcul la fractale au rang suivant. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:126</div></div>
 <div class="ttc" id="class_fractale_html_a0d3df9f1e22b8e83271406a5cf1d4f93"><div class="ttname"><a href="class_fractale.html#a0d3df9f1e22b8e83271406a5cf1d4f93">Fractale::Fractale</a></div><div class="ttdeci">Fractale()</div><div class="ttdoc">Fractale::Fractale. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:6</div></div>
-<div class="ttc" id="class_fractale_html_a2a222da66f021b2cdd63d67f9ec0fb90"><div class="ttname"><a href="class_fractale.html#a2a222da66f021b2cdd63d67f9ec0fb90">Fractale::AddRotation</a></div><div class="ttdeci">void AddRotation(qreal theta)</div><div class="ttdoc">Fractale::AddRotation. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:75</div></div>
-<div class="ttc" id="class_fractale_html_a1a95e10996abd82855d68e1ef26eee9c"><div class="ttname"><a href="class_fractale.html#a1a95e10996abd82855d68e1ef26eee9c">Fractale::getSizeEnsForme</a></div><div class="ttdeci">int getSizeEnsForme() const </div><div class="ttdoc">Fractale::getSizeEnsForme. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:151</div></div>
+<div class="ttc" id="class_fractale_html_a2a222da66f021b2cdd63d67f9ec0fb90"><div class="ttname"><a href="class_fractale.html#a2a222da66f021b2cdd63d67f9ec0fb90">Fractale::AddRotation</a></div><div class="ttdeci">void AddRotation(qreal theta)</div><div class="ttdoc">Fractale::AddRotation Ajoute une Rotation d&#39;angle theta à la fractale. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:81</div></div>
+<div class="ttc" id="class_fractale_html_a1a95e10996abd82855d68e1ef26eee9c"><div class="ttname"><a href="class_fractale.html#a1a95e10996abd82855d68e1ef26eee9c">Fractale::getSizeEnsForme</a></div><div class="ttdeci">int getSizeEnsForme() const </div><div class="ttdoc">Fractale::getSizeEnsForme. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:161</div></div>
+<div class="ttc" id="class_fractale_html_ade83766018a59502166dd0d56f801315"><div class="ttname"><a href="class_fractale.html#ade83766018a59502166dd0d56f801315">Fractale::isCantor</a></div><div class="ttdeci">bool isCantor</div><div class="ttdef"><b>Definition:</b> fractale.h:50</div></div>
 <div class="ttc" id="class_application_html"><div class="ttname"><a href="class_application.html">Application</a></div><div class="ttdef"><b>Definition:</b> application.h:10</div></div>
-<div class="ttc" id="class_fractale_html_a558ed8b360dcd396321ddd4c6b18aed3"><div class="ttname"><a href="class_fractale.html#a558ed8b360dcd396321ddd4c6b18aed3">Fractale::AddForme</a></div><div class="ttdeci">void AddForme(Forme F)</div><div class="ttdoc">Fractale::AddForme. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:108</div></div>
+<div class="ttc" id="homothetie_8h_html"><div class="ttname"><a href="homothetie_8h.html">homothetie.h</a></div></div>
+<div class="ttc" id="class_fractale_html_a558ed8b360dcd396321ddd4c6b18aed3"><div class="ttname"><a href="class_fractale.html#a558ed8b360dcd396321ddd4c6b18aed3">Fractale::AddForme</a></div><div class="ttdeci">void AddForme(Forme F)</div><div class="ttdoc">Fractale::AddForme Ajoute une Forme à la fractale. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:117</div></div>
 <div class="ttc" id="class_fractale_html_a8a3f226eb475bb5645a81b3342a6c00d"><div class="ttname"><a href="class_fractale.html#a8a3f226eb475bb5645a81b3342a6c00d">Fractale::isLikeCantor</a></div><div class="ttdeci">bool isLikeCantor() const </div><div class="ttdoc">Fractale::isLikeCantor. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:15</div></div>
-<div class="ttc" id="class_fractale_html_a9394c7048ef36aedbe33ef2607c40155"><div class="ttname"><a href="class_fractale.html#a9394c7048ef36aedbe33ef2607c40155">Fractale::generateExisting</a></div><div class="ttdeci">void generateExisting(quint32 n)</div><div class="ttdoc">Fractale::generateExisting. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:169</div></div>
+<div class="ttc" id="class_fractale_html_a9394c7048ef36aedbe33ef2607c40155"><div class="ttname"><a href="class_fractale.html#a9394c7048ef36aedbe33ef2607c40155">Fractale::generateExisting</a></div><div class="ttdeci">void generateExisting(quint32 n)</div><div class="ttdoc">Fractale::generateExisting Génere une fractale selon des valeurs par defaut. </div><div class="ttdef"><b>Definition:</b> fractale.cpp:188</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
