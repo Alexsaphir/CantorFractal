@@ -1,7 +1,0 @@
-<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
-<area shape="rect" id="node1" href="$class_application.html" title="Application" alt="" coords="5,81,92,108"/>
-<area shape="rect" id="node2" href="$class_homothetie.html" title="Homothetie" alt="" coords="160,5,249,32"/>
-<area shape="rect" id="node3" href="$class_rotation.html" title="Rotation" alt="" coords="169,56,240,83"/>
-<area shape="rect" id="node4" href="$class_similitude_directe.html" title="SimilitudeDirecte" alt="" coords="144,107,265,133"/>
-<area shape="rect" id="node5" href="$class_similitude_indirecte.html" title="SimilitudeIndirecte" alt="" coords="140,157,269,184"/>
-</map>
