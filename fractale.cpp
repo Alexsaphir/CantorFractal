@@ -237,7 +237,7 @@ void Fractale::generateExisting(quint32 n)
 		F1.AddPoint(QPointF(1.,0.));
 		//Si triangle This is based on a dragon curve construction
 		F1.AddPoint(QPointF(1./2.,qSqrt(3.)/2.));
-                this.AddForme(F1);
+		this->AddForme(F1);
 		QPointF Centre;
 
 		S1.setSimilitudeDirecte(1./3.		,-2.*M_PI/3., Centre, QPointF(1./6., qSqrt(3.)/6.)	);
