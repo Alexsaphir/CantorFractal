@@ -1,0 +1,98 @@
+\documentclass[a4paper, 12pt]{report}
+
+\usepackage[utf8]{inputenc} % un package
+\usepackage[T1]{fontenc}      % un second package
+\usepackage[frenchb]{babel}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ textcomp }
+
+
+
+
+\headheight=0mm
+\topmargin=-10mm
+\oddsidemargin=-1cm
+\evensidemargin=-1cm
+\textwidth=18cm
+\textheight=25.5cm
+\parindent=0mm
+
+\title{ \bf Fractales et dimension de Haussdorf}
+\author{Mechineau Alexandre}
+
+\makeindex
+\begin{document}
+\maketitle
+\newtheorem{definition}{Definition}
+\tableofcontents
+
+
+\part{\bf Introduction sur les fractales}
+Le mot fractale a été introduit par Benoît Mandlebrot en 1974 pour décrire des objet dits brisés ou irrégulier, à la difference des objets géométrique classique tels que les droites, les sphères,...
+Cepandant, ces objets avaient déjà été ``découvert'' et cela dès l'antiquité par Apollonius de Perge avec la figure nommé ``la baderne d'Apollonius''\\
+Image\\
+On remarque que si l'on agrandit une zone de la fractale, le meme motif se repète. C'est une propriété des fractales que l'on verra par la suite.\\
+Par la suite, en 1520, Dürer dessine une fractale qui sera nommé Pentagone de Dürer.\\
+îmage\\
+
+Il existe trois maniere de definir une fractales :
+\begin{enumerate}\itemsep2pt
+	\item Par un systeme de fonction itéré(IFS)
+	\item Par  une relation de recurrence
+	\item Par des processus stochastiques et non déterministes
+\end{enumerate}
+
+Dans ce projet, je vais étudier les fractales de type IFS. C'est a dire que  je définit un ensemble de départ E et j'applique mon ensemble de fonction définissant ma fractale sur E.
+L'ensemble des points générés converge alors vers la fractale désirée.
+
+Je vais donc, alors étudier dans un premier temps les fonctions definissant une fractale et l'ensemble de départ.
+Puis, dans un second temps, j'étudierais la {\bf dimension de Haussdorf} permettant de calculer la dimension d'une fractale.
+Enfin, je présenterais de maniere succinte,comment j'ai écrit le programme permetaant de tracer des fractales.
+
+\part{\bf Défintions des fractales}
+\begin{definition}
+	Un objet auto-similaire (self-similarity) est un objet qui conserve sa forme qu'elle que soit l'échelle. 
+\end{definition}
+
+
+\begin{definition}
+	Une fractale est un ensemble auto-similaire.
+\end{definition}
+
+\begin{definition}
+	
+	  Soit $P\in\mathbb{R}^n$, soit F: $\mathbb{R}^n\longrightarrow \mathbb{R}^n\times\ldots\times\mathbb{R}^n$,
+	      $P\longmapsto\begin{pmatrix}
+	      f_{1}(P)	 \\
+	      f_{2}(P)	 \\
+	      \vdots \\
+	      f_{i}(P) 
+	      \end{pmatrix}$ 
+	      est contractante $\Longleftrightarrow \forall j \in $\textlbrackdbl 1,i \textrbrackdbl$, \quad f_j:\mathbb{R}^n \longrightarrow \mathbb{R}^n$ est contractante
+	
+	
+\end{definition}
+
+\begin{definition}
+	Soit S une similitude alors l'image d'un segment est un segment.
+\end{definition}
+
+
+\begin{proof}
+ Soit S une similitude de rapport k, soit AB un segment A,B$\in\mathbb{R}^n$ muni de la distance d alors S(A)=A' et S(B)=B'.\\
+ On a donc d(A',B')=k*d(A,B).\\
+ La longueur du segment A'B' est proportionnelle à la longueur de AB.\\
+ Donc les deux segments sont semblables.
+\end{proof}
+
+\begin{proof}[Proof of important theorem]
+Here is my important proof
+\end{proof}
+
+\end{document}
+
+
