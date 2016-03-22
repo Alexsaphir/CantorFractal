@@ -9,7 +9,8 @@ SOURCES += \
     rotation.cpp \
     window.cpp \
     similitudedirecte.cpp \
-    similitudeindirecte.cpp
+    similitudeindirecte.cpp \
+    windowgenfractale.cpp
 
 HEADERS += \
     application.h \
@@ -19,7 +20,8 @@ HEADERS += \
     rotation.h \
     window.h \
     similitudedirecte.h \
-    similitudeindirecte.h
+    similitudeindirecte.h \
+    windowgenfractale.h
 
 DISTFILES += \
     Triangle \
