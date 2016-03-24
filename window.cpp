@@ -7,25 +7,38 @@
 ///
 Window::Window() : QMainWindow()
 {
+	Str1 = "Create Fractal";
+	Str2 = "Go to View";
+
 	//Type SDI
-	SDI_Area = new QWidget;
+	//SDI_Area = new QWidget;
 	GridLayout = new QGridLayout;
 
-	B_next = new QPushButton("Next Step");
-	B_load = new QPushButton("Load");
+	B_createOrAff	= new QPushButton(Str1);
+	B_erase			= new QPushButton("Erase");
+	B_next			= new QPushButton("Next Step");
+	B_load			= new QPushButton("Load");
+
 
 	scene = new QGraphicsScene;
 	view = new QGraphicsView(scene);
+	Scroll = new QScrollArea;
+
 	fractale=NULL;
+	WGF = new WindowGenFractale;
 
 
-	GridLayout->addWidget(view);
 	//Configuration de la vue
+	GridLayout->addWidget(view,0,0);
+	//GridLayout->addWidget(WGF,0,0);
+	//WGF->hide();
+
 	view->setTransformationAnchor(QGraphicsView::AnchorUnderMouse);
 	view->setDragMode(QGraphicsView::ScrollHandDrag);
+	//Configuration Pen
 	Pen1.setWidth(1);
 	Pen1.setCosmetic(true);
-	//Filtre d'événement
+	//Filtre d'événement pour capturer roulette
 	view->scene()->installEventFilter(this);
 
 
@@ -34,22 +47,52 @@ Window::Window() : QMainWindow()
 	ToolBar->setMovable(false);
 	ToolBar->addWidget(B_next);
 	ToolBar->addWidget(B_load);
-	//B_next->setDisabled(true);//To test new Fractale in main
+	ToolBar->addWidget(B_createOrAff);
+	ToolBar->addSeparator();
+	ToolBar->addWidget(B_erase);
+	B_next->setDisabled(true);//To test new Fractale in main
 
 
-	SDI_Area->setLayout(GridLayout);
-	setCentralWidget(SDI_Area);
+	Scroll->setLayout(GridLayout);
+
+	setCentralWidget(Scroll);
+
 
 	setWindowTitle("QMainWindow");
 	this->resize(800,800);
 
 	connect(B_next, SIGNAL(clicked(bool)), this, SLOT(refreshView()));
 	connect(B_load, SIGNAL(clicked(bool)), this, SLOT(load()));
+	connect(B_erase, SIGNAL(clicked(bool)), this, SLOT(erase()));
+	connect(B_createOrAff, SIGNAL(clicked(bool)), this, SLOT(createOrAff()));
 
 	step=0;
 	tweak = false;
 	this->show();
 	this->load();
+}
+
+void Window::createOrAff()
+{
+	qDebug()<<B_createOrAff->text();
+	if(B_createOrAff->text()==Str1)
+	{
+		B_createOrAff->setText(Str2);
+		Scroll->setWidget(WGF);
+	}
+	else
+	{
+		B_createOrAff->setText(Str1);
+		Scroll->setWidget(view);
+	}
+}
+
+void Window::erase()
+{
+	delete fractale;
+	fractale=NULL;
+	B_next->setDisabled(true);
+	refreshView();
 }
 
 ///
@@ -91,7 +134,10 @@ void Window::refreshView()
 	//Permet d'afficher la fractale a l'écran
 
 	if(fractale == NULL)
+	{
+		scene->clear();
 		return;//Si Aucune fractale n'a été créé on n'affiche rien
+	}
 	if(step!=0)
 		fractale->RunOnce();
 	if(fractale->isLikeCantor())

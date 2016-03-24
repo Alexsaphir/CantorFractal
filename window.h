@@ -4,8 +4,10 @@
 #include <QtWidgets>
 #include <QInputDialog>
 #include <QtPrintSupport/QPrinter>
+#include <QScrollArea>
 
 #include "fractale.h"
+#include "windowgenfractale.h"
 
 class Window : public QMainWindow
 {
@@ -27,6 +29,8 @@ private:
 public slots:
 	void load();
 	void refreshView();
+	void erase();
+	void createOrAff();
 
 
 private:
@@ -36,12 +40,17 @@ private:
 
 	QGraphicsView *view;
 	QGraphicsScene *scene;
+	QScrollArea *Scroll;
+	WindowGenFractale *WGF;
 	QPen Pen1;
-
 
 	QPushButton *B_next;
 	QPushButton *B_load;
+	QPushButton *B_createOrAff;
+	QPushButton *B_erase;
 
+	QString Str1;
+	QString Str2;
 
 	quint32 step;
 };
