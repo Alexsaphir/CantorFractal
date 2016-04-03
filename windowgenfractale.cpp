@@ -1,16 +1,15 @@
 #include "windowgenfractale.h"
 
-WindowGenFractale::WindowGenFractale() : QWidget()
+WindowGenFractale::WindowGenFractale() : QScrollArea()
 {
-	gridLayout = new QGridLayout;
-	scroll = new QScrollArea;
-	scroll->setWidgetResizable(true);
-	scroll->setWidget(this);
+	gridLayout	= new QGridLayout;
+	widget			= new QWidget;
 	for(int i=0;i<10;++i)
 	{
 		listButton.append(new QPushButton("bouton"));
 		gridLayout->addWidget(listButton.at(i), i,1);
 	}
-	this->setLayout(gridLayout);
+	widget->setLayout(gridLayout);
+	this->setWidget(widget);
 }
 

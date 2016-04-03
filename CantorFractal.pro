@@ -1,5 +1,8 @@
 QT+=widgets gui core printsupport
 
+QMAKE_CXXFLAGS += -Wno-comment
+QMAKE_CXXFLAGS += -Wall
+
 SOURCES += \
     main.cpp \
     application.cpp \

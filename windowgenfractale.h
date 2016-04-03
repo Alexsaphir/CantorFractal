@@ -7,7 +7,7 @@
 #include <QPushButton>
 #include <QScrollArea>
 
-class WindowGenFractale : public QWidget
+class WindowGenFractale : public QScrollArea
 {
 
 public:
@@ -17,7 +17,7 @@ private:
     QTabWidget *tabWidget;
     QGridLayout *gridLayout;
     QList<QPushButton*> listButton;
-    QScrollArea *scroll;
+	QWidget *widget;
 };
 
 #endif // WINDOWGENFRACTALE_H

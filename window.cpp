@@ -8,11 +8,11 @@
 Window::Window() : QMainWindow()
 {
 	Str1 = "Create Fractal";
-	Str2 = "Go to View";
 
 	//Type SDI
-	//SDI_Area = new QWidget;
+	SDI_Area = new QWidget;
 	GridLayout = new QGridLayout;
+	GridLayout2 = new QGridLayout;
 
 	B_createOrAff	= new QPushButton(Str1);
 	B_erase			= new QPushButton("Erase");
@@ -22,16 +22,13 @@ Window::Window() : QMainWindow()
 
 	scene = new QGraphicsScene;
 	view = new QGraphicsView(scene);
-	Scroll = new QScrollArea;
 
 	fractale=NULL;
 	WGF = new WindowGenFractale;
 
 
 	//Configuration de la vue
-	GridLayout->addWidget(view,0,0);
-	//GridLayout->addWidget(WGF,0,0);
-	//WGF->hide();
+	GridLayout->addWidget(view);
 
 	view->setTransformationAnchor(QGraphicsView::AnchorUnderMouse);
 	view->setDragMode(QGraphicsView::ScrollHandDrag);
@@ -52,11 +49,8 @@ Window::Window() : QMainWindow()
 	ToolBar->addWidget(B_erase);
 	B_next->setDisabled(true);//To test new Fractale in main
 
-
-	Scroll->setLayout(GridLayout);
-
-	setCentralWidget(Scroll);
-
+	SDI_Area->setLayout(GridLayout);
+	setCentralWidget(SDI_Area);
 
 	setWindowTitle("QMainWindow");
 	this->resize(800,800);
@@ -75,16 +69,6 @@ Window::Window() : QMainWindow()
 void Window::createOrAff()
 {
 	qDebug()<<B_createOrAff->text();
-	if(B_createOrAff->text()==Str1)
-	{
-		B_createOrAff->setText(Str2);
-		Scroll->setWidget(WGF);
-	}
-	else
-	{
-		B_createOrAff->setText(Str1);
-		Scroll->setWidget(view);
-	}
 }
 
 void Window::erase()

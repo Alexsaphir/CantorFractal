@@ -36,6 +36,7 @@ public slots:
 private:
 	QWidget *SDI_Area;
 	QGridLayout *GridLayout;
+	QGridLayout *GridLayout2;
 	QToolBar *ToolBar;
 
 	QGraphicsView *view;
