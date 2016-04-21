@@ -1,0 +1,244 @@
+\documentclass[a4paper, 12pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage{stmaryrd} %llbracket and rrbracket
+
+\usepackage{ dsfont }
+
+%Liens hypertexte
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+%Découpe des mots
+\hyphenation{}
+
+%Alinéa
+\setlength{\parindent}{2 cm}
+
+
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{1}
+
+%Paramètre de la page
+\headheight=0mm
+\topmargin=-10mm
+\oddsidemargin=-1cm
+\evensidemargin=-1cm
+\textwidth=18cm
+\textheight=25.5cm
+\parindent=0mm
+
+
+
+%Création du Titre
+\title{ \bf Fractales et dimension de Haussdorf}
+\author{Mechineau Alexandre}
+
+\makeindex
+
+
+
+
+\begin{document}
+	%Creation du paragraphe définition
+	\newtheorem{definition}{Définition}
+	\newtheorem{prop}{Proposition}
+	\newtheorem{theorem}{Théorème}
+	\newtheorem*{remark*}{Remarque}
+	
+	
+	\maketitle
+	
+	\begin{abstract}
+		Je vais définir ce qu'est un ensemble auto-similaire puis chercher à caractériser sa dimension dans l'espace. 
+	\end{abstract}
+	
+	\tableofcontents
+	
+	\chapter{\bf Introduction}
+	
+	\chapter{\bf Ensemble auto-similaire et fractales}
+		\section{Rappel}
+			Dans un premier temps je vais définir ce qu'est un espace métrique. Puis, je rappelerrais ce qu'est les notions d'espaces complets et d'espace compact. Enfin, je rappellerai la notion d'application contractante et enoncerai le Théorème du points fixe de Banach(Picard).
+			
+			\begin{definition}
+				On appelle $(E,d)$ un \textbf{espace métrique} si $E$ est un ensemble et $d$ une distance sur E.
+				
+				On appelle distance sur un ensemble $E$ une application:
+				\begin{equation*}
+					d:E^2\longrightarrow \mathds{R}
+				\end{equation*}
+			Tel que pour tout $x$,$y$,$z$ $\in E$:
+				\begin{enumerate}\itemsep2pt
+					\item $d(x,y)=d(y,x)$
+					\item $d(x,y)=0 \Longrightarrow x=y$
+					\item $d(x,z) \leq d(x,y)+d(y,z)$
+				\end{enumerate}
+			\end{definition}
+			
+			\begin{definition}
+				Un espace métrique $(E,d)$ est dit \textbf{complet} si toute suite de Cauchy de $E$ admette une limite dans $E$.
+				\label{espMetriqueDef}
+			\end{definition}
+			
+			\begin{definition}
+				Un espace métrique $(E,d)$ est dit \textbf{précompact} si pour tout $\varepsilon >0$, on peut peut recouvrir $E$ par un nombre fini de boule ouverte de rayon $\varepsilon$.
+			\end{definition}
+			
+			\begin{definition}
+				Un espace métrique $(E,d)$ est dit \textbf{compact} 
+			\end{definition}
+			
+			\begin{prop}
+				Un espace métrique est \textbf{compact} si et seulement si il est \textbf{complet} et \textbf{précompact}.
+			\end{prop}
+			
+			\begin{definition}
+				Soit $(E,d)$ un espace métrique et $K$ un sous-espace de $E$.
+				\begin{itemize}
+					\item Un ensemble fini $A$ est appellé \textbf{r-recouvrement} de $K$ si et seulement si:
+					\begin{equation*}
+						\cup_{x\in A} \mathcal{B}_r(x)\supseteq K
+					\end{equation*}
+					\item $K$ est dit \textbf{précompact} si et seulement si il existe un r-recouvrement de $K$ pour tout $r>0$.
+
+				\end{itemize}
+
+			\end{definition}
+
+
+			J'ai donc définit ce qu'est un espace métrique et je l'ai décrit. Je peux donc définir ce qu'es une application contractante.
+			\begin{definition}
+				Une application $f$ d'un espace métrique $(E,d)$ est dite \textbf{contractante} si:
+				\begin{equation}
+					\exists k\in\mathds{R}^+, k<1 \mid \forall x,y\in E, d(f(x),f(y))\leqslant k\times d(x,y)
+					\label{Pcontractante}
+				\end{equation}
+			\end{definition}
+			
+			\begin{remark*}
+				Une application est contractante  par rapport à une distance donnée!
+			\end{remark*}
+
+			Comme nous le verrons plus tard, cette propriété de contraction est la clé pour pouvoir définir ce que sont les fractales. 
+			\begin{prop}
+				\begin{itemize}
+					\item Les homothéties de rapport inférieur à 1 sont des applications contractantes.
+					\item Les similitudes de rapport inférieur à 1 sont des applications contractantes.
+				\end{itemize}
+			\end{prop}
+			Ces deux propriétées sont essentielles par la suite. En effet, l'ensemble des fractales qui seront étudiées sont définies par de telle applications.
+			
+			\begin{theorem}[\textbf{Théorème du points fixe de Banach(Picard)}]
+				\label{ThmPtFixe}
+				Soit $(E,d)$, un espace métrique complet et $f$ une application k-contractante de $E$ dans $E$. Alors, il existe un unique points fixe $x^*$ de $f$:
+				\begin{equation*}
+					x^*\in E\mid x^*=f(x^*)
+				\end{equation*}
+				De plus, pour toute suite d'éléments $(x_n)_{n\in\mathds{N}}$ de $E$ vérifiant la récurrence :
+				\begin{equation*}
+					x_{n+1}=f(x_n)
+				\end{equation*}
+				On a,
+				\begin{equation}
+					d(x_n,x^*)\leq \frac{k^n}{1-k} d(x_0,x_1)
+				\end{equation}
+				Donc, la suite $(x_n)$ converge vers $x^*$.
+				On note aussi, $\forall a\in E,(f^n(a))_{n\geq 0}\longrightarrow x^*$ si $x^*$est un points fixe.
+			\end{theorem}
+			
+			\begin{proof}
+				Soit $(X,d)$ un espace complet.\\
+				Soit $f$ une application k-contractante de $E$ dans $E$.\\
+				On pose $m,n\in\mathds{N}\mid m>n,a\in E$\\
+				\begin{align*}
+					d(f^n(a),f^m(a))&\leq d(f^n(a),f^{n+1}(a))+\ldots+d(f^{m-1}(a),f^m(a))  \tag{Inégalité triangulaire}\\
+									&\leq (k^n+\ldots+k^{m-1})d(a,f(a)) \tag*{\eqref{Pcontractante}}\\
+									&\leq \frac{k^n}{1-k}d(a,f(a))
+				\end{align*}
+				La série $(f^n(a))_{n\geq 0}$ est de Cauchy. En effet, elle converge vers $x^*$ quand $n\longrightarrow\infty$.
+				Or $(E,d)$ est un espace complet donc $x^*\in E$ (Définition \ref{espMetriqueDef}).
+				On a alors $x^*=f(x^*)$\\
+				\textbf{Unicité du point fixe :}
+				\begin{align*}
+					f(x)=x \textrm{ et } f(y)=y\\
+					&d(x,y) = d(f(x),f(y)) \leq k\times d(x,y)\\
+					&d(x,y) \leq k\times d(x,y)
+					&\Rightarrow d(x,y)=0\Rightarrow x=y \tag{Unicité}
+				\end{align*}
+			\end{proof}
+
+
+
+		\section{Ensemble auto-similaire}
+		
+		\begin{theorem}[Unicité et existence des ensembles auto-similaires]
+			Soit $(E,d)$ un espace complet.\\
+			$\forall i \in \llbracket 1,N \rrbracket, f_i:E \longrightarrow E$ est une application contractante, par rapport à la distance $d$.\\
+			Il existe, alors un compact $K\subset E$, tel que:
+			\begin{equation*}
+				K=\cup^N_{i=1}f_i(K)
+			\end{equation*}
+			$K$ est appellé un \textbf{ensemble auto-similaire} défini par :
+			\begin{equation*}
+				\{f_1,\ldots\,f_N\}
+			\end{equation*}
+		\end{theorem}
+		
+		\begin{remark*}
+		\hyperref[ThmPtFixe]{Le Théorème du point fixe de Banach} est un cas particulier de ce théorème avec $N=1$.
+		\end{remark*}
+		
+		Pour simplifier, on pose :
+		\begin{equation*}
+			F(A)=\cup^N_{i=1}f_i(A)
+		\end{equation*}
+		De plus, on introduit l'ensemble suivant pour tout $(E,d)$ espace complet:
+		\begin{equation*}
+			\mathcal{C}(E) : \{A|A\subseteq E, A\textrm{ est un compacte non vide de }E\}
+		\end{equation*}
+		
+		On va maintenant définir une métrique $\delta$ sur $\mathcal{C}(E)$ nommée \textit{mesure de Haussdorf} sur $\mathcal{C}(E)$.
+		\begin{prop}
+			\label{mesHauss}
+			Pour $A,B\in\mathcal{C}(E),$ et $(E,d)$ un espace métrique\\
+			On définit $\delta(A,B)=\inf\{r>0\mid U_r(A)\supseteq B, U_r(B)\supseteq A\}$\\
+			On pose, pour $r>0$ fixé, $U_r(A)=\{x\in E\mid d(x,y)\leq r,y\in A\}$\\
+			$\delta$ est alors une mesure sur $\mathcal{C}(E)$.\\$(E,d)$
+			De plus, si $(E,d)$ est complet alors $(\mathcal{C}(E),\delta)$ est complet.
+		\end{prop}
+		\begin{remark*}
+			La mesure $\delta$ dépends de la mesure $d$ de l'ensemble $E$ comme nous pouvons le voir dans la définition. 
+		\end{remark*}
+
+		
+		Nous pouvons alors montré que $\delta$ est une mesure. Pour ce faire nous allons 
+		\begin{proof}
+			Soit un compact $A\subseteq X$,\\
+			On va montrer que $F$ admet un point fixe.\\
+			Pour cela, on pose \\
+			\textbf{Preuve que la mesure de HAUSSDORF est bien une mesure!!!!!!!!!!!}
+		\end{proof}
+	
+
+
+	\chapter{\bf Dimension des ensembles auto-similaires}
+	
+	\chapter{\bf Exemple de fractale}
+
+
+\end{document}
