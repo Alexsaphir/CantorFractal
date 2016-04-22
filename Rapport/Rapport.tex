@@ -59,6 +59,7 @@
 	\newtheorem{prop}{Proposition}
 	\newtheorem{theorem}{Théorème}
 	\newtheorem*{remark*}{Remarque}
+	\newtheorem{lemma}{Lemme}
 	
 	
 	\maketitle
@@ -233,6 +234,29 @@
 			Pour cela, on pose \\
 			\textbf{Preuve que la mesure de HAUSSDORF est bien une mesure!!!!!!!!!!!}
 		\end{proof}
+		
+		\begin{theorem}
+			Soit $(E,d)$ un espace métrique complet.\\
+			Soit 
+			\begin{align*}
+				F:&\mathcal{C}(E)\longrightarrow \mathcal{C}(E)\\
+				  &A\longmapsto F(A)=\cup^N_{i=1}f_i(A)
+			\end{align*}
+			et $f_i:X \longrightarrow X, i\in\llbracket 1,N\rrbracket$\\
+			Alors $F$ admet un unique points fixe K. De plus, $\forall A\in\mathcal{C}(E), F^n(A)\longrightarrow K$ quand ${n\to\infty}$ par rapport à la mesure de Haussdorf.
+		\end{theorem}
+
+		\begin{lemma}
+			$\forall A_1,A_2,B_1,B_2\in\mathcal{C}(E),$ on a :
+			\begin{equation*}
+				\delta(A_1\cup A_2 , B_1\cup B_2)\leq \max(\delta(A_1,B_1), \delta(A_2,B_2))
+			\end{equation*}
+		\end{lemma}
+	
+	\begin{proof}
+		Si r>$\max(\delta(A_1,B_1), \delta(A_2,B_2))$, alors 
+	\end{proof}
+
 	
 
 
