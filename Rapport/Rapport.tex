@@ -45,7 +45,7 @@
 
 
 %Création du Titre
-\title{ \bf Fractales et dimension de Haussdorf}
+\title{ \bf Fractales et dimension de Hausdorff}
 \author{Mechineau Alexandre}
 
 \makeindex
@@ -74,7 +74,7 @@
 	
 	\chapter{\bf Ensemble auto-similaire et fractales}
 		\section{Rappel}
-			Dans un premier temps je vais définir ce qu'est un espace métrique. Puis, je rappelerrais ce qu'est les notions d'espaces complets et d'espace compact. Enfin, je rappellerai la notion d'application contractante et enoncerai le Théorème du points fixe de Banach(Picard).
+			Dans un premier temps je vais définir ce qu'est un espace métrique. Puis, je rappellerais ce qu'est les notions d'espaces complets et d'espace compact. Enfin, je rappellerai la notion d'application contractante et enoncerai le Théorème du points fixe de Banach(Picard).
 			
 			\begin{definition}
 				On appelle $(E,d)$ un \textbf{espace métrique} si $E$ est un ensemble et $d$ une distance sur E.
@@ -111,7 +111,7 @@
 			\begin{definition}
 				Soit $(E,d)$ un espace métrique et $K$ un sous-espace de $E$.
 				\begin{itemize}
-					\item Un ensemble fini $A$ est appellé \textbf{r-recouvrement} de $K$ si et seulement si:
+					\item Un ensemble fini $A$ est appelé \textbf{r-recouvrement} de $K$ si et seulement si:
 					\begin{equation*}
 						\cup_{x\in A} \mathcal{B}_r(x)\supseteq K
 					\end{equation*}
@@ -135,14 +135,14 @@
 				Une application est contractante  par rapport à une distance donnée!
 			\end{remark*}
 
-			Comme nous le verrons plus tard, cette propriété de contraction est la clé pour pouvoir définir ce que sont les fractales. 
+			Comme nous le verrons plus tard, cette propriété de contraction est la clé pour pouvoir définir ce que sont les fractales définies par IFS. 
 			\begin{prop}
 				\begin{itemize}
 					\item Les homothéties de rapport inférieur à 1 sont des applications contractantes.
 					\item Les similitudes de rapport inférieur à 1 sont des applications contractantes.
 				\end{itemize}
 			\end{prop}
-			Ces deux propriétées sont essentielles par la suite. En effet, l'ensemble des fractales qui seront étudiées sont définies par de telle applications.
+			Ces deux propriétés sont essentielles par la suite. En effet, l'ensemble des fractales qui seront étudiées sont définies par de telle applications.
 			
 			\begin{theorem}[\textbf{Théorème du points fixe de Banach(Picard)}]
 				\label{ThmPtFixe}
@@ -161,7 +161,7 @@
 				Donc, la suite $(x_n)$ converge vers $x^*$.
 				On note aussi, $\forall a\in E,(f^n(a))_{n\geq 0}\longrightarrow x^*$ si $x^*$est un points fixe.
 			\end{theorem}
-			
+
 			\begin{proof}
 				Soit $(X,d)$ un espace complet.\\
 				Soit $f$ une application k-contractante de $E$ dans $E$.\\
@@ -194,7 +194,7 @@
 				\begin{equation*}
 					K=\cup^N_{i=1}f_i(K)
 				\end{equation*}
-				$K$ est appellé un \textbf{ensemble auto-similaire} défini par :
+				$K$ est appelé un \textbf{ensemble auto-similaire} défini par :
 				\begin{equation*}
 					\{f_1,\ldots\,f_N\}
 				\end{equation*}
@@ -219,7 +219,7 @@
 				Pour $A,B\in\mathcal{C}(E),$ et $(E,d)$ un espace métrique\\
 				On définit $\delta(A,B)=\inf\{r>0\mid U_r(A)\supseteq B, U_r(B)\supseteq A\}$\\
 				On pose, pour $r>0$ fixé, $U_r(A)=\{x\in E\mid d(x,y)\leq r,y\in A\}$\\
-				$\delta$ est alors une mesure sur $\mathcal{C}(E)$.\\$(E,d)$
+				$\delta$ est alors une distance sur $\mathcal{C}(E)$.\\$(E,d)$
 				De plus, si $(E,d)$ est complet alors $(\mathcal{C}(E),\delta)$ est complet.
 			\end{prop}
 			\begin{remark*}
@@ -227,12 +227,12 @@
 			\end{remark*}
 
 			
-			Nous pouvons alors montré que $\delta$ est une mesure. Pour ce faire nous allons 
+			Nous pouvons alors montré que $\delta$ est une distance. Pour ce faire nous allons 
 			\begin{proof}
 				Soit un compact $A\subseteq X$,\\
 				On va montrer que $F$ admet un point fixe.\\
 				Pour cela, on pose \\
-				\textbf{Preuve que la mesure de HAUSSDORF est bien une mesure!!!!!!!!!!!}
+				\textbf{Preuve que la mesure de HAUSDORFF est bien une mesure!!!!!!!!!!!}
 			\end{proof}
 			
 			\begin{theorem}
@@ -247,6 +247,7 @@
 			\end{theorem}
 
 			\begin{lemma}
+				\label{lemme118}
 				$\forall A_1,A_2,B_1,B_2\in\mathcal{C}(E),$ on a :
 				\begin{equation}
 					\label{HaussMajUnion}
@@ -261,6 +262,7 @@
 			\end{proof}
 
 			\begin{lemma}
+			\label{lemme119}
 				Si $f$ est une application $k$-contractante défini de $\mathcal{C}(E)$ dans $\mathcal{C}(E)$, alors :
 				\begin{equation}
 					\delta(f(A),f(B))\leq k\times \delta(A,B),\forall A,B\in\mathcal{C}(E)
@@ -268,15 +270,71 @@
 			\end{lemma}
 			
 			\begin{proof}
-				On sait qu'il existe $s$ tel que:
+				On sait qu'il existe $s\geq\delta(A,B)$ tel que:
 				\begin{equation*}
-					U_s(A)\supseteq B \textrm{ et } U_s(B)\supseteq A
+					U_s(A)\supseteq B \textrm{ et } U_s(B)\supseteq A,  U_{sk}(f(A))\supseteq f(U_s(A))\supseteq f(B)					
 				\end{equation*}
+				\begin{equation*}
+					U_s(B)\supseteq A \textrm{ et } U_s(A)\supseteq B,  U_{sk}(f(B))\supseteq f(U_s(B))\supseteq f(A)
+				\end{equation*}
+				On a donc montré que $\delta(f(A),f(B))\leq k*s\leq k*\delta(A,B)$
 
 			\end{proof}
 
+			\begin{proof}[Preuve du théorème]
+				On applique le Lemme \ref{lemme118}, on obtient alors:
+				\begin{align*}
+					\delta(F(A),F(B))	&=\delta(\bigcup_{i=1}^N f_i(A),\bigcup_{i=1}^N f_i(B))\\
+										&\leq\max_{1\leq i\leq N}\{\delta(f_i(A),f_i(B))\}
+				\end{align*}
+				D'après le lemme \ref{lemme119} on a:
+				\begin{align*}
+					\delta(f_i(A),f_i(B))\leq r_i\times\delta(A,B)
+				\end{align*}
+				On a alors,
+				\begin{align*}
+					\delta(F(A),F(B))	&\leq\max_{1\leq i\leq N}\{r_i\times\delta(A,B)\}\\
+										&\leq \left\lgroup\max_{1\leq i\leq N}\{r_i\}\right\rgroup\times\delta(A,B)
+				\end{align*}
+				$F$ est donc une application contractante par rapport à la distance de Hausdorff. D'après la proposition \ref{mesHauss}, on sait que $\mathcal{C}(E)$ est complet donc d'après \hyperref[ThmPtFixe]{Le Théorème du point fixe}, $F$ admet un point fixe.
+			\end{proof}
+		\section{Ensemble auto-similaire et fractale}
+			Un ensemble auto-similaire est la traduction du mot anglais ``self-similarity''. Ce mot représente le fait qu'un objet présente des similarités peu importe l'échelle à laquelle il est regardée. On va étudier les fractales définies par un système de fonction contractante, on sera donc dans le cas des ensembles auto-similaires. On choisit $E=\mathds{R}^2$ et on lui associe la distance usuelle. L'espace métrique défini est complet. On pourra donc utiliser l'ensemble des théorèmes et propositions précédente. Les fonctions qui définirons notre fractale seront des similitudes contractante. Nous munirons notre fractale d'un sous-compact de $E=\mathds{R}^2$ qui sera le plus adapté à la fractale même si comme nous pourrons le voir cela n'a pas d'importance sur le papier. 
+			\begin{definition}
+				Une \textbf{similitude} est une application de $E$ dans $E$ qui multiplie les distances par un rapport $k$ constant.
+			\end{definition}
+			\begin{remark*}
+				On peut représenter une similitude comme la composée d'une homothétie, d'une rotation(ou symétrie) et d'une translation.
+			\end{remark*}
+			\begin{prop}
+				Soit S une similitude, soit $k$ son rapport,$\theta$ son angle de rotation et $T$ un vecteur de translation. On peut écrire S sous la forme suivante:
+				\begin{align*}
+					S(X)=k\times M(\theta)\times X+T
+				\end{align*}
+				On pose M étant une rotation directe ou indirecte:
+				\begin{align*}
+					M(\theta)\in\Bigg\{
+					\begin{pmatrix}
+						\cos(\theta) & -\sin(\theta) \\
+						\sin(\theta) & cos(\theta) 
+					\end{pmatrix}
+					,
+					\begin{pmatrix}
+						\cos(\theta) & \sin(\theta) \\
+						\sin(\theta) & -cos(\theta) 
+					\end{pmatrix}
+					\Bigg\}
+				\end{align*}
+			\end{prop}
+
+			\begin{definition}
+				Une fractale défini par un ensemble de similitude contractante est appelé \textbf{IFS} (Iterated function system). 
+			\end{definition}
+			
+			On remarque qu'une fractale défini par IFS est un ensemble auto-similaire. On sait alors grâce au théorème
 
 	\chapter{\bf Dimension des ensembles auto-similaires}
+		\section{Dimension de Hausdorff}
 	
 	\chapter{\bf Exemple de fractale}
 
