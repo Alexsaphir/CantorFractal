@@ -11,7 +11,6 @@
 \usepackage{textcomp}
 \usepackage{hyperref}
 \usepackage{stmaryrd} %llbracket and rrbracket
-
 \usepackage{ dsfont }
 
 %Liens hypertexte
@@ -19,7 +18,7 @@
     colorlinks,
     citecolor=black,
     filecolor=black,
-    linkcolor=black,
+    linkcolor=blue,
     urlcolor=black
 }
 
@@ -74,7 +73,7 @@
 	
 	\chapter{\bf Ensemble auto-similaire et fractales}
 		\section{Rappel}
-			Dans un premier temps je vais définir ce qu'est un espace métrique. Puis, je rappellerais ce qu'est les notions d'espaces complets et d'espace compact. Enfin, je rappellerai la notion d'application contractante et enoncerai le Théorème du points fixe de Banach(Picard).
+			Dans un premier temps je vais définir ce qu'est un espace métrique. Puis, je rappellerais ce qu'est les notions d'espaces complets et d'espace compact. Enfin, je rappellerai la notion d'application contractante et énoncerai le Théorème du points fixe de Banach(Picard).
 			
 			\begin{definition}
 				On appelle $(E,d)$ un \textbf{espace métrique} si $E$ est un ensemble et $d$ une distance sur E.
@@ -97,7 +96,7 @@
 			\end{definition}
 			
 			\begin{definition}
-				Un espace métrique $(E,d)$ est dit \textbf{précompact} si pour tout $\varepsilon >0$, on peut peut recouvrir $E$ par un nombre fini de boule ouverte de rayon $\varepsilon$.
+				Un espace métrique $(E,d)$ est dit \textbf{pré-compact} si pour tout $\varepsilon >0$, on peut peut recouvrir $E$ par un nombre fini de boule ouverte de rayon $\varepsilon$.
 			\end{definition}
 			
 			\begin{definition}
@@ -105,7 +104,7 @@
 			\end{definition}
 			
 			\begin{prop}
-				Un espace métrique est \textbf{compact} si et seulement si il est \textbf{complet} et \textbf{précompact}.
+				Un espace métrique est \textbf{compact} si et seulement si il est \textbf{complet} et \textbf{pré-compact}.
 			\end{prop}
 			
 			\begin{definition}
@@ -115,7 +114,7 @@
 					\begin{equation*}
 						\cup_{x\in A} \mathcal{B}_r(x)\supseteq K
 					\end{equation*}
-					\item $K$ est dit \textbf{précompact} si et seulement si il existe un r-recouvrement de $K$ pour tout $r>0$.
+					\item $K$ est dit \textbf{pré-compact} si et seulement si il existe un r-recouvrement de $K$ pour tout $r>0$.
 
 				\end{itemize}
 
@@ -188,6 +187,7 @@
 		\section{Ensemble auto-similaire}
 		
 			\begin{theorem}[Unicité et existence des ensembles auto-similaires]
+			\label{thmPrincipale}
 				Soit $(E,d)$ un espace complet.\\
 				$\forall i \in \llbracket 1,N \rrbracket, f_i:E \longrightarrow E$ est une application contractante, par rapport à la distance $d$.\\
 				Il existe, alors un compact $K\subset E$, tel que:
@@ -213,7 +213,7 @@
 				\mathcal{C}(E) : \{A|A\subseteq E, A\textrm{ est un compacte non vide de }E\}
 			\end{equation*}
 			
-			On va maintenant définir une métrique $\delta$ sur $\mathcal{C}(E)$ nommée \textit{mesure de Haussdorf} sur $\mathcal{C}(E)$.
+			On va maintenant définir une métrique $\delta$ sur $\mathcal{C}(E)$ nommée \textit{mesure de Hausdorff} sur $\mathcal{C}(E)$.
 			\begin{prop}
 				\label{mesHauss}
 				Pour $A,B\in\mathcal{C}(E),$ et $(E,d)$ un espace métrique\\
@@ -236,6 +236,7 @@
 			\end{proof}
 			
 			\begin{theorem}
+			\label{ThmConverge}
 				Soit $(E,d)$ un espace métrique complet.\\
 				Soit 
 				\begin{align*}
@@ -243,7 +244,7 @@
 					&A\longmapsto F(A)=\cup^N_{i=1}f_i(A)
 				\end{align*}
 				et $f_i:X \longrightarrow X, i\in\llbracket 1,N\rrbracket$\\
-				Alors $F$ admet un unique points fixe K. De plus, $\forall A\in\mathcal{C}(E), F^n(A)\longrightarrow K$ quand ${n\to\infty}$ par rapport à la mesure de Haussdorf.
+				Alors $F$ admet un unique points fixe K. De plus, $\forall A\in\mathcal{C}(E), F^n(A)\longrightarrow K$ quand ${n\to\infty}$ par rapport à la mesure de Hausdorff.
 			\end{theorem}
 
 			\begin{lemma}
@@ -257,7 +258,7 @@
 		
 			\begin{proof}
 				Si r>$\max(\delta(A_1,B_1), \delta(A_2,B_2))$, alors $U_r(A_1)\supseteq B_1$ et $U_r(A_2)\supseteq B_2$. Par conséquent, $U_r(A_1\cup A_2)\supseteq B_1\cup B_2$.\\
-				De meme, $U_r(B_1)\supseteq A_1$ et $U_r(B_2)\supseteq A_2\Longrightarrow U_r(B_1\cup B_2)\supseteq A_1\cup A_2$.\\
+				De même, $U_r(B_1)\supseteq A_1$ et $U_r(B_2)\supseteq A_2\Longrightarrow U_r(B_1\cup B_2)\supseteq A_1\cup A_2$.\\
 				On a donc $r\geq \max(\delta(A_1,B_1), \delta(A_2,B_2)) $ (\ref{HaussMajUnion})
 			\end{proof}
 
@@ -331,10 +332,19 @@
 				Une fractale défini par un ensemble de similitude contractante est appelé \textbf{IFS} (Iterated function system). 
 			\end{definition}
 			
-			On remarque qu'une fractale défini par IFS est un ensemble auto-similaire. On sait alors grâce au théorème
+			On remarque qu'une fractale défini par IFS est un ensemble auto-similaire. On sait alors grâce au théorème \ref{thmPrincipale} qu'il existe un unique points fixe(Ensemble). De plus, on sait grâce au théorème \ref{ThmConverge} que pour tout compact de $\mathds{R}^2$ le système converge vers le même ensemble.
 
 	\chapter{\bf Dimension des ensembles auto-similaires}
 		\section{Dimension de Hausdorff}
+	
+	\chapter{IFS et informatique}
+			
+			On sait que l'on peut décrire une fractale IFS par un ensemble de similitude et un compact. Le choix du compact a seulement de l'importance pour avoir un résultat "correct" le plus rapidement. Pour calculer le premier pas de la fractale on applique chaque similitude sur l'ensemble de départ. On obtient, alors, une liste d'ensemble. Pour la deuxième étape, on utilise la liste d'ensemble précédemment obtenue sur lequel on applique chaque similitude.
+			
+			
+			
+			
+			On utilise comme compact de base un segment, il nous permet de décrire chaque forme nécessaire aux fractales IFS que l'on représentera. On a alors à chaque étape une liste de segment défini par deux points. Cette liste a une taille qui suit une croissance exponentielle. Mais à chaque itération on se rapproche du points fixe.
 	
 	\chapter{\bf Exemple de fractale}
 
