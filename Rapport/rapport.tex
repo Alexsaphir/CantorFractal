@@ -359,7 +359,17 @@
 	
 			
 			En appliquant l'ensemble des Applications $n$ fois sur la Forme initiale on obtient la n-ème étape de la construction de la fractale. Il ne reste plus qu'à afficher chaque étape a l'écran.
+	
+	
+	
 	\chapter{\bf Exemple de fractale}
+		\section{Notation}
+		On note $SD$ les similitudes directes du plan.\newline
+		On note $SI$ les similitudes indirectes du plan.\newline
+		$M_d(\theta)$ est la matrice de rotation directe du plan d'angle $\theta$.\newline
+		$M_i(\theta)$ est la matrice de rotation indirecte du plan d'angle $\theta$.
+		$x$ est un élément d'un compact de $\mathds{R}$ ou du plan.
+		\newpage
 		\section{Cantor}
 			\subsection{Définition}
 				Pour l'ensemble de Cantor on part du segment $[0;1]$ que l'on contracte de $1/3$ à droite et gauche.
@@ -369,10 +379,10 @@
 					&H_2:x\mapsto 1/3\times x+2/3
 				\end{align*}
 			\subsection{Dimension}
-			
+		\newpage
 		\section{Courbe de Koch}
 			\subsection{Définition}
-				Pour la courbe de Koch on part aussi du segment $[0;1]$. On définit quatre similitude directe du plan. $x$ est un élément du plan. $M_d(\theta)$ est la matrice de rotation directe du plan d'angle $\theta$.
+				Pour la courbe de Koch on part aussi du segment $[0;1]$. On définit quatre similitude directe du plan.
 				\begin{align*}
 					&SD_1:x\mapsto 1/3\times x\\
 					&SD_2:x\mapsto 1/3\times M_d(\pi/3)\times x+\left(	\begin{array}{ccc}
@@ -389,23 +399,115 @@
 														\end{array}\right)
 				\end{align*}
 			\subsection{Dimension}
-			
-		\section{Flocon de Koch}
+		\newpage
+		\section{Flocon de Koch} 
 			\subsection{Définition}
+				Le flocon de Koch est l'union de trois courbe de Koch. Elle est défini par sept similitudes et la forme de base est un triangle équilatéral de longueur $1$.
+				\begin{align*}
+					&SD_1:x\mapsto 1/3\times M_d(-2\pi/3)\times x+\left(	\begin{array}{ccc}
+															1/6\\
+															\sqrt{3}/6\\
+														\end{array}\right)\\
+					&SD_2:x\mapsto 1/3\times M_d(\pi/3)\times x+\left(	\begin{array}{ccc}
+															1/6\\
+															\sqrt{3}/6\\
+														\end{array}\right)\\
+					&SD_3:x\mapsto 1/3\times M_d(0)\times x+\left(	\begin{array}{ccc}
+															1/3\\
+															\sqrt{3}/3\\
+														\end{array}\right)\\
+					&SD_4:x\mapsto 1/3\times M_d(-\pi/3)\times x+\left(	\begin{array}{ccc}
+															2/3\\
+															\sqrt{3}/3\\
+														\end{array}\right)\\
+					&SD_5:x\mapsto 1/\sqrt{3}\times M_d(\pi/6)\times x+\left(	\begin{array}{ccc}
+															1/3\\
+															0\\
+														\end{array}\right)\\
+					&SD_6:x\mapsto 1/3\times M_d(\pi)\times x+\left(	\begin{array}{ccc}
+															2/3\\
+															0\\
+														\end{array}\right)\\
+					&SD_7:x\mapsto 1/3\times M_d(0)\times x+\left(	\begin{array}{ccc}
+															1/3\\
+															0\\
+														\end{array}\right)
+				\end{align*}
 			\subsection{Dimension}
+		\newpage
 		\section{Triangle de Sierpiński}
 			\subsection{Définition}
+				Le triangle de Sierpiński est basé sur un triangle équilatéral de longueur 1. Il est constitué de trois homothétie de centre correspondant aux extrémités du triangle et de rapport $1/2$.
+				\begin{align*}
+					&H_1:x\mapsto 1/2\times x+\frac{1}{2}\left(	\begin{array}{ccc}
+															0\\
+															0\\
+														\end{array}\right)\\
+					&H_2:x\mapsto 1/2\times x+\frac{1}{2}\left(	\begin{array}{ccc}
+															1\\
+															0\\
+														\end{array}\right)\\
+					&H_3:x\mapsto 1/2\times x+\frac{1}{2}\left(	\begin{array}{ccc}
+															1/2\\
+															\sqrt{3/4}\\
+														\end{array}\right)
+				\end{align*}
 			\subsection{Dimension}
+		\newpage
 		\section{Tapis de Sierpiński}
 			\subsection{Définition}
+			Le tapis de Sierpiński est basé sur un carré, c'est a dire l'union de quatre segment. Il est constitué de 8 homothéties de rapport 1/3.
+			\begin{align*}
+				&H_1:x\mapsto 1/2\times x+\frac{1}{2}\left(	\begin{array}{ccc}
+															0\\
+															0\\
+														\end{array}\right)\\
+				&H_2:x\mapsto 1/3\times x-\frac{1}{2}\left(	\begin{array}{ccc}
+																1\\
+																0\\
+															\end{array}\right)\\
+				&H_3:x\mapsto 1/3\times x-\frac{1}{2}\left(	\begin{array}{ccc}
+																1\\
+																1\\
+															\end{array}\right)\\
+				&H_4:x\mapsto 1/3\times x-\frac{1}{2}\left(	\begin{array}{ccc}
+																0\\
+																1\\
+															\end{array}\right)\\
+				&H_5:x\mapsto 1/3\times x-\frac{1}{2}\left(	\begin{array}{ccc}
+																1/2\\
+																0\\
+															\end{array}\right)\\
+				&H_6:x\mapsto 1/3\times x-\frac{1}{2}\left(	\begin{array}{ccc}
+																1\\
+																1/2\\
+															\end{array}\right)\\
+				&H_7:x\mapsto 1/3\times x-\frac{1}{2}\left(	\begin{array}{ccc}
+																1/2\\
+																1\\
+															\end{array}\right)\\
+				&H_8:x\mapsto 1/3\times x-\frac{1}{2}\left(	\begin{array}{ccc}
+																0\\
+																1/2\\
+															\end{array}\right)
+			\end{align*}
+
 			\subsection{Dimension}
+		\newpage
 		\section{Hata's tree-like set}
 			\subsection{Définition}
+			Cette fractale représente de manière simpliste une branche d'arbre. Elle est défini à partir de deux formes le segment classique$[0;1]$ et un second segment ayant pour extrémité l'origine et un point du plan servant de paramètre. Elle est constitué deux similitudes indirectes. Au contraire des fractales précedente je vais me servir des complexes pour définir en partie la fractale.
+			s
 			\subsection{Dimension}
+		\newpage
 		\section{Courbe de Lévy}
 			\subsection{Définition}
-			\subsection{Dimension}
+			Ma courbe de Lévy est définit a partir d'un segment. Elle est construite par deux similitudes directe de rapport $\frac{\sqrt{2}}{2}$.
+			
 		\section{PentaKun}
+			\subsection{Définition}
+			Le pentakun 
+			\subsection{Dimension}
 http://ecademy.agnesscott.edu/~lriddle/ifs/kcurve/kcurve.htm
 
 \end{document}
