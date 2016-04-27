@@ -458,35 +458,35 @@
 			\subsection{Définition}
 			Le tapis de Sierpiński est basé sur un carré, c'est a dire l'union de quatre segment. Il est constitué de 8 homothéties de rapport 1/3.
 			\begin{align*}
-				&H_1:x\mapsto 1/2\times x+\frac{1}{2}\left(	\begin{array}{ccc}
+				&H_1:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
 															0\\
 															0\\
 														\end{array}\right)\\
-				&H_2:x\mapsto 1/3\times x-\frac{1}{2}\left(	\begin{array}{ccc}
+				&H_2:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
 																1\\
 																0\\
 															\end{array}\right)\\
-				&H_3:x\mapsto 1/3\times x-\frac{1}{2}\left(	\begin{array}{ccc}
+				&H_3:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
 																1\\
 																1\\
 															\end{array}\right)\\
-				&H_4:x\mapsto 1/3\times x-\frac{1}{2}\left(	\begin{array}{ccc}
+				&H_4:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
 																0\\
 																1\\
 															\end{array}\right)\\
-				&H_5:x\mapsto 1/3\times x-\frac{1}{2}\left(	\begin{array}{ccc}
+				&H_5:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
 																1/2\\
 																0\\
 															\end{array}\right)\\
-				&H_6:x\mapsto 1/3\times x-\frac{1}{2}\left(	\begin{array}{ccc}
+				&H_6:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
 																1\\
 																1/2\\
 															\end{array}\right)\\
-				&H_7:x\mapsto 1/3\times x-\frac{1}{2}\left(	\begin{array}{ccc}
+				&H_7:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
 																1/2\\
 																1\\
 															\end{array}\right)\\
-				&H_8:x\mapsto 1/3\times x-\frac{1}{2}\left(	\begin{array}{ccc}
+				&H_8:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
 																0\\
 																1/2\\
 															\end{array}\right)
@@ -506,9 +506,20 @@
 			
 		\section{PentaKun}
 			\subsection{Définition}
-			Le pentakun 
+			Le pentakun est basé comme son nom l'indique sur un pentagone. On définit donc cinq point.
+			\begin{equation*}
+				p_i=\left(\begin{array}{ccc}
+							-\sin\left(\frac{2i\pi}{5}\right)\\
+							\cos\left(\frac{2i\pi}{5}\right)\\
+						\end{array}\right)
+						,\forall i\in\textlbrackdbl 1,5\textrbrackdbl
+			\end{equation*}
+			On définit cinq homothétie qui vont réduire le pentagone dans chaque coins.
+			\begin{equation*}
+				H_i=\frac{3-\sqrt{5}}{2}\times x+\frac{\sqrt{5}-1}{2}p_i,\forall i\in\textlbrackdbl 1,5\textrbrackdbl
+			\end{equation*}
 			\subsection{Dimension}
 http://ecademy.agnesscott.edu/~lriddle/ifs/kcurve/kcurve.htm
-
+https://www.yumpu.com/es/document/view/14324138/analisis-armonico-en-fractales-universidad-de-colima/5
 \end{document}
 
