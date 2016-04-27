@@ -121,7 +121,7 @@
 
 			\end{definition}
 
-
+			\hspace{.7 cm}
 			J'ai donc définit ce qu'est un espace métrique et je l'ai décrit. Je peux donc définir ce qu'es une application contractante.
 			\begin{definition}
 				Une application $f$ d'un espace métrique $(E,d)$ est dite \textbf{contractante} si:
@@ -135,14 +135,14 @@
 				Une application est contractante  par rapport à une distance donnée!
 			\end{remark*}
 
-			Comme nous le verrons plus tard, cette propriété de contraction est la clé pour pouvoir définir ce que sont les fractales définies par IFS. 
+			\hspace{.7 cm}Comme nous le verrons plus tard, cette propriété de contraction est la clé pour pouvoir définir ce que sont les fractales définies par IFS. 
 			\begin{prop}
 				\begin{itemize}
 					\item Les homothéties de rapport inférieur à 1 sont des applications contractantes.
 					\item Les similitudes de rapport inférieur à 1 sont des applications contractantes.
 				\end{itemize}
 			\end{prop}
-			Ces deux propriétés sont essentielles par la suite. En effet, l'ensemble des fractales qui seront étudiées sont définies par de telle applications.
+			\hspace{.7 cm}Ces deux propriétés sont essentielles par la suite. En effet, l'ensemble des fractales qui seront étudiées sont définies par de telle applications.
 			
 			\begin{theorem}[\textbf{Théorème du points fixe de Banach(Picard)}]
 				\label{ThmPtFixe}
@@ -214,7 +214,7 @@
 				\mathcal{C}(E) : \{A|A\subseteq E, A\textrm{ est un compacte non vide de }E\}
 			\end{equation*}
 			
-			On va maintenant définir une métrique $\delta$ sur $\mathcal{C}(E)$ nommée \textit{mesure de Hausdorff} sur $\mathcal{C}(E)$.
+			\hspace{.7 cm}On va maintenant définir une métrique $\delta$ sur $\mathcal{C}(E)$ nommée \textit{mesure de Hausdorff} sur $\mathcal{C}(E)$.
 			\begin{prop}
 				\label{mesHauss}
 				Pour $A,B\in\mathcal{C}(E),$ et $(E,d)$ un espace métrique\\
@@ -228,7 +228,7 @@
 			\end{remark*}
 
 			
-			Nous pouvons alors montré que $\delta$ est une distance. Pour ce faire nous allons 
+			\hspace{.7 cm}Nous pouvons alors montré que $\delta$ est une distance. Pour ce faire nous allons 
 			\begin{proof}
 				Soit un compact $A\subseteq X$,\\
 				On va montrer que $F$ admet un point fixe.\\
@@ -333,7 +333,7 @@
 				Une fractale défini par un ensemble de similitude contractante est appelé \textbf{IFS} (Iterated function system). 
 			\end{definition}
 			
-			On remarque qu'une fractale défini par IFS est un ensemble auto-similaire. On sait alors grâce au théorème \ref{thmPrincipale} qu'il existe un unique points fixe(Ensemble). De plus, on sait grâce au théorème \ref{ThmConverge} que pour tout compact de $\mathds{R}^2$ le système converge vers le même ensemble.
+			\hspace{.7 cm}On remarque qu'une fractale défini par IFS est un ensemble auto-similaire. On sait alors grâce au théorème \ref{thmPrincipale} qu'il existe un unique points fixe(Ensemble). De plus, on sait grâce au théorème \ref{ThmConverge} que pour tout compact de $\mathds{R}^2$ le système converge vers le même ensemble.
 
 	\chapter{\bf Dimension des ensembles auto-similaires}
 		\section{Dimension de Hausdorff}
@@ -343,22 +343,23 @@
 			On sait que l'on peut décrire une fractale IFS par un ensemble de similitude et un compact. Le choix du compact a seulement de l'importance pour avoir un résultat "correct" le plus rapidement. Pour calculer le premier pas de la fractale on applique chaque similitude sur l'ensemble de départ. On obtient, alors, une liste d'ensemble. Pour la deuxième étape, on utilise la liste d'ensemble précédemment obtenue sur lequel on applique chaque similitude.
 			
 			
+			\vspace{.2 cm}\hspace{.7 cm}
 			On utilise comme compact de base un segment, il nous permet de décrire chaque forme nécessaire aux fractales IFS que l'on représentera. On a alors à chaque étape une liste de segment défini par deux points. Cette liste a une taille qui suit une croissance exponentielle. Mais à chaque itération on se rapproche du points fixe. En pratique, à partir de cinq itérations le résultat est correct à l'échelle normale.
 			
-			
+			\vspace{.2 cm}\hspace{.7 cm}
 			D'un point de vue algorithmique, j'ai crée un objet application qui me permet de représenter l'ensemble des applications nécessaire de $\mathds{R}^2$. Puis j'ai créé des objets représentant des applications plus spécifique, mais dépendant de Application, comme Rotation, Homothétie, ...
 			
-			
+			\vspace{.2 cm}\hspace{.7 cm}
 			J'ai aussi créé un objet Forme décrivant par un ensemble de points un polygone de $\mathds{R}^2$. Cette objet forme représente un compact, c'est en effet l'union de plusieurs segments qui sont compact.
 			
-			
+			\vspace{.2 cm}\hspace{.7 cm}
 			J'ai écrit un dernier objet Fractale me permettant de définir une fractale IFS comme un ensemble d'Applications et un ensemble de Forme.
 			
-			
+			\vspace{.2 cm}\hspace{.7 cm}
 			L'objet Application permet d'appliquer l'application définie sur un ensemble de forme. Ce qui revient à calculer l'image de chaque extrémité des segments définissant l'objet Forme.
 	
-			
-			En appliquant l'ensemble des Applications $n$ fois sur la Forme initiale on obtient la n-ème étape de la construction de la fractale. Il ne reste plus qu'à afficher chaque étape a l'écran.
+			\vspace{.2 cm}\hspace{.7 cm}
+			En appliquant l'ensemble des Applications $n$ fois sur la Forme initiale on obtient la n-ème étape de la construction de la fractale. Il ne reste plus qu'à afficher chaque étape à l'écran.
 	
 	
 	
@@ -367,8 +368,35 @@
 		On note $SD$ les similitudes directes du plan.\newline
 		On note $SI$ les similitudes indirectes du plan.\newline
 		$M_d(\theta)$ est la matrice de rotation directe du plan d'angle $\theta$.\newline
-		$M_i(\theta)$ est la matrice de rotation indirecte du plan d'angle $\theta$.
-		$x$ est un élément d'un compact de $\mathds{R}$ ou du plan.
+		$M_i(\theta)$ est la matrice de rotation indirecte du plan d'angle $\theta$.\newline
+		$H$ est une homothétie de rapport $k$.
+		$x$ est un élément d'un compact de $\mathds{R}$ ou du plan.\newline
+		$k$ est le rapport d'une similitude.\newline
+		$\theta$ est l'angle d'une similitude.\newline
+		$T$ est un vecteur représentant une translation.\newline
+		
+		\begin{align*}
+			M_D(\theta)&=\left(	\begin{array}{ccc}
+							\cos(\theta) &  -\sin(\theta) \\
+							\sin(\theta) &  \cos(\theta)  \\
+						\end{array} \right)\\
+			M_I(\theta)&=\left(	\begin{array}{ccc}
+							\cos(\theta) &  \sin(\theta) \\
+							\sin(\theta) &  -\cos(\theta)  \\
+						\end{array} \right)\\
+			SD(x)&=k\times M_D(\theta)\times x + T\\
+			SI(x)&=k\times M_I(\theta)\times x + T\\
+			H(x)&=k\times M_D(0)\times x +T=k\times x+T
+		\end{align*}
+		\hspace{.7 cm} De même on peut représenter les similitudes grâce au complexe. Cela sera particulièrement utile pour la fractale de Hata.
+		\begin{align*}
+			&z\in\mathds{C} \textrm{ et } a\in\mathds{C}^*,b\in\mathds{C}\textrm{ fixés},\\
+			&SD(z)=az+b\\
+			&k=\lvert a\rvert
+			&\theta
+		\end{align*}
+
+
 		\newpage
 		\section{Cantor}
 			\subsection{Définition}
@@ -379,6 +407,22 @@
 					&H_2:x\mapsto 1/3\times x+2/3
 				\end{align*}
 			\subsection{Dimension}
+				Pour calculer la dimension de Hausdorff de l'ensemble de Cantor on utilise le théorème (REFERENCE). On a alors,
+				\begin{align*}
+					\left(\frac{1}{3}\right)^d+\left(\frac{1}{3}\right)^d	&=1\\
+											  2\left(\frac{1}{3}\right)^d	&=1\\
+											   \left(\frac{1}{3}\right)^d	&=\frac{1}{2}\\
+						\exp\left(d\times\ln\left(\frac{1}{3}\right)\right)	&=\frac{1}{2} \tag{Passage à la forme exponentielle}\\
+										d\times\ln\left(\frac{1}{3}\right)	&=\ln\left(\frac{1}{2}\right)\\
+																		d	&=\frac{\ln\left(\frac{1}{2}\right)}{\ln\left(\frac{1}{3}\right)}\\
+																		d	&=\frac{\ln(1)-\ln(2)}{\ln(1)-\ln(2)}\\
+																		d	&=\frac{\ln(2)}{\ln(3)} \tag{$\ln(1)$=0}\\
+																		d	&\approx 0.6309
+				\end{align*}
+				On a donc calculer la dimension de Hausdorff de l'ensemble de Cantor.
+				
+				
+				On se base sur ce calcule pour le reste des fractales.
 		\newpage
 		\section{Courbe de Koch}
 			\subsection{Définition}
@@ -399,6 +443,13 @@
 														\end{array}\right)
 				\end{align*}
 			\subsection{Dimension}
+				La courbe de Koch est constitué de quatre similitudes de rapport $1/3$. On a alors:
+				\begin{align*}
+					 4\left(\frac{1}{3}\right)^d	&=1\\
+												d	&=\frac{\ln(4)}{\ln(3)}\\
+												d	&\approx 1.2618
+				\end{align*}
+			
 		\newpage
 		\section{Flocon de Koch} 
 			\subsection{Définition}
@@ -434,6 +485,12 @@
 														\end{array}\right)
 				\end{align*}
 			\subsection{Dimension}
+				Le flocon de Koch est constitué de six similitudes de rapport $1/3$ et une similitude de rapport $1/\sqrt{3}$. On a alors:
+				\begin{align*}
+					 6\left(\frac{1}{3}\right)^d+\left(\frac{1}{\sqrt{3}}\right)^d	&=1\\
+																				d	&=2
+				\end{align*}
+
 		\newpage
 		\section{Triangle de Sierpiński}
 			\subsection{Définition}
@@ -453,6 +510,13 @@
 														\end{array}\right)
 				\end{align*}
 			\subsection{Dimension}
+				On a pour le triangle de Sierpiński:
+				\begin{align*}
+					 3\left(\frac{1}{2}\right)^d	&=1\\
+												d	&=\frac{\ln(3)}{\ln(2)}\\
+												d	&\approx 1.5849
+				\end{align*}
+				
 		\newpage
 		\section{Tapis de Sierpiński}
 			\subsection{Définition}
@@ -493,17 +557,32 @@
 			\end{align*}
 
 			\subsection{Dimension}
+				En appliquant, la formule une fois encore, on obtient:
+				\begin{align*}
+					 8\left(\frac{1}{3}\right)^d	&=1\\
+												d	&=\frac{\ln(8)}{\ln(3)}\\
+												d	&\approx 1.8928
+				\end{align*}
 		\newpage
 		\section{Hata's tree-like set}
 			\subsection{Définition}
 			Cette fractale représente de manière simpliste une branche d'arbre. Elle est défini à partir de deux formes le segment classique$[0;1]$ et un second segment ayant pour extrémité l'origine et un point du plan servant de paramètre. Elle est constitué deux similitudes indirectes. Au contraire des fractales précedente je vais me servir des complexes pour définir en partie la fractale.
-			s
+			
 			\subsection{Dimension}
+
 		\newpage
 		\section{Courbe de Lévy}
 			\subsection{Définition}
-			Ma courbe de Lévy est définit a partir d'un segment. Elle est construite par deux similitudes directe de rapport $\frac{\sqrt{2}}{2}$.
+			La courbe de Lévy est définit à partir d'un segment. Elle est construite par deux similitudes directe de rapport $\frac{\sqrt{2}}{2}$.
 			
+			\subsection{Dimension}
+				\begin{align*}
+					 2\left(\frac{1}{\sqrt{2}}\right)^d	&=1\\
+					 \left(\frac{1}{\sqrt{2}}\right)^d	&=\frac{1}{2}\\
+													d	&=2
+				\end{align*}
+				
+		\newpage
 		\section{PentaKun}
 			\subsection{Définition}
 			Le pentakun est basé comme son nom l'indique sur un pentagone. On définit donc cinq point.
@@ -512,14 +591,21 @@
 							-\sin\left(\frac{2i\pi}{5}\right)\\
 							\cos\left(\frac{2i\pi}{5}\right)\\
 						\end{array}\right)
-						,\forall i\in\textlbrackdbl 1,5\textrbrackdbl
+						,\forall i\in\textrm{\textlbrackdbl} 1,5\textrm{\textrbrackdbl}
 			\end{equation*}
-			On définit cinq homothétie qui vont réduire le pentagone dans chaque coins.
+			On définit cinq homothétie qui vont réduire le pentagone dans chaque coins. Le rapport des homothéties est de $\frac{3-\sqrt{5}}{2}$.
 			\begin{equation*}
-				H_i=\frac{3-\sqrt{5}}{2}\times x+\frac{\sqrt{5}-1}{2}p_i,\forall i\in\textlbrackdbl 1,5\textrbrackdbl
+				H_i=\frac{3-\sqrt{5}}{2}\times x+\frac{\sqrt{5}-1}{2}p_i,\forall i\in\textrm{\textlbrackdbl} 1,5\textrm{\textrbrackdbl}
 			\end{equation*}
 			\subsection{Dimension}
+				\begin{align*}
+					 5\left(\frac{3-\sqrt{5}}{2}\right)^d	&=1\\
+					 \left(\frac{3-\sqrt{5}}{2}\right)^d	&=\frac{1}{5}\\
+														d	&=\frac{-\ln(5)}{\ln(3-\sqrt{5})-\ln(2)}\\
+														d	&\approx 1.6723
+				\end{align*}
 http://ecademy.agnesscott.edu/~lriddle/ifs/kcurve/kcurve.htm
+
 https://www.yumpu.com/es/document/view/14324138/analisis-armonico-en-fractales-universidad-de-colima/5
 \end{document}
 
