@@ -1,0 +1,8 @@
+\begin{prop}
+				\begin{itemize}
+					\item Les homothéties de rapport inférieur à 1 sont des applications contractantes.
+					\item Les similitudes de rapport inférieur à 1 sont des applications contractantes.
+				\end{itemize}
+			\end{prop}
+			\hspace{.7 cm}Ces deux propriétés sont essentielles par la suite. En effet, l'ensemble des fractales qui seront étudiées sont définies par de telle applications.
+			

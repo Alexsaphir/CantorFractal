@@ -44,4 +44,5 @@ DISTFILES += \
     Rapport/Images/pentakun.png \
     Rapport/Images/triangle.png \
     Rapport/projet.tex \
-    Rapport/rapport.tex
+    Rapport/rapport.tex \
+    Rapport/buffer

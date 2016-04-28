@@ -65,12 +65,28 @@
 	\maketitle
 	
 	\begin{abstract}
-		Je vais définir ce qu'est un ensemble auto-similaire puis chercher à caractériser sa dimension dans l'espace. 
+		Je vais définir ce qu'est un ensemble auto-similaire puis chercher à caractériser sa dimension dans l'espace. De plus, je ferrais le liens entre fractale et ensemble auto-similaire. Pour terminer, je montrerai définirai quelque fractale.
 	\end{abstract}
 	
 	\tableofcontents
 	
 	\chapter{\bf Introduction}
+		
+		Le mot fractale a été introduit par Benoît Mandelbrot, en 1974, pour décrire des objet brisés mais invariants aux changement d'échelle. C'est a dire que lorsque l'on zoome sur une partie d'une fractale on voit le même motif qu'avant.
+		
+		Cependant, ces objets avaient déjà été remarqué, dés l'antiquité par Apollonius de Perge avec la figure en son nom ``la baderne d'Apollonius''.
+		\begin{center}
+			\includegraphics[scale=0.1]{Images/baderne}
+		\end{center}
+		
+		\hspace{.7 cm} Dürer, en 1520, dessine une fractale que l'on nommera ``Pentagone de Dürer''. On l'étudiera sous le nom de \hyperref[Pentakun]{Pentakun}. 
+		
+		
+		\hspace{.7 cm} De plus,  ces figures ce retrouvent souvent dans la nature,  c'est le cas du chou Romanesco. On peut aussi citer le cas des poumons, le fait d'avoir une géométrie fractale permet d'avoir une surface importante avec un volume très petit.
+		
+		\hspace{.7 cm} Il existe trois type de fractale. La première étudie la convergence d'une suite en fonction des point du plan, la seconde, est un système d'itération de fonction et la dernière utilise le hasard.
+		
+		\hspace{.7 cm}Nous allons étudier la seconde nommé IFS. Pour cela, nous commencerons par un petit rappel sur les ensembles (compact,....), puis nous introduirons la notion d'ensemble auto-similaire. Dans un second temps, nous chercherons à caractériser la dimension des ensembles auto-similaire. Enfin, nous découvrirons quelque fractale.	
 	
 	\chapter{\bf Ensemble auto-similaire et fractales}
 		\section{Rappel}
@@ -121,8 +137,8 @@
 
 			\end{definition}
 
-			\hspace{.7 cm}
-			J'ai donc définit ce qu'est un espace métrique et je l'ai décrit. Je peux donc définir ce qu'es une application contractante.
+			\hspace{.7 cm} On a donc rappelé l'ensemble des notions de topologie nécessaire pour introduire les ensembles auto-similaire. Mais avant, on va rappeler la notion d'application contractante et le Théorème du point fixe de Picard.
+			
 			\begin{definition}
 				Une application $f$ d'un espace métrique $(E,d)$ est dite \textbf{contractante} si:
 				\begin{equation}
@@ -135,14 +151,7 @@
 				Une application est contractante  par rapport à une distance donnée!
 			\end{remark*}
 
-			\hspace{.7 cm}Comme nous le verrons plus tard, cette propriété de contraction est la clé pour pouvoir définir ce que sont les fractales définies par IFS. 
-			\begin{prop}
-				\begin{itemize}
-					\item Les homothéties de rapport inférieur à 1 sont des applications contractantes.
-					\item Les similitudes de rapport inférieur à 1 sont des applications contractantes.
-				\end{itemize}
-			\end{prop}
-			\hspace{.7 cm}Ces deux propriétés sont essentielles par la suite. En effet, l'ensemble des fractales qui seront étudiées sont définies par de telle applications.
+			\hspace{.7 cm}Comme nous le verrons plus tard, cette propriété de contraction est la clé pour pouvoir définir ce que sont les fractales définies par IFS et avoir un ensemble limite. On va d'abord montrer qu'une application contractante admet un point fixe.
 			
 			\begin{theorem}[\textbf{Théorème du points fixe de Banach(Picard)}]
 				\label{ThmPtFixe}
@@ -182,11 +191,10 @@
 					&\Rightarrow d(x,y)=0\Rightarrow x=y \tag{Unicité}
 				\end{align*}
 			\end{proof}
-
-
+			\hspace{.7 cm} Le théorème du point fixe de Picard est défini pour une application contractante de $\mathds{R}^n$. On veut donc essayer de le généraliser pour un ensemble d'application contractante.
 
 		\section{Ensemble auto-similaire}
-		
+			Comme indiqué précédemment, On cherche a généraliser le théorème du point fixe de Picard.
 			\begin{theorem}[Unicité et existence des ensembles auto-similaires]
 			\label{thmPrincipale}
 				Soit $(E,d)$ un espace complet.\\
@@ -200,7 +208,6 @@
 					\{f_1,\ldots\,f_N\}
 				\end{equation*}
 			\end{theorem}
-		
 			\begin{remark*}
 			\hyperref[ThmPtFixe]{Le Théorème du point fixe de Banach} est un cas particulier de ce théorème avec $N=1$.
 			\end{remark*}
@@ -209,12 +216,14 @@
 			\begin{equation*}
 				F(A)=\cup^N_{i=1}f_i(A)
 			\end{equation*}
-			De plus, on introduit l'ensemble suivant pour tout $(E,d)$ espace complet:
+			\hspace{.7 cm} Avant de faire la preuve de ce théorème clé, on introduit quelque notion qui nous faciliterons la tache. Le théorème du point fixe de Picard travaille avec un élément de $(E,d)$, on peut alors utiliser la distance $d$ sur cet élément. Cependant, le théorème \ref{thmPrincipale} utilise des compacts, on va donc chercher à définir une distance pour les compacts.
+			
+			On introduit, donc, l'ensemble suivant pour tout $(E,d)$ espace complet:
 			\begin{equation*}
 				\mathcal{C}(E) : \{A|A\subseteq E, A\textrm{ est un compacte non vide de }E\}
 			\end{equation*}
 			
-			\hspace{.7 cm}On va maintenant définir une métrique $\delta$ sur $\mathcal{C}(E)$ nommée \textit{mesure de Hausdorff} sur $\mathcal{C}(E)$.
+			\hspace{.7 cm}On va maintenant définir une distance $\delta$ sur $\mathcal{C}(E)$ nommée \textit{distance de Hausdorff} sur $\mathcal{C}(E)$.
 			\begin{prop}
 				\label{mesHauss}
 				Pour $A,B\in\mathcal{C}(E),$ et $(E,d)$ un espace métrique\\
@@ -224,7 +233,7 @@
 				De plus, si $(E,d)$ est complet alors $(\mathcal{C}(E),\delta)$ est complet.
 			\end{prop}
 			\begin{remark*}
-				La mesure $\delta$ dépends de la mesure $d$ de l'ensemble $E$ comme nous pouvons le voir dans la définition. 
+				La distance $\delta$ dépends de la distance $d$ de l'ensemble $E$ comme nous pouvons le voir dans la définition. 
 			\end{remark*}
 
 			
@@ -233,7 +242,7 @@
 				Soit un compact $A\subseteq X$,\\
 				On va montrer que $F$ admet un point fixe.\\
 				Pour cela, on pose \\
-				\textbf{Preuve que la mesure de HAUSDORFF est bien une mesure!!!!!!!!!!!}
+				\textbf{Preuve que la distance de HAUSDORFF est bien une distance!!!!!!!!!!!}
 			\end{proof}
 			
 			\begin{theorem}
@@ -245,7 +254,7 @@
 					&A\longmapsto F(A)=\cup^N_{i=1}f_i(A)
 				\end{align*}
 				et $f_i:X \longrightarrow X, i\in\llbracket 1,N\rrbracket$\\
-				Alors $F$ admet un unique points fixe K. De plus, $\forall A\in\mathcal{C}(E), F^n(A)\longrightarrow K$ quand ${n\to\infty}$ par rapport à la mesure de Hausdorff.
+				Alors $F$ admet un unique points fixe K. De plus, $\forall A\in\mathcal{C}(E), F^n(A)\longrightarrow K$ quand ${n\to\infty}$ par rapport à la distance de Hausdorff.
 			\end{theorem}
 
 			\begin{lemma}
@@ -337,6 +346,7 @@
 
 	\chapter{\bf Dimension des ensembles auto-similaires}
 		\section{Dimension de Hausdorff}
+			
 	
 	\chapter{IFS et informatique}
 			
@@ -612,19 +622,20 @@
 				\end{align*}
 \newpage
 		\section{PentaKun}
+		\label{Pentakun}
 			\subsection{Définition}
-			Le pentakun est basé comme son nom l'indique sur un pentagone. On définit donc cinq point.
-			\begin{equation*}
-				p_i=\left(\begin{array}{ccc}
+				Le pentakun est basé comme son nom l'indique sur un pentagone. On définit donc cinq point.
+				\begin{equation*}
+					p_i=\left(\begin{array}{ccc}
 							-\sin\left(\frac{2i\pi}{5}\right)\\
 							\cos\left(\frac{2i\pi}{5}\right)\\
 						\end{array}\right)
 						,\forall i\in\textrm{\textlbrackdbl} 1,5\textrm{\textrbrackdbl}
 			\end{equation*}
-			On définit cinq homothétie qui vont réduire le pentagone dans chaque coins. Le rapport des homothéties est de $\frac{3-\sqrt{5}}{2}$.
-			\begin{equation*}
-				H_i=\frac{3-\sqrt{5}}{2}\times x+\frac{\sqrt{5}-1}{2}p_i,\forall i\in\textrm{\textlbrackdbl} 1,5\textrm{\textrbrackdbl}
-			\end{equation*}
+				On définit cinq homothétie qui vont réduire le pentagone dans chaque coins. Le rapport des homothéties est de $\frac{3-\sqrt{5}}{2}$.
+				\begin{equation*}
+					H_i=\frac{3-\sqrt{5}}{2}\times x+\frac{\sqrt{5}-1}{2}p_i,\forall i\in\textrm{\textlbrackdbl} 1,5\textrm{\textrbrackdbl}
+				\end{equation*}
 			\subsection{Dimension}
 				\begin{align*}
 					 5\left(\frac{3-\sqrt{5}}{2}\right)^d	&=1\\
