@@ -32,3 +32,21 @@ DISTFILES += \
     HataTreeLike \
     Source \
     Script_Scilab/script.sce \
+    Doxygen/latex/refman.pdf \
+    Rapport/rapport.pdf \
+    Rapport/rapport.toc \
+    Rapport/Images/cantor.png \
+    Rapport/Images/carpet.png \
+    Rapport/Images/courbe.png \
+    Rapport/Images/flocon.png \
+    Rapport/Images/hata1.png \
+    Rapport/Images/hata2.png \
+    Rapport/Images/levy.png \
+    Rapport/Images/pentakun.png \
+    Rapport/Images/triangle.png \
+    Rapport/rapport.aux \
+    Rapport/rapport.idx \
+    Rapport/rapport.out \
+    Rapport/rapport.log \
+    Rapport/projet.tex \
+    Rapport/rapport.tex
