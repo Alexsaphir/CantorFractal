@@ -365,40 +365,31 @@
 	
 	\chapter{\bf Exemple de fractale}
 		\section{Notation}
-		On note $SD$ les similitudes directes du plan.\newline
-		On note $SI$ les similitudes indirectes du plan.\newline
-		$M_d(\theta)$ est la matrice de rotation directe du plan d'angle $\theta$.\newline
-		$M_i(\theta)$ est la matrice de rotation indirecte du plan d'angle $\theta$.\newline
-		$H$ est une homothétie de rapport $k$.
-		$x$ est un élément d'un compact de $\mathds{R}$ ou du plan.\newline
-		$k$ est le rapport d'une similitude.\newline
-		$\theta$ est l'angle d'une similitude.\newline
-		$T$ est un vecteur représentant une translation.\newline
-		
-		\begin{align*}
-			M_D(\theta)&=\left(	\begin{array}{ccc}
-							\cos(\theta) &  -\sin(\theta) \\
-							\sin(\theta) &  \cos(\theta)  \\
-						\end{array} \right)\\
-			M_I(\theta)&=\left(	\begin{array}{ccc}
-							\cos(\theta) &  \sin(\theta) \\
-							\sin(\theta) &  -\cos(\theta)  \\
-						\end{array} \right)\\
-			SD(x)&=k\times M_D(\theta)\times x + T\\
-			SI(x)&=k\times M_I(\theta)\times x + T\\
-			H(x)&=k\times M_D(0)\times x +T=k\times x+T
-		\end{align*}
-		\hspace{.7 cm} De même on peut représenter les similitudes grâce au complexe. Cela sera particulièrement utile pour la fractale de Hata.
-		\begin{align*}
-			&z\in\mathds{C} \textrm{ et } a\in\mathds{C}^*,b\in\mathds{C}\textrm{ fixés},\\
-			&SD(z)=az+b\\
-			&k=\lvert a\rvert
-			&\theta
-		\end{align*}
-
-
-		\newpage
+			On note $SD$ les similitudes directes du plan.\newline
+			On note $SI$ les similitudes indirectes du plan.\newline
+			$M_d(\theta)$ est la matrice de rotation directe du plan d'angle $\theta$.\newline
+			$M_i(\theta)$ est la matrice de rotation indirecte du plan d'angle $\theta$.\newline
+			$H$ est une homothétie de rapport $k$.
+			$x$ est un élément d'un compact de $\mathds{R}$ ou du plan.\newline
+			$k$ est le rapport d'une similitude.\newline
+			$\theta$ est l'angle d'une similitude.\newline
+			$T$ est un vecteur représentant une translation.\newline
+			\begin{align*}
+				M_D(\theta)&=\left(	\begin{array}{ccc}
+								\cos(\theta) &  -\sin(\theta) \\
+								\sin(\theta) &  \cos(\theta)  \\
+									\end{array} \right)\\
+				M_I(\theta)&=\left(	\begin{array}{ccc}
+								\cos(\theta) &  \sin(\theta) \\
+								\sin(\theta) &  -\cos(\theta)  \\
+									\end{array} \right)\\
+				SD(x)&=k\times M_D(\theta)\times x + T\\
+				SI(x)&=k\times M_I(\theta)\times x + T\\
+				H(x)&=k\times M_D(0)\times x +T=k\times x+T
+			\end{align*}
+\newpage
 		\section{Cantor}
+			\includegraphics[scale=0.8]{Images/cantor}
 			\subsection{Définition}
 				Pour l'ensemble de Cantor on part du segment $[0;1]$ que l'on contracte de $1/3$ à droite et gauche.
 				On a donc deux homothéties de rapport 1/3 de centre 0 et 1. L'ensemble de départ et d'arrivé pour chaque application est $\mathds{R}.$ 
@@ -423,11 +414,9 @@
 				
 				
 				On se base sur ce calcule pour le reste des fractales.
-				
-				
-				\includegraphics[scale=0.8]{Images/cantor}
-		\newpage
+\newpage
 		\section{Courbe de Koch}
+			\includegraphics[scale=0.9]{Images/courbe}
 			\subsection{Définition}
 				Pour la courbe de Koch on part aussi du segment $[0;1]$. On définit quatre similitude directe du plan.
 				\begin{align*}
@@ -452,10 +441,11 @@
 												d	&=\frac{\ln(4)}{\ln(3)}\\
 												d	&\approx 1.2618
 				\end{align*}
-				\includegraphics[scale=0.9]{Images/courbe}
-			
-		\newpage
+\newpage
 		\section{Flocon de Koch} 
+			\begin{center}
+				\includegraphics[scale=0.4]{Images/flocon}
+			\end{center}
 			\subsection{Définition}
 				Le flocon de Koch est l'union de trois courbe de Koch. Elle est défini par sept similitudes et la forme de base est un triangle équilatéral de longueur $1$.
 				\begin{align*}
@@ -494,11 +484,11 @@
 					 6\left(\frac{1}{3}\right)^d+\left(\frac{1}{\sqrt{3}}\right)^d	&=1\\
 																				d	&=2
 				\end{align*}
-				\begin{center}
-					\includegraphics[scale=0.4]{Images/flocon}
-				\end{center}
-		\newpage
+\newpage
 		\section{Triangle de Sierpiński}
+			\begin{center}
+				\includegraphics[scale=0.7]{Images/triangle}
+			\end{center}
 			\subsection{Définition}
 				Le triangle de Sierpiński est basé sur un triangle équilatéral de longueur 1. Il est constitué de trois homothétie de centre correspondant aux extrémités du triangle et de rapport $1/2$.
 				\begin{align*}
@@ -521,49 +511,48 @@
 					 3\left(\frac{1}{2}\right)^d	&=1\\
 												d	&=\frac{\ln(3)}{\ln(2)}\\
 												d	&\approx 1.5849
-				\end{align*}
-				\begin{center}
-					\includegraphics[scale=0.7]{Images/triangle}
-				\end{center}
-				
-		\newpage
+				\end{align*}	
+\newpage
 		\section{Tapis de Sierpiński}
+			\begin{center}
+				\includegraphics[scale=0.3]{Images/carpet}
+			\end{center}
 			\subsection{Définition}
-			Le tapis de Sierpiński est basé sur un carré, c'est a dire l'union de quatre segment. Il est constitué de 8 homothéties de rapport 1/3.
-			\begin{align*}
-				&H_1:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
-															0\\
-															0\\
-														\end{array}\right)\\
-				&H_2:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
-																1\\
+				Le tapis de Sierpiński est basé sur un carré, c'est a dire l'union de quatre segment. Il est constitué de 8 homothéties de rapport 1/3.
+				\begin{align*}
+					&H_1:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
+																0\\
 																0\\
 															\end{array}\right)\\
-				&H_3:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
-																1\\
-																1\\
-															\end{array}\right)\\
-				&H_4:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
-																0\\
-																1\\
-															\end{array}\right)\\
-				&H_5:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
-																1/2\\
-																0\\
-															\end{array}\right)\\
-				&H_6:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
-																1\\
-																1/2\\
-															\end{array}\right)\\
-				&H_7:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
-																1/2\\
-																1\\
-															\end{array}\right)\\
-				&H_8:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
-																0\\
-																1/2\\
-															\end{array}\right)
-			\end{align*}
+					&H_2:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
+																	1\\
+																	0\\
+																\end{array}\right)\\
+					&H_3:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
+																	1\\
+																	1\\
+																\end{array}\right)\\
+					&H_4:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
+																	0\\
+																	1\\
+																\end{array}\right)\\
+					&H_5:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
+																	1/2\\
+																	0\\
+																\end{array}\right)\\
+					&H_6:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
+																	1\\
+																	1/2\\
+																\end{array}\right)\\
+					&H_7:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
+																	1/2\\
+																	1\\
+																\end{array}\right)\\
+					&H_8:x\mapsto 1/3\times x+\frac{1}{2}\left(	\begin{array}{ccc}
+																	0\\
+																	1/2\\
+																\end{array}\right)
+				\end{align*}
 
 			\subsection{Dimension}
 				En appliquant, la formule une fois encore, on obtient:
@@ -572,24 +561,48 @@
 												d	&=\frac{\ln(8)}{\ln(3)}\\
 												d	&\approx 1.8928
 				\end{align*}
-				\begin{center}
-					\includegraphics[scale=0.3]{Images/carpet}
-				\end{center}
-		\newpage
+\newpage
 		\section{Hata's tree-like set}
-			\subsection{Définition}
-			Cette fractale représente de manière simpliste une branche d'arbre. Elle est défini à partir de deux formes le segment classique$[0;1]$ et un second segment ayant pour extrémité l'origine et un point du plan servant de paramètre. Elle est constitué deux similitudes indirectes. Au contraire des fractales précedente je vais me servir des complexes pour définir en partie la fractale.
-			
-			\subsection{Dimension}
 			\begin{center}
 				\includegraphics[scale=0.3]{Images/hata1}
 				\includegraphics[scale=0.3]{Images/hata2}
 			\end{center}
-
-		\newpage
-		\section{Courbe de Lévy}
 			\subsection{Définition}
-			La courbe de Lévy est définit à partir d'un segment. Elle est construite par deux similitudes directe de rapport $\frac{\sqrt{2}}{2}$.
+				Cette fractale représente de manière simpliste une branche d'arbre. Elle est défini à partir de deux formes le segment classique$[0;1]$ et un second segment ayant pour extrémité l'origine et un point du plan $\beta$ servant de paramètre qui respecte les  conditions suivantes:
+				\begin{align*}
+					&\left|\beta\right|<1\\
+					&\left|\beta-1\right|<1\\
+					&\textrm{Im }\beta\neq0
+				\end{align*}
+				On définit deux similitudes indirectes dépendant de $\beta$:
+				\begin{align*}
+					SI_1: &x\mapsto \left|\beta\right|\times M_I(\arg(\beta))\times x \\
+					SI_2: &x\mapsto(1-\left|\beta\right|^2)\times M_I(0)+ 	\left(\begin{array}{ccc}
+																				\left|\beta\right|^2\\
+																				0\\
+																			\end{array}\right)\\
+				\end{align*}
+				
+				Pour cette fractale, on va l’étudier pour deux paramètres différents:
+				\begin{itemize}
+					\item $\beta_1=\frac{1}{2}-\frac{1}{2\sqrt{3}}i$ (Image de gauche)
+					\item $\beta_2=\frac{1}{2}i$ (Image de droite)
+				\end{itemize}
+			\subsection{Dimension}
+				On doit donc calculer la dimension de deux fractales car le rapport de chaque similitude dépends de $\beta$. J'ai été capable seulement de calculer des valeurs approchées de la dimension de ces deux ensembles.
+				Pour $\beta_1$, je trouve une valeur approchée de $1.6355$ et pour $\beta_2$, j'obtiens $1.50713$.
+				\begin{align*}
+					\left|\beta\right|^r+\left(1-\left|\beta\right|^2\right)^r=1
+				\end{align*}
+
+
+\newpage
+		\section{Courbe de Lévy}
+			\begin{center}
+				\includegraphics[scale=0.7]{Images/levy}
+			\end{center}
+			\subsection{Définition}
+				La courbe de Lévy est définit à partir d'un segment. Elle est construite par deux similitudes directe de rapport $\frac{\sqrt{2}}{2}$.
 			
 			\subsection{Dimension}
 				\begin{align*}
@@ -597,10 +610,7 @@
 					 \left(\frac{1}{\sqrt{2}}\right)^d	&=\frac{1}{2}\\
 													d	&=2
 				\end{align*}
-				\begin{center}
-					\includegraphics[scale=0.7]{Images/levy}
-				\end{center}
-		\newpage
+\newpage
 		\section{PentaKun}
 			\subsection{Définition}
 			Le pentakun est basé comme son nom l'indique sur un pentagone. On définit donc cinq point.
