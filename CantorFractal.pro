@@ -34,7 +34,6 @@ DISTFILES += \
     Script_Scilab/script.sce \
     Doxygen/latex/refman.pdf \
     Rapport/rapport.pdf \
-    Rapport/rapport.toc \
     Rapport/Images/cantor.png \
     Rapport/Images/carpet.png \
     Rapport/Images/courbe.png \
@@ -44,9 +43,5 @@ DISTFILES += \
     Rapport/Images/levy.png \
     Rapport/Images/pentakun.png \
     Rapport/Images/triangle.png \
-    Rapport/rapport.aux \
-    Rapport/rapport.idx \
-    Rapport/rapport.out \
-    Rapport/rapport.log \
     Rapport/projet.tex \
     Rapport/rapport.tex

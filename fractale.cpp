@@ -177,13 +177,13 @@ int Fractale::getSizeEnsAppli() const
 /// Génere une fractale selon des valeurs par defaut
 /// \param n Type de fractal par defaut
 /// \n n=0 : Cantor
-/// \n n=2 : Triangle de Sierpinski
-/// \n n=3 : Courbe de Koch
-/// \n n=4 : Flocon de Koch
-/// \n n=5 : Hata's tree-like set
-/// \n n=6 : Lévy Curve
-/// \n n=7 : PentaKun
-/// \n n=8 : Sierpinski carpet
+/// \n n=1 : Triangle de Sierpinski
+/// \n n=2 : Courbe de Koch
+/// \n n=3 : Flocon de Koch
+/// \n n=4 : Hata's tree-like set
+/// \n n=5 : Lévy Curve
+/// \n n=6 : PentaKun
+/// \n n= : Sierpinski carpet
 ///
 void Fractale::generateExisting(quint32 n)
 {
