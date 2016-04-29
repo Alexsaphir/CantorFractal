@@ -192,7 +192,7 @@
 				\end{align*}
 			\end{proof}
 			\hspace{.7 cm} Le théorème du point fixe de Picard est défini pour une application contractante de $\mathds{R}^n$. On veut donc essayer de le généraliser pour un ensemble d'application contractante.
-
+\newpage
 		\section{Ensemble auto-similaire}
 			Comme indiqué précédemment, On cherche a généraliser le théorème du point fixe de Picard.
 			\begin{theorem}[Unicité et existence des ensembles auto-similaires]
@@ -310,6 +310,7 @@
 				$F$ est donc une application contractante par rapport à la distance de Hausdorff. D'après la proposition \ref{mesHauss}, on sait que $\mathcal{C}(E)$ est complet donc d'après \hyperref[ThmPtFixe]{Le Théorème du point fixe}, $F$ admet un point fixe.
 			\end{proof}
 		\section{Ensemble auto-similaire et fractale}
+		\label{FracEns}
 			Un ensemble auto-similaire est la traduction du mot anglais ``self-similarity''. Ce mot représente le fait qu'un objet présente des similarités peu importe l'échelle à laquelle il est regardée. On va étudier les fractales définies par un système de fonction contractante, on sera donc dans le cas des ensembles auto-similaires. On choisit $E=\mathds{R}^2$ et on lui associe la distance usuelle. L'espace métrique défini est complet. On pourra donc utiliser l'ensemble des théorèmes et propositions précédente. Les fonctions qui définirons notre fractale seront des similitudes contractante. Nous munirons notre fractale d'un sous-compact de $E=\mathds{R}^2$ qui sera le plus adapté à la fractale même si comme nous pourrons le voir cela n'a pas d'importance sur le papier. 
 			\begin{definition}
 				Une \textbf{similitude} est une application de $E$ dans $E$ qui multiplie les distances par un rapport $k$ constant.
@@ -337,20 +338,70 @@
 					\Bigg\}
 				\end{align*}
 			\end{prop}
+			\begin{prop}
+				Si $S$ est une similitude de rapport $k<1$, alors elle est contractante.
+			\end{prop}
+			\begin{proof}
+				Soit $x,y\in E$, soit $\theta\in\mathds{R}$ fixé et soit $T\in\mathds{E}$ fixé:\\
+				On a que $d(x,y)=d(x+T,y+T)$.\\
+				De plus, M est une matrice de rotation donc ne modifie pas la distance entre deux éléments. On a alors:
+				\begin{align*}
+					d(kM(\theta)x+T,kM(\theta)y+T)	&=d(kM(\theta)x,kM(\theta)y)\\
+													&=kd(x,y)\\
+													&\leq kd(x,y)
+				\end{align*}
+				Une similitude de rapport $k<1$ est donc contractante.
+			\end{proof}
+
+
 
 			\begin{definition}
-				Une fractale défini par un ensemble de similitude contractante est appelé \textbf{IFS} (Iterated function system). 
+				Une fractale $F$ défini par $N$ similitude $S_i$ contractante est appelé \textbf{IFS} (Iterated function system).\\
+				Soit $C$ un compact, on a alors
+				\begin{align*}
+					F(C)=\cup^N_{i=1}S_i(C)
+				\end{align*}
+
 			\end{definition}
 			
-			\hspace{.7 cm}On remarque qu'une fractale défini par IFS est un ensemble auto-similaire. On sait alors grâce au théorème \ref{thmPrincipale} qu'il existe un unique points fixe(Ensemble). De plus, on sait grâce au théorème \ref{ThmConverge} que pour tout compact de $\mathds{R}^2$ le système converge vers le même ensemble.
+			\hspace{.7 cm}On remarque qu'une fractale défini par IFS est un ensemble auto-similaire. On sait alors grâce au théorème \ref{thmPrincipale} qu'il existe un unique points fixe(Compact). De plus, on sait grâce au théorème \ref{ThmConverge} que pour tout compact de $E$ le système converge vers un compact $K$ unique. On sait alors qu'en calculant, pour un compact $C$ donné, $F^n(C)$ tends vers $K$, ($F^n$ répresente la composée n-ème de F). En calculant quelque itérations, nous pouvons alors obtenir un résultat ressemblant visuellement à $K$.
 
 	\chapter{\bf Dimension des ensembles auto-similaires}
+		On sait exprimer la dimension des objets géométrique classique comme le point,la droite, le plan,... . Pour définir cette dimension, on compte le nombre de variable nécessaire à désigner un de ses points. On a donc $\dim(point)=0$, $\dim(droite)=1$, $\dim(plan)=2$, $\dim(cube)=3$,... On obtient toujours une dimension entière.\\
+		Cepandant, pour les fractales on ne peut pas définir une dimension entière. 
 		\section{Dimension de Hausdorff}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 	
 	\chapter{IFS et informatique}
 			
-			On sait que l'on peut décrire une fractale IFS par un ensemble de similitude et un compact. Le choix du compact a seulement de l'importance pour avoir un résultat "correct" le plus rapidement. Pour calculer le premier pas de la fractale on applique chaque similitude sur l'ensemble de départ. On obtient, alors, une liste d'ensemble. Pour la deuxième étape, on utilise la liste d'ensemble précédemment obtenue sur lequel on applique chaque similitude.
+			Comme on l'a vu dans la partie \hyperref[FracEns]{Ensemble auto-similaire et fractale}, on sait que l'on peut décrire une fractale IFS par un ensemble de similitude et un compact. 
+			Le choix du compact a seulement de l'importance pour avoir un résultat "correct" le plus rapidement. Pour calculer le premier pas de la fractale on applique chaque similitude sur l'ensemble de départ. On obtient, alors, une liste d'ensemble. Pour la deuxième étape, on utilise la liste d'ensemble précédemment obtenue sur lequel on applique chaque similitude.
 			
 			
 			\vspace{.2 cm}\hspace{.7 cm}
@@ -374,7 +425,11 @@
 	
 	
 	\chapter{\bf Exemple de fractale}
+		On va, donc dans ce chapitre, découvrir plusieurs fractales. On précisera le compact ``optimum'' et l'ensemble des applications pour chaque fractale. Ensuite, on calculera la dimension de Hausdorff de chaque ensemble.\\
+		On va commencer par introduire plusieurs notations qui nous serons utiles par la suite.
 		\section{Notation}
+			On sait qu'il existe deux types de similitude, on va donc les définir. On exprimera, aussi, la similitude représentant une homothétie.
+			\vspace{.3cm}
 			On note $SD$ les similitudes directes du plan.\newline
 			On note $SI$ les similitudes indirectes du plan.\newline
 			$M_d(\theta)$ est la matrice de rotation directe du plan d'angle $\theta$.\newline
