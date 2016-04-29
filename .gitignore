@@ -43,3 +43,11 @@ Rapport/rapport.toc
 Rapport/rapport.out
 *.aux
 Rapport/rapport.idx
+Rapport/projet.fdb_latexmk
+*.idx
+Rapport/projet.fls
+*.ind
+Rapport/projet.toc
+*.ilg
+Rapport/rapport.fls
+*.backup

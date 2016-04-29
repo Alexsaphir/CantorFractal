@@ -388,6 +388,9 @@
 			
 			
 			
+			
+			
+			
 			\begin{prop}
 				\begin{equation}
 				\label{DimHaus}
@@ -401,13 +404,35 @@
 			\begin{remark*}
 				Il faut remarquer que comme pour la distance de Hausdorff, la dimension de Hausdorff est basée sur la distance $d$. Elle est donc définie pour une distance donnée.
 			\end{remark*}
-			
+			\begin{lemma}
+				Soit $(E,d)$ un espace complet. Pour $0\leq s\leq t$
+				\begin{align*}
+					\mathscr{H}^t_\delta(A)\leq\delta^{t-s}\mathscr{H}^s_\delta(A),\forall A\subseteq E
+				\end{align*}
+			\end{lemma}
+			\begin{proof}
+				Si $A\subseteq \cup_{i\geq 1} A_i$ et $diam(A_i)\leq\delta$ pour tout i, on a alors:
+				\begin{align*}
+					\sum_{i\geq1}diam(A_i)^t\leqslant\sum_{i\geq1}diam(A_i)^{t-s}diam(A_i)^s\leqslant\delta^{t-s}\sum_{i\geq1}diam(A_i)^s
+				\end{align*}
+			\end{proof}
+			On peut, donc, grâce à ce lemme montré cette proposition:
+			\begin{prop}
+				Pour tout $A\subseteq E$,
+				\begin{align*}
+					\sup\{
+				\end{align*}
+
+			\end{prop}
+
+
+
 			
 \newpage
 		\section{Dimension de Hausdorff d'un ensemble auto-similaire}
 			On a définit la dimension de Hausdorff pour des ensembles bornés quelconque. On peut remarqués que la définition de cette dimension, ne nous pêrmet pas de la calculer de maniere explicite. Ce que l'on souhaite,ici, c'est pouvoir la calculer pour les fractales que l'on verra. On sait qu'une fractale IFS est un ensemble auto-similaire. On va donc chercher à définir cette dimension dans le cas des ensembles auto-similaires.
 			\begin{theorem}
-				Soit $N$ similitudes $S_i$ de rapport $r_i<1$, on sait qu'il existe $K==\cup^N_{i=1}S_i(K)$
+				Soit $N$ similitudes $S_i$ de rapport $r_i<1$, on sait qu'il existe $K=\cup^N_{i=1}S_i(K)$
 				On a alors:
 				\begin{equation}
 					diam_\mathscr{H}=d \mid \sum_{i=1}^N r_i^d=1
