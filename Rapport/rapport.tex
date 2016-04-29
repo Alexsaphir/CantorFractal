@@ -12,6 +12,7 @@
 \usepackage{hyperref}
 \usepackage{stmaryrd} %llbracket and rrbracket
 \usepackage{ dsfont }
+\usepackage{mathrsfs}
 
 
 %Liens hypertexte
@@ -368,8 +369,60 @@
 
 	\chapter{\bf Dimension des ensembles auto-similaires}
 		On sait exprimer la dimension des objets géométrique classique comme le point,la droite, le plan,... . Pour définir cette dimension, on compte le nombre de variable nécessaire à désigner un de ses points. On a donc $\dim(point)=0$, $\dim(droite)=1$, $\dim(plan)=2$, $\dim(cube)=3$,... On obtient toujours une dimension entière.\\
-		Cepandant, pour les fractales on ne peut pas définir une dimension entière. 
+		Cependant, pour les fractales on ne peut pas définir une dimension entière. On va, donc, chercher à définir une dimension pour les fractales.
 		\section{Dimension de Hausdorff}
+			
+			\begin{definition}
+				Soit $(X,d)$ un espace métrique. Pour tout ensemble $A$ borné, on définit:
+				\begin{align*}
+					\mathscr{H}^s_\delta(A)=\inf\{\sum_{i\leq1}diam(E_i)^s:A\subset\cup_{i\leq1}E_i,diam(E_i)\leq\delta\}\\
+					diam(E_i)=\sup_{x,y\in E_i}d(x,y)
+					\end{align*}
+				On définit aussi:
+				\begin{align*}
+					\mathscr{H}^s(A)=\lim_{\delta\rightarrow0}\mathscr{H}^s_\delta(A)
+				\end{align*}
+			\end{definition}
+			\hspace{0.7 cm} Cette définition montre le fait que l'on essaye de recouvrir de la manière la plus efficace possible l'ensemble $A$.
+			
+			
+			
+			
+			\begin{prop}
+				\begin{equation}
+				\label{DimHaus}
+					\forall A\subseteq X, dim_\mathscr{H}(A)=\sup\{s:\mathscr{H}^s(A)=\infty\}=\inf\{s:\mathscr{H}^s(A)=0\}
+				\end{equation}
+			\end{prop}
+
+			\begin{definition}
+				On appelle dimension de Hausdorff, la valeur $s$ donné par l'équation \ref{DimHaus}.
+			\end{definition}
+			\begin{remark*}
+				Il faut remarquer que comme pour la distance de Hausdorff, la dimension de Hausdorff est basée sur la distance $d$. Elle est donc définie pour une distance donnée.
+			\end{remark*}
+			
+\newpage
+		\section{Dimension de Hausdorff d'un ensemble auto-similaire}
+			On a définit la dimension de Hausdorff pour des ensembles bornés quelconque. On peut remarqués que la définition de cette dimension, ne nous pêrmet pas de la calculer de maniere explicite. Ce que l'on souhaite,ici, c'est pouvoir la calculer pour les fractales que l'on verra. On sait qu'une fractale IFS est un ensemble auto-similaire. On va donc chercher à définir cette dimension dans le cas des ensembles auto-similaire.
+			\begin{theorem}
+				Soit $N$ similitudes $S_i$ de rapport $r_i<1$, on sait qu'il existe $K==\cup^N_{i=1}S_i(K)$
+				On a alors:
+				\begin{equation}
+					diam_\mathscr{H}=d \mid \sum_{i=1}^N r_i^d=1
+				\end{equation}
+				voir Hutchinson [Hu]
+			\end{theorem}
+			
+			De plus, La dimension de Hausdorff de l'ensemble $K$ requiert que $K$ soit un ensemble borné. Or, pour que $K$ soit un ensemble auto-similaire, $K$ doit être compact. Or,un compact est borné. On a donc plus d’ambiguïté sur la définition de cette dimension dans le cas des ensembles auto-similaire.
+			
+			
+			
+			
+			
+			
+			
+		
 			
 			
 			
@@ -701,6 +754,13 @@
 				\begin{center}
 					\includegraphics[scale=0.5]{Images/pentakun.png}
 				\end{center}
+				
+	\chapter*{Remerciements}
+	\addcontentsline{toc}{chapter}{Remerciements}
+	
+	
+	\chapter*{Bibliographie}
+	\addcontentsline{toc}{chapter}{Bibliographie}
 				
 http://ecademy.agnesscott.edu/~lriddle/ifs/kcurve/kcurve.htm
 
