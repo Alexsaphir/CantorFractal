@@ -38,3 +38,8 @@ Thumbs.db
 
 *.user
 Makefile
+Rapport/rapport.toc
+*.gz(busy)
+Rapport/rapport.out
+*.aux
+Rapport/rapport.idx
