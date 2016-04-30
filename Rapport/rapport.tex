@@ -196,7 +196,7 @@
 \newpage
 		\section{Ensemble auto-similaire}
 			Comme indiqué précédemment, on cherche a généraliser le théorème du point fixe de Picard.
-			\begin{theorem}[Unicité et existence des ensembles auto-similaires]
+			\begin{theorem}[Théorème de Hutchinson: Unicité et existence des ensembles auto-similaires]
 			\label{thmPrincipale}
 				Soit $(E,d)$ un espace complet.\\
 				$\forall i \in \llbracket 1,N \rrbracket, f_i:E \longrightarrow E$ est une application contractante, par rapport à la distance $d$.\\
@@ -230,21 +230,15 @@
 				Pour $A,B\in\mathcal{C}(E),$ et $(E,d)$ un espace métrique\\
 				On définit $\delta(A,B)=\inf\{r>0\mid U_r(A)\supseteq B, U_r(B)\supseteq A\}$\\
 				On pose, pour $r>0$ fixé, $U_r(A)=\{x\in E\mid d(x,y)\leq r,y\in A\}$\\
-				$\delta$ est alors une distance sur $\mathcal{C}(E)$.\\$(E,d)$
-				De plus, si $(E,d)$ est complet alors $(\mathcal{C}(E),\delta)$ est complet.
+				$\delta$ est alors une distance sur $\mathcal{C}(E)$.\\
+				De plus, si $(E,d)$ est complet alors $(\mathcal{C}(E),\delta)$ est complet. (ADMIS)
 			\end{prop}
 			\begin{remark*}
 				La distance $\delta$ dépend de la distance $d$ de l'ensemble $E$ comme nous pouvons le voir dans la définition. 
 			\end{remark*}
 
+
 			
-			\hspace{.7 cm}Nous pouvons alors montré que $\delta$ est une distance. Pour ce faire nous allons 
-			\begin{proof}
-				Soit un compact $A\subseteq X$,\\
-				On va montrer que $F$ admet un point fixe.\\
-				Pour cela, on pose \\
-				\textbf{Preuve que la distance de HAUSDORFF est bien une distance!!!!!!!!!!!}
-			\end{proof}
 			
 			\begin{theorem}
 			\label{ThmConverge}
@@ -310,14 +304,16 @@
 				\end{align*}
 				$F$ est donc une application contractante par rapport à la distance de Hausdorff. D'après la proposition \ref{mesHauss}, on sait que $\mathcal{C}(E)$ est complet donc d'après \hyperref[ThmPtFixe]{Le Théorème du point fixe}, $F$ admet un point fixe.
 			\end{proof}
+\newpage
 		\section{Ensemble auto-similaire et fractale}
 		\label{FracEns}
 			Un ensemble auto-similaire est la traduction du mot anglais ``self-similarity''. Ce mot représente le fait qu'un objet présente des similarités peu importe l'échelle à laquelle il est regardée. On va étudier les fractales définies par un système de fonction contractante, on sera donc dans le cas des ensembles auto-similaires. On choisit $E=\mathds{R}^2$ et on lui associe la distance usuelle. L'espace métrique défini est complet. On pourra donc utiliser l'ensemble des théorèmes et propositions précédente. Les fonctions qui définirons notre fractale seront des similitudes contractantes. Nous munirons notre fractale d'un sous-compact de $E=\mathds{R}^2$ qui sera le plus adapté à la fractale même si comme nous pourrons le voir cela n'a pas d'importance sur le papier. 
 			\begin{definition}
+			\label{simiDef}
 				Une \textbf{similitude} est une application de $E$ dans $E$ qui multiplie les distances par un rapport $k$ constant.
 			\end{definition}
 			\begin{remark*}
-				On peut représenter une similitude comme la composée d'une homothétie, d'une rotation(ou symétrie) et d'une translation.
+				On peut représenter une similitude du plan comme la composée d'une homothétie, d'une rotation(ou symétrie) et d'une translation.
 			\end{remark*}
 			\begin{prop}
 				Soit S une similitude, soit $k$ son rapport,$\theta$ son angle de rotation et $T$ un vecteur de translation. On peut écrire S sous la forme suivante:
@@ -340,24 +336,17 @@
 				\end{align*}
 			\end{prop}
 			\begin{prop}
+				
 				Si $S$ est une similitude de rapport $k<1$, alors elle est contractante.
 			\end{prop}
 			\begin{proof}
-				Soit $x,y\in E$, soit $\theta\in\mathds{R}$ fixé et soit $T\in\mathds{E}$ fixé:\\
-				On a que $d(x,y)=d(x+T,y+T)$.\\
-				De plus, M est une matrice de rotation donc ne modifie pas la distance entre deux éléments. On a alors:
-				\begin{align*}
-					d(kM(\theta)x+T,kM(\theta)y+T)	&=d(kM(\theta)x,kM(\theta)y)\\
-													&=kd(x,y)\\
-													&\leq kd(x,y)
-				\end{align*}
-				Une similitude de rapport $k<1$ est donc contractante.
+				Une similitude de rapport $k$ multiplie les distances par $k$(Définition \ref{simiDef}). Donc, si $k<1$, c'est une application contractante.
 			\end{proof}
 
 
 
 			\begin{definition}
-				Une fractale $F$ défini par $N$ similitude $S_i$ contractante est appelé \textbf{IFS} (Iterated function system).\\
+				Une fractale $F$ défini par $N$ similitudes $S_i$ contractante est appelé \textbf{IFS} (Iterated function system).\\
 				Soit $C$ un compact, on a alors
 				\begin{align*}
 					F(C)=\cup^N_{i=1}S_i(C)
@@ -367,10 +356,9 @@
 			
 			\hspace{.7 cm}On remarque qu'une fractale défini par IFS est un ensemble auto-similaire. On sait alors grâce au théorème \ref{thmPrincipale} qu'il existe un unique points fixe(Compact). De plus, on sait grâce au théorème \ref{ThmConverge} que pour tout compact de $E$ le système converge vers un compact $K$ unique. On sait alors qu'en calculant, pour un compact $C$ donné, $F^n(C)$ tends vers $K$, ($F^n$ répresente la composée n-ème de F). En calculant quelque itérations, nous pouvons alors obtenir un résultat ressemblant visuellement à $K$.
 
-	\chapter{\bf Dimension des ensembles auto-similaires}
+	\chapter{\bf Dimension des ensembles auto-similaires, Dimension de Hausdorff}
 		On sait exprimer la dimension des objets géométriques classiques comme le point,la droite, le plan,... . Pour définir cette dimension, on compte le nombre de variable nécessaire à désigner un de ses points. On a donc $\dim(point)=0$, $\dim(droite)=1$, $\dim(plan)=2$, $\dim(cube)=3$,... On obtient toujours une dimension entière.\\
 		Cependant, pour les fractales on ne peut pas définir une dimension entière. On va, donc, chercher à définir une dimension pour les fractales.
-		\section{Dimension de Hausdorff}
 			
 			\begin{definition}
 				Soit $(X,d)$ un espace métrique. Pour tout ensemble $A$ borné, on définit:
@@ -379,32 +367,17 @@
 					diam(E_i)=\sup_{x,y\in E_i}d(x,y)
 					\end{align*}
 				On définit aussi:
-				\begin{align*}
+				\begin{equation*}
 					\mathscr{H}^s(A)=\lim_{\delta\rightarrow0}\mathscr{H}^s_\delta(A)
-				\end{align*}
+				\end{equation*}
 			\end{definition}
 			\hspace{0.7 cm} Cette définition montre le fait que l'on essaye de recouvrir de la manière la plus efficace possible l'ensemble $A$.
 			
-			
-			
-			
-			
-			
-			
-			\begin{prop}
-				\begin{equation}
-				\label{DimHaus}
-					\forall A\subseteq X, dim_\mathscr{H}(A)=\sup\{s:\mathscr{H}^s(A)=\infty\}=\inf\{s:\mathscr{H}^s(A)=0\}
-				\end{equation}
-			\end{prop}
 
-			\begin{definition}
-				On appelle dimension de Hausdorff, la valeur $s$ donné par l'équation \ref{DimHaus}.
-			\end{definition}
-			\begin{remark*}
-				Il faut remarquer que comme pour la distance de Hausdorff, la dimension de Hausdorff est basée sur la distance $d$. Elle est donc définie pour une distance donnée.
-			\end{remark*}
+			
+			
 			\begin{lemma}
+			\label{lemme152}
 				Soit $(E,d)$ un espace complet. Pour $0\leq s\leq t$
 				\begin{align*}
 					\mathscr{H}^t_\delta(A)\leq\delta^{t-s}\mathscr{H}^s_\delta(A),\forall A\subseteq E
@@ -416,31 +389,88 @@
 					\sum_{i\geq1}diam(A_i)^t\leqslant\sum_{i\geq1}diam(A_i)^{t-s}diam(A_i)^s\leqslant\delta^{t-s}\sum_{i\geq1}diam(A_i)^s
 				\end{align*}
 			\end{proof}
-			On peut, donc, grâce à ce lemme montré cette proposition:
+\newpage
+			On peut, donc, grâce au lemme précédent montré cette proposition:
 			\begin{prop}
 				Pour tout $A\subseteq E$,
-				\begin{align*}
-					\sup\{
-				\end{align*}
-
-			\end{prop}
-
-
-
-			
-\newpage
-		\section{Dimension de Hausdorff d'un ensemble auto-similaire}
-			On a définit la dimension de Hausdorff pour des ensembles bornés quelconque. On peut remarqués que la définition de cette dimension, ne nous pêrmet pas de la calculer de maniere explicite. Ce que l'on souhaite,ici, c'est pouvoir la calculer pour les fractales que l'on verra. On sait qu'une fractale IFS est un ensemble auto-similaire. On va donc chercher à définir cette dimension dans le cas des ensembles auto-similaires.
-			\begin{theorem}
-				Soit $N$ similitudes $S_i$ de rapport $r_i<1$, on sait qu'il existe $K=\cup^N_{i=1}S_i(K)$
-				On a alors:
 				\begin{equation}
-					diam_\mathscr{H}=d \mid \sum_{i=1}^N r_i^d=1
+					\label{sHaus}
+					\sup\{s:\mathscr{H}^s(A)=\infty\}=\inf\{s:\mathscr{H}^s(A)=0\}
 				\end{equation}
-				voir Hutchinson [Hu]
-			\end{theorem}
+			\end{prop}
+			\begin{proof}
+				D'après le lemme \ref{lemme152}, si $s<t$, on a que $\mathscr{H}^s(A)<\infty$ implique $\mathscr{H}^t(A)=0$. De  même, on a $\mathscr{H}^t(A)>0$ implique $\mathscr{H}^s(A)=\infty$. On remarque donc l'implication \ref{sHaus}
+			\end{proof}
 			
-			De plus, La dimension de Hausdorff de l'ensemble $K$ requiert que $K$ soit un ensemble borné. Or, pour que $K$ soit un ensemble auto-similaire, $K$ doit être compact. Or,un compact est borné. On a donc plus d’ambiguïté sur la définition de cette dimension dans le cas des ensembles auto-similaires.
+			
+			\begin{definition}[Dimension de Hausdorff]
+				La valeur $s$ donnée par l'équation \ref{sHaus} est appelé dimension de Hausdorff de $A$. On la note $dim_H A$.
+			\end{definition}
+			\begin{remark*}
+				Il faut remarquer que comme pour la distance de Hausdorff, la dimension de Hausdorff est basée sur la distance $d$. Elle est donc définie pour une distance donnée.
+			\end{remark*}
+			
+			On a définit la dimension de Hausdorff pour des ensembles bornés quelconque. On peut remarqués que la définition de cette dimension, ne nous permet pas de la calculer de manière explicite. Ce que l'on souhaite,ici, c'est pouvoir la calculer pour les fractales que l'on verra. On sait qu'une fractale IFS est un ensemble auto-similaire. On va donc chercher à définir cette dimension dans le cas des ensembles auto-similaires.
+			Ce qui définit un ensemble auto-similaire, ce sont ces applications contractantes caractérisés par leurs rapports. On va, donc ,tenter d'exprimer la dimension de Hausdorff en fonction de ces rapports.
+			\newline \hspace{0.7 cm} On va dans un premier temps travailler sur une liste de rapports contractants.
+			\begin{theorem}
+				Soit $N$ rapport contractant $r_i$, on a $r_i<1$. $(r_1,\cdots,r_N)$ est une liste de rapports contractants. Il existe $s\geq0$ tel que:
+				
+				\begin{equation}
+					\sum_{i=1}^N r_i^s =1
+				\end{equation}
+				$s$ est égale à $0$ si et seulement si $N=1$.
+			\end{theorem}
+			\begin{proof}
+				Si $N=1$, $s=0$ est la seule solution.\\
+				Si $N>1$, soit $f$ une fonction définie sur$[0,\infty)$ par:
+				\begin{equation}
+				\label{sumRatio}
+					f(t)=\sum_{i=1}^N r_i^t
+				\end{equation}
+				On a $f(0)=n$ et $\lim_{t\rightarrow\infty}f(t)=0<1$. $f$ est une somme de fonctions continues, donc est continue. $f$ admet comme dérivée:
+				\begin{equation*}
+					\sum_{i=1}^N r_i^t\ln r_i<0
+				\end{equation*}
+				$f$ est donc décroissante. $1$ est compris entre $0$ et $n$.
+				D'après le théorème des valeurs intermédiaire, il existe une solution positive à l'équation \ref{sumRatio}.
+			\end{proof}
+			
+			\begin{definition}
+				Soit N similitudes $S_i$. Soit $(r_1,\cdots,r_N)$ une liste de rapports contractants. On associe, à chaque similitude $S_i$, le rapport $r_i$. On dit que $(f_1,\cdots,f_N)$ est une réalisation de $(r_1,\cdots,r_N)$.
+			\end{definition}
+
+			\begin{definition}
+				$s$ est appelé dimension de similitude associé à $(r_1,\cdots,r_N)$.
+			\end{definition}
+			
+			Cependant, on pourrait se dire que l'on a la dimension de notre fractale mais ce n'est pas le cas on a juste:
+			\begin{remark*}
+				Soit K une fractale et soit $(r_1,\cdots,r_N)$ la liste de rapport contractant associé à $K$ de dimension de similitude $s$. On a alors:
+				\begin{equation*}
+					\dim(K)\leq s
+				\end{equation*}
+			\end{remark*}
+			
+			On a besoin d'ajouter une condition plus forte, qui nous permettrais de dire $s$ est la dimension de la fractale. Cette condition est appelée ``Condition de Morans''.
+			\begin{definition}[Condition de Moran]
+				Il existe un ouvert $\mathscr{O}$ tel que:
+				\begin{equation}
+					\mathscr{O}\supset f_i(\mathscr{O})\forall i \textrm{ et } f_i(\mathscr{O})\cap f_j(\mathscr{O})=\emptyset \forall i\neq j
+				\end{equation}
+			\end{definition}
+			Cette condition traduit le fait que l'ensemble des applications définissant l'ensemble auto-similaire sont différente les unes des autres.
+			On peut alors, avec cette condition, énoncé le théorème suivant:
+			\begin{theorem}
+				\label{thmDim}
+				Si $(S_1,\cdots,S_n)$ est une réalisation de $(r_1,\cdots,r_n)$ définis sur l'espace métrique $\mathds{R}^d$ et si la condition de Moran est respectée, on a alors:
+				\begin{equation*}
+					\dim(K)=s
+				\end{equation*}
+			\end{theorem}
+			\hspace{0.7 cm} Grâce à ce théorème, nous sommes en mesure de calculer la dimension de Hausdorff d'un ensemble auto-similaire et de ce fait celle d'une fractale IFS. Nous mettrons en application ce théorème pour le calcul de la dimension de Hausdorff des fractales lorsque nous les présenterons.
+			
+
 			
 	
 	\chapter{IFS et informatique}
@@ -467,7 +497,10 @@
 			\vspace{.2 cm}\hspace{.7 cm}
 			En appliquant l'ensemble des Applications $n$ fois sur la Forme initiale on obtient la n-ème étape de la construction de la fractale. Il ne reste plus qu'à afficher chaque étape à l'écran.
 	
-	
+			\begin{remark*}
+				L'image d'un segment par une similitude est un segment. En effet, effectuer une rotation, translation ou une homothétie sur un segment donne un segment. Une similitude étant la composée de ces différentes applications, elle donne donc un segment.
+			\end{remark*}
+
 	
 	\chapter{\bf Exemple de fractale}
 		On va, donc dans ce chapitre, découvrir plusieurs fractales. On précisera le compact ``optimum'' et l'ensemble des applications pour chaque fractale. Ensuite, on calculera la dimension de Hausdorff de chaque ensemble.\\
@@ -508,7 +541,7 @@
 					&H_2:x\mapsto 1/3\times x+2/3
 				\end{align*}
 			\subsection{Dimension}
-				Pour calculer la dimension de Hausdorff de l'ensemble de Cantor on utilise le théorème (REFERENCE). On a alors,
+				Pour calculer la dimension de Hausdorff de l'ensemble de Cantor on utilise le théorème \ref{thmDim}. En effet, comme toute les fractales que nous définirons, l'ensemble de Cantor est constitué de deux similitudes différentes. On a alors,
 				\begin{align*}
 					\left(\frac{1}{3}\right)^d+\left(\frac{1}{3}\right)^d	&=1\\
 											  2\left(\frac{1}{3}\right)^d	&=1\\
@@ -754,13 +787,17 @@
 	\chapter*{Bibliographie}
 	\addcontentsline{toc}{chapter}{Bibliographie}
 		\begin{itemize}
+			\setlength\itemsep{.5 cm}
 			\item KIGAMI, Jun. Hausdorff dimensions of self-similar sets and shortest path metrics. J. Math. Soc. Japan 47 (1995), no. 3, 381--404
+			
 			\item Jun Kigami . Analysis on Fractals. Cambridge University Press., 2001, ISBN 978-0-521-79321-6
 			
+			\item J. E. Hutchinson, Fractals and self similarity, Indiana Univ. Math. J. 30 (1981), 713-747.
 
 			\item Classic Iterated Function Systems, \url{http://ecademy.agnesscott.edu/~lriddle/ifs/ifs.htm}, 1999
 
 			\item Wikipedia contributors, 'Totally bounded space', Wikipedia, The Free Encyclopedia, 10 November 2015, 18:06 UTC, \url{https://en.wikipedia.org/w/index.php?title=Totally_bounded_space&oldid=690001055} [accessed 29 April 2016]
+			
 			\item Shlomo Sternberg, Lecture 10: The Hausdorff metric. Hutchinson's theorem. Fractal images Similarity dimension and Hausdorff dimension., \url{http://www.math.harvard.edu/library/sternberg/slides/1180910.pdf} [accessed 29 april 2016]
 		\end{itemize}
 \end{document}
