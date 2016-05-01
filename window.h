@@ -6,7 +6,11 @@
 #include <QtPrintSupport/QPrinter>
 #include <QScrollArea>
 
+#include<cstdlib>
+#include<ctime>
+
 #include "fractale.h"
+#include "forme.h"
 #include "windowgenfractale.h"
 
 class Window : public QMainWindow

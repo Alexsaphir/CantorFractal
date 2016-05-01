@@ -62,13 +62,50 @@ Window::Window() : QMainWindow()
 
 	step=0;
 	tweak = false;
+	srand(time(NULL));
 	this->show();
 	this->load();
 }
 
 void Window::createOrAff()
 {
-	qDebug()<<B_createOrAff->text();
+	Forme forme;
+	forme.AddPoint(QPointF(0.,0.));
+	int nbr=rand() % 3+1;
+	if (fractale != NULL)
+		delete fractale;
+	view->scene()->clear();
+	step=0;
+	fractale = new Fractale;
+
+	for (int i = 1; i < nbr; ++i)
+	{
+		float r1 = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/2.));
+		float r2 = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/2.));
+		forme.AddPoint(QPointF(r1,r2));
+	}
+	fractale->AddForme(forme);
+	for (int i = 0; i < nbr; ++i)
+	{
+		float k = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/.9));
+		float r1 = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/(2.*M_PI)));
+		Application A;
+		A.setCentre(forme.GetPoint(i));
+		A.setK(k);
+		A.setm11(qCos(r1));
+		A.setm12(-qSin(r1));
+		A.setm21(qSin(r1));
+		A.setm22(qCos(r1));
+
+		r1 = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/2.));
+		float r2 = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/2.));
+		A.setv1(r1);
+		A.setv2(r2);
+		fractale->AddApplication(A);
+		qDebug() <<"Rapport" <<A.getK();
+	}
+	refreshView();
+	B_next->setDisabled(false);
 }
 
 void Window::erase()

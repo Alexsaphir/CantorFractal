@@ -259,8 +259,8 @@ void Fractale::generateExisting(quint32 n)
 	}
 	else if(n==4)
 	{
-		std::complex<qreal> beta=1./2.-1i*qSqrt(3.)/6.;
-		//std::complex<qreal> beta(0-1i*0.5);
+		//std::complex<qreal> beta=1./2.-1i*qSqrt(3.)/6.;
+		std::complex<qreal> beta(0-1i*0.5);
 		Forme F1,F2;
 		F1.generateExisting(0);//genere segment
 		F2.AddPoint(QPointF(0.,0.));
