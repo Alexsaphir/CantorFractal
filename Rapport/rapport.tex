@@ -91,7 +91,7 @@
 	
 	\chapter{\bf Ensemble auto-similaire et fractale}
 		\section{Rappel}
-			Dans un premier temps je vais définir ce qu'est un espace métrique. Puis, je rappellerai quelques notions sur les espaces complets et d'espaces compacts. Enfin, je rappellerai la notion d'application contractante et énoncerai le Théorème du points fixe de Banach(Picard).
+			Dans un premier temps je vais définir ce qu'est un espace métrique. Puis, je rappellerai quelques notions sur les espaces complets et les espaces compacts. Enfin, je rappellerai la notion d'application contractante et énoncerai le Théorème du points fixe de Banach(Picard).
 			
 			\begin{definition}
 				On appelle $(E,d)$ un \textbf{espace métrique} si $E$ est un ensemble et $d$ une distance sur E.
@@ -118,25 +118,31 @@
 			\end{definition}
 			
 			\begin{definition}
-				Un espace métrique $(E,d)$ est dit \textbf{compact} 
+				Soit $(E,d)$ un espace métrique et $X$ un sous-espace de $E$.
+				\begin{itemize}
+					\item Un ensemble fini $A$ est appelé \textbf{r-recouvrement} de $X$ si et seulement si:
+					\begin{equation*}
+						\cup_{x\in A} \mathcal{B}_r(x)\supseteq X,\mathcal{B}_r(x)=\{e\in E\mid d(x,e)<r\}
+					\end{equation*}
+					\item $X$ est dit \textbf{pré-compact} si et seulement si il existe un r-recouvrement de $X$.
+				\end{itemize}
+			\end{definition}
+			
+			\begin{definition}
+			\label{compactDef}
+				Un ensemble $X$ d'un espace métrique $(E,d)$ est dit \textbf{compact} si pour tout r-recouvrement, il existe un sous-ensemble fini d'ouvert tel que leurs unions contiennent X.
 			\end{definition}
 			
 			\begin{prop}
-				Un espace métrique est \textbf{compact} si et seulement si il est \textbf{complet} et \textbf{pré-compact}.
+			\label{compactProp}
+				Un ensemble $X$ d'un espace métrique $(E,d)$ est \textbf{compact} si et seulement si il est \textbf{complet} et \textbf{pré-compact}.
 			\end{prop}
 			
-			\begin{definition}
-				Soit $(E,d)$ un espace métrique et $K$ un sous-espace de $E$.
-				\begin{itemize}
-					\item Un ensemble fini $A$ est appelé \textbf{r-recouvrement} de $K$ si et seulement si:
-					\begin{equation*}
-						\cup_{x\in A} \mathcal{B}_r(x)\supseteq K
-					\end{equation*}
-					\item $K$ est dit \textbf{pré-compact} si et seulement si il existe un r-recouvrement de $K$ pour tout $r>0$.
+			\begin{remark*}
+				La définition \ref{compactDef} et la propriété \ref{compactProp} sont équivalentes.
+			\end{remark*}
 
-				\end{itemize}
-
-			\end{definition}
+			
 
 			\hspace{.7 cm} On a donc rappelé l'ensemble des notions de topologie nécessaire pour introduire les ensembles auto-similaire. Mais avant, on va rappeler la notion d'application contractante et le Théorème du point fixe de Picard.
 			
@@ -181,8 +187,7 @@
 									&\leq (k^n+\ldots+k^{m-1})d(a,f(a)) \tag*{\eqref{Pcontractante}}\\
 									&\leq \frac{k^n}{1-k}d(a,f(a))
 				\end{align*}
-				La série $(f^n(a))_{n\geq 0}$ est de Cauchy. En effet, elle converge vers $x^*$ quand $n\longrightarrow\infty$.
-				Or $(E,d)$ est un espace complet donc $x^*\in E$ (Définition \ref{espMetriqueDef}).
+				La série $(f^n(a))_{n\geq 0}$ est donc de Cauchy. Or, E est complet, $(f^n(a))_{n\geq 0}$ admet donc une limite dans $E$ (Définition \ref{espMetriqueDef}). On note cette limite $x^*$.
 				On a alors $x^*=f(x^*)$\\
 				\textbf{Unicité du point fixe :}
 				\begin{align*}
@@ -192,10 +197,10 @@
 					&\Rightarrow d(x,y)=0\Rightarrow x=y \tag{Unicité}
 				\end{align*}
 			\end{proof}
-			\hspace{.7 cm} Le théorème du point fixe de Picard est défini pour une application contractante de $\mathds{R}^n$. On veut donc essayer de le généraliser pour un ensemble d'application contractante.
+			\hspace{.7 cm} Le théorème du point fixe de Picard est défini pour une application contractante définie sur un ensemble complet.
 \newpage
 		\section{Ensemble auto-similaire}
-			Comme indiqué précédemment, on cherche a généraliser le théorème du point fixe de Picard.
+			Les ensembles auto-similaire sont définis à partir d'une union d'ensemble compact, on cherche, alors, un théorème similaire au théorème du point fixe de Picard mais s'appliquant sur une union d'espace compact.
 			\begin{theorem}[Théorème de Hutchinson: Unicité et existence des ensembles auto-similaires]
 			\label{thmPrincipale}
 				Soit $(E,d)$ un espace complet.\\
@@ -783,6 +788,9 @@
 	\chapter*{Remerciements}
 	\addcontentsline{toc}{chapter}{Remerciements}
 	
+	Je remercie particulièrement Clément Fromenteau pour ses conseils de qualités tout au long de ce projet.
+	\newline
+	Je remercie également ma Maman pour les corrections orthographiques apportés à ce rapport et Théo Voillemin 
 	
 	\chapter*{Bibliographie}
 	\addcontentsline{toc}{chapter}{Bibliographie}
