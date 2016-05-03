@@ -21,7 +21,7 @@
     citecolor=black,
     filecolor=black,
     linkcolor=blue,
-    urlcolor=black
+    urlcolor=red
 }
 
 %Découpe des mots
@@ -71,7 +71,8 @@
 	
 	\tableofcontents
 	
-	\chapter{\bf Introduction}
+	\chapter*{\bf Introduction}
+	\addcontentsline{toc}{chapter}{Introduction}
 		
 		Le mot fractale a été introduit par Benoît Mandelbrot, en 1974, pour décrire des objet brisés mais invariants aux changements d'échelle. C'est à dire que lorsque l'on zoome sur une partie d'une fractale on voit le même motif qu'avant.
 		
@@ -114,23 +115,24 @@
 			\end{definition}
 			
 			\begin{definition}
-				Un ensemble $X$ d'un espace métrique $(E,d)$ est dit \textbf{pré-compact} si il existe $\varepsilon >0$, on peut recouvrir $X$ par un nombre fini de boule ouverte de rayon $\varepsilon$.
-			\end{definition}
-			
-			\begin{definition}
-				Soit $(E,d)$ un espace métrique et $X$ un sous-espace de $E$.
-				\begin{itemize}
-					\item Un ensemble fini $A$ est appelé \textbf{r-recouvrement} de $X$ si et seulement si:
+				Soit $(E,d)$ un espace métrique et $X$ un sous-espace de $E$. Un ensemble fini $A$ est appelé \textbf{r-recouvrement} de $X$ si et seulement si:
 					\begin{equation*}
 						\cup_{x\in A} \mathcal{B}_r(x)\supseteq X,\mathcal{B}_r(x)=\{e\in E\mid d(x,e)<r\}
 					\end{equation*}
-					\item $X$ est dit \textbf{pré-compact} si et seulement si il existe un r-recouvrement de $X$.
-				\end{itemize}
 			\end{definition}
+			
+			
+			
+			\begin{definition}
+				
+				Un ensemble $X$ d'un espace métrique $(E,d)$ est dit \textbf{pré-compact} si et seulement si il existe un r-recouvrement de $X$.
+			\end{definition}
+			
+	
 			
 			\begin{definition}
 			\label{compactDef}
-				Un ensemble $X$ d'un espace métrique $(E,d)$ est dit \textbf{compact} si pour tout r-recouvrement, il existe un sous-ensemble fini d'ouvert tel que leurs unions contiennent X.
+				Un ensemble $X$ d'un espace métrique $(E,d)$ est dit \textbf{compact} si pour tout $r>0$, il existe un r-recouvrement de  X.
 			\end{definition}
 			
 			\begin{prop}
@@ -187,7 +189,7 @@
 									&\leq (k^n+\ldots+k^{m-1})d(a,f(a)) \tag*{\eqref{Pcontractante}}\\
 									&\leq \frac{k^n}{1-k}d(a,f(a))
 				\end{align*}
-				La série $(f^n(a))_{n\geq 0}$ est donc de Cauchy. Or, E est complet, $(f^n(a))_{n\geq 0}$ admet donc une limite dans $E$ (Définition \ref{espMetriqueDef}). On note cette limite $x^*$.
+				La suite $(f^n(a))_{n\geq 0}$ est donc de Cauchy. Or, E est complet, $(f^n(a))_{n\geq 0}$ admet donc une limite dans $E$ (Définition \ref{espMetriqueDef}). On note cette limite $x^*$.
 				On a alors $x^*=f(x^*)$\\
 				\textbf{Unicité du point fixe :}
 				\begin{align*}
@@ -511,7 +513,7 @@
 	\chapter{\bf Exemple de fractales}
 		On va, donc dans ce chapitre, découvrir plusieurs fractales. On précisera le compact ``optimum'' et l'ensemble des applications pour chaque fractale. Ensuite, on calculera la dimension de Hausdorff de chaque ensemble.\\
 		On va commencer par introduire plusieurs notations qui nous serons utiles par la suite.\\
-			Les sources du programme utilisé sont disponible à l'adresse https://github.com/Alexsaphir/CantorFractal
+			Les sources du programme utilisé sont disponible à l'adresse \url{https://github.com/Alexsaphir/CantorFractal}
 		\section{Notation}
 			On sait qu'il existe deux types de similitudes, on va donc les définir. On exprimera, aussi, la similitude représentant une homothétie.
 			\vspace{.3cm}
@@ -737,7 +739,7 @@
 				Pour cette fractale, on va l’étudier pour deux paramètres différents:
 				\begin{itemize}
 					\item $\beta_1=\frac{1}{2}-\frac{1}{2\sqrt{3}}i$ (Image de gauche)
-					\item $\beta_2=\frac{1}{2}i$ (Image de droite)
+					\item $\beta_2=-\frac{1}{2}i$ (Image de droite)
 				\end{itemize}
 			\subsection{Dimension}
 				On doit donc calculer la dimension de deux fractales car le rapport de chaque similitude dépends de $\beta$. J'ai été capable seulement de calculer des valeurs approchées de la dimension de ces deux ensembles.
