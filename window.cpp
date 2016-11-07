@@ -26,7 +26,7 @@ Window::Window() : QMainWindow()
 	fractale=NULL;
 	WGF = new WindowGenFractale;
 
-
+	this->setWindowTitle("Fractale");
 	//Configuration de la vue
 	GridLayout->addWidget(view);
 
